@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Fraud Detection Portal</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" />
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <h1>Healthcare Claims — Fraud Detection</h1>
+      <p class="subtitle">Upload batch files or run single-record analysis for provider-level or claim-level fraud detection.</p>
+    </header>
+
+    <main>
+      <div class="selectors">
+        <button class="big" id="btn_provider">Provider level fraud</button>
+        <button class="big" id="btn_claim">Claim level fraud</button>
+      </div>
+
+      <!-- Provider Section -->
+      <section id="provider_section" class="panel hidden">
+        <h2>Provider Level Fraud</h2>
+        <div class="mode-buttons">
+          <button class="mode" data-mode="batch" data-type="provider">Batch Mode</button>
+          <button class="mode" data-mode="single" data-type="provider">Single Analysis Mode</button>
+        </div>
+
+        <!-- Batch -->
+        <div class="batch-panel hidden" data-type="provider">
+          <p>Upload CSV or JSON (first row should contain columns). Required fields (best-effort): <strong>is_inpatient, is_groupcode, ChronicCond_rheumatoidarthritis, Beneficiaries_Count, DeductibleAmtPaid, InscClaimAmtReimbursed, ChronicCond_Alzheimer, ChronicCond_IschemicHeart, Days_Admitted, ChronicCond_stroke</strong></p>
+          <input type="file" id="provider_batch_file" />
+          <button id="provider_batch_analyze">Analyse</button>
+          <div id="provider_batch_result" class="result"></div>
+        </div>
+
+        <!-- Single -->
+        <div class="single-panel hidden" data-type="provider">
+          <form id="provider_single_form" class="form-grid">
+            <input type="number" name="is_inpatient" placeholder="Inpatient Status (0/1)" required>
+            <input type="number" name="is_groupcode" placeholder="Group code (0/1)" required>
+            <input type="number" name="ChronicCond_rheumatoidarthritis" placeholder="Rheumatoid Arthritis (0/1)" required>
+            <input type="number" name="Beneficiaries_Count" placeholder="Beneficiaries Count" required>
+            <input type="number" name="DeductibleAmtPaid" placeholder="Deductible Paid" required>
+            <input type="number" name="InscClaimAmtReimbursed" placeholder="Reimbursed Amount" required>
+            <input type="number" name="ChronicCond_Alzheimer" placeholder="Alzheimer's (0/1)" required>
+            <input type="number" name="ChronicCond_IschemicHeart" placeholder="Ischemic Heart (0/1)" required>
+            <input type="number" name="Days_Admitted" placeholder="Days Admitted" required>
+            <input type="number" name="ChronicCond_stroke" placeholder="Stroke (0/1)" required>
+            <button type="submit">Analyse</button>
+          </form>
+          <div id="provider_single_result" class="result"></div>
+        </div>
+      </section>
+
+      <!-- Claim Section -->
+      <section id="claim_section" class="panel hidden">
+        <h2>Claim Level Fraud</h2>
+        <div class="mode-buttons">
+          <button class="mode" data-mode="batch" data-type="claim">Batch Mode</button>
+          <button class="mode" data-mode="single" data-type="claim">Single Analysis Mode</button>
+        </div>
+
+        <!-- Batch -->
+        <div class="batch-panel hidden" data-type="claim">
+          <p>Upload CSV or JSON with fields: <strong>IPAnnualReimbursementAmt, IPAnnualDeductibleAmt, OPAnnualReimbursementAmt, OPAnnualDeductibleAmt, InscClaimAmtReimbursed, DeductibleAmtPaid, Age, Days_Admitted, Diseases_Count, Total_Physicians, Total_ClaimCodes, Total_ProcedureCodes, Claim_Period</strong></p>
+          <input type="file" id="claim_batch_file" />
+          <button id="claim_batch_analyze">Analyse</button>
+          <div id="claim_batch_result" class="result"></div>
+        </div>
+
+        <!-- Single -->
+        <div class="single-panel hidden" data-type="claim">
+          <form id="claim_single_form" class="form-grid">
+            <input type="number" name="IPAnnualReimbursementAmt" placeholder="IPAnnualReimbursementAmt" required>
+            <input type="number" name="IPAnnualDeductibleAmt" placeholder="IPAnnualDeductibleAmt" required>
+            <input type="number" name="OPAnnualReimbursementAmt" placeholder="OPAnnualReimbursementAmt" required>
+            <input type="number" name="OPAnnualDeductibleAmt" placeholder="OPAnnualDeductibleAmt" required>
+            <input type="number" name="InscClaimAmtReimbursed" placeholder="InscClaimAmtReimbursed" required>
+            <input type="number" name="DeductibleAmtPaid" placeholder="DeductibleAmtPaid" required>
+            <input type="number" name="Age" placeholder="Age" required>
+            <input type="number" name="Days_Admitted" placeholder="Days_Admitted" required>
+            <input type="number" name="Diseases_Count" placeholder="Diseases_Count" required>
+            <input type="number" name="Total_Physicians" placeholder="Total_Physicians" required>
+            <input type="number" name="Total_ClaimCodes" placeholder="Total_ClaimCodes" required>
+            <input type="number" name="Total_ProcedureCodes" placeholder="Total_ProcedureCodes" required>
+            <input type="number" name="Claim_Period" placeholder="Claim_Period (days)" required>
+            <button type="submit">Analyse</button>
+          </form>
+          <div id="claim_single_result" class="result"></div>
+        </div>
+      </section>
+
+      
+
+    </main>
+  </div>
+
+  <script src="{{ url_for('static', filename='app.js') }}"></script>
+</body>
+</html>

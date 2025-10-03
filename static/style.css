@@ -45,3 +45,21 @@ button:hover {
     margin-top: 20px;
     font-size: 16px;
 }
+:root{--accent:#0b74de;--muted:#666}
+body{font-family:Inter,Arial,Helvetica,sans-serif;background:#f4f7fb;margin:0;color:#222}
+.wrap{max-width:980px;margin:24px auto;padding:20px}
+header h1{margin:0;font-size:24px}
+.subtitle{color:var(--muted);margin:8px 0 20px}
+.selectors{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:18px}
+.big{background:var(--accent);color:#fff;padding:12px 18px;border:none;border-radius:8px;cursor:pointer}
+.panel{background:#fff;padding:18px;border-radius:10px;box-shadow:0 6px 18px rgba(20,30,50,0.06);margin-bottom:18px}
+.mode-buttons{display:flex;gap:10px;margin-bottom:12px}
+.mode{padding:8px 12px;border-radius:6px;border:1px solid #ddd;background:#fff;cursor:pointer}
+.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.form-grid input{padding:8px;border-radius:6px;border:1px solid #ddd}
+.form-grid button{grid-column:1 / -1;padding:10px;border-radius:6px;background:var(--accent);color:#fff;border:none;cursor:pointer}
+.hidden{display:none}
+.result{margin-top:12px;padding:10px;border-radius:6px;background:#fbfbff;border:1px solid #eef}
+.cards{display:flex;gap:12px;margin:12px 0}
+.card{background:#fff;padding:12px;border-radius:8px;flex:1;text-align:center;box-shadow:0 4px 12px rgba(10,20,30,0.04)}
+footer{margin-top:20px;color:#666}

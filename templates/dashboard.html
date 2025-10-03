@@ -1,0 +1,56 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <div class="wrap">
+    <header><h1>Fraud Detection Dashboard</h1></header>
+    <main>
+      <p>This dashboard preview uses summary from last analysis. For production, load aggregated analysis CSVs and compute charts server-side.</p>
+
+      <div class="cards">
+        <div class="card">
+          <h3>Total Records</h3>
+          <p id="total_records">-</p>
+        </div>
+        <div class="card">
+          <h3>Suspicions</h3>
+          <p id="suspicious_count">-</p>
+        </div>
+        <div class="card">
+          <h3>Avg Fraud Prob</h3>
+          <p id="avg_prob">-</p>
+        </div>
+      </div>
+
+      <canvas id="riskChart" width="800" height="300"></canvas>
+
+      <p><a href="/">Back to home</a></p>
+    </main>
+  </div>
+
+  <script>
+    // Basic static demo values. Replace with AJAX to server to load real aggregated data.
+    document.getElementById('total_records').innerText = 'N/A';
+    document.getElementById('suspicious_count').innerText = 'N/A';
+    document.getElementById('avg_prob').innerText = 'N/A';
+
+    const ctx = document.getElementById('riskChart').getContext('2d');
+    const chart = new Chart(ctx, {
+      type: 'bar',
+      data: {
+        labels: ['Low', 'Medium', 'High', 'Very High'],
+        datasets: [{
+          label: 'Risk Buckets',
+          data: [120, 30, 10, 3]
+        }]
+      },
+      options: {}
+    });
+  </script>
+</body>
+</html>
