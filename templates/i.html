@@ -64,7 +64,7 @@
 
         <!-- Batch -->
         <div class="batch-panel hidden" data-type="claim">
-          <p>Upload CSV or JSON with fields: <strong>IPAnnualReimbursementAmt, IPAnnualDeductibleAmt, OPAnnualReimbursementAmt, OPAnnualDeductibleAmt, InscClaimAmtReimbursed, DeductibleAmtPaid, Age, Days_Admitted, Diseases_Count, Total_Physicians, Total_ClaimCodes, Total_ProcedureCodes, Claim_Period</strong></p>
+          <p>Upload CSV or JSON with fields: <strong>Total_Claims_Per_Bene, TimeInHptal, Provider_Claim_Frequency, ChronicCond_stroke_Yes, DeductibleAmtPaid, OPD_Flag_Yes, Diagnosis_Count, ChronicDisease_Count, Age</strong></p>
           <input type="file" id="claim_batch_file" />
           <button id="claim_batch_analyze">Analyse</button>
           <div id="claim_batch_result" class="result"></div>
@@ -73,27 +73,20 @@
         <!-- Single -->
         <div class="single-panel hidden" data-type="claim">
           <form id="claim_single_form" class="form-grid">
-            <input type="number" name="IPAnnualReimbursementAmt" placeholder="IPAnnualReimbursementAmt" required>
-            <input type="number" name="IPAnnualDeductibleAmt" placeholder="IPAnnualDeductibleAmt" required>
-            <input type="number" name="OPAnnualReimbursementAmt" placeholder="OPAnnualReimbursementAmt" required>
-            <input type="number" name="OPAnnualDeductibleAmt" placeholder="OPAnnualDeductibleAmt" required>
-            <input type="number" name="InscClaimAmtReimbursed" placeholder="InscClaimAmtReimbursed" required>
-            <input type="number" name="DeductibleAmtPaid" placeholder="DeductibleAmtPaid" required>
+            <input type="number" name="Total_Claims_Per_Bene" placeholder="Total Claims Per Beneficiary" required>
+            <input type="number" name="TimeInHptal" placeholder="Time in Hospital (days)" required>
+            <input type="number" name="Provider_Claim_Frequency" placeholder="Provider Claim Frequency" required>
+            <input type="number" name="ChronicCond_stroke_Yes" placeholder="Stroke (0/1)" required>
+            <input type="number" name="DeductibleAmtPaid" placeholder="Deductible Paid" required>
+            <input type="number" name="OPD_Flag_Yes" placeholder="OPD Flag (0/1)" required>
+            <input type="number" name="Diagnosis_Count" placeholder="Diagnosis Count" required>
+            <input type="number" name="ChronicDisease_Count" placeholder="Chronic Disease Count" required>
             <input type="number" name="Age" placeholder="Age" required>
-            <input type="number" name="Days_Admitted" placeholder="Days_Admitted" required>
-            <input type="number" name="Diseases_Count" placeholder="Diseases_Count" required>
-            <input type="number" name="Total_Physicians" placeholder="Total_Physicians" required>
-            <input type="number" name="Total_ClaimCodes" placeholder="Total_ClaimCodes" required>
-            <input type="number" name="Total_ProcedureCodes" placeholder="Total_ProcedureCodes" required>
-            <input type="number" name="Claim_Period" placeholder="Claim_Period (days)" required>
             <button type="submit">Analyse</button>
           </form>
           <div id="claim_single_result" class="result"></div>
         </div>
       </section>
-
-      
-
     </main>
   </div>
 
