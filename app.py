@@ -7,12 +7,11 @@ app = Flask(__name__)
 # Load trained model
 xgb_model = joblib.load('xgb_fraud_detection_model.joblib')
 
-# Homepage
 @app.route('/')
 def home():
     return render_template('index.html')
 
-# Prediction API
+# Prediction 
 @app.route('/predict', methods=['POST'])
 def predict():
     try:
