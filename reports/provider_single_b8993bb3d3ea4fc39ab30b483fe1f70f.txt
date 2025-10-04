@@ -1,0 +1,83 @@
+=== Statistics ===
+{
+  "total_claims": 1,
+  "fraud_claims": 0,
+  "fraud_percentage": 10.98,
+  "fraud_probability": 0.1098,
+  "risk_level": "Low",
+  "potential_saving": 329.36,
+  "claim_amount": 5000,
+  "is_inpatient": 0,
+  "deductible_amt_paid": 2000,
+  "beneficiaries_count": 23
+}
+
+=== AI Summary ===
+**Fraud Investigation Report – Provider-Level Analysis**  
+*Prepared for: Medical Insurance System – Fraud Analysis Team*  
+
+```
+───────────────────────────────────────────────────────────────────────
+SUMMARY
+───────────────────────────────────────────────────────────────────────
+• Fraud Probability: 0.1098  (≈10.98% likelihood of fraud)  
+• Risk Level: Low  
+• Potential Saving: $329.36  
+• Claim Amount: $5,000  
+• Deductible Amount Paid: $2,000  
+• Inpatient Status: 0  (outpatient service)  
+• Beneficiaries Count: 23  
+
+───────────────────────────────────────────────────────────────────────
+1. OVERALL FRAUD SITUATION
+───────────────────────────────────────────────────────────────────────
+The provider’s claim exhibits a fraud probability of 10.98%, which is below the system’s
+threshold for high‑risk claims but still indicates a measurable risk.  
+The risk level is classified as *Low*, suggesting that the claim does not currently
+trigger automated high‑risk alerts.  
+A potential saving of $329.36 indicates that, if fraudulent activity were confirmed,
+the insurer could recover a modest amount relative to the $5,000 claim.
+
+───────────────────────────────────────────────────────────────────────
+2. LIKELY FRAUD TYPES
+───────────────────────────────────────────────────────────────────────
+• **Up‑coding** – Billing for a higher‑tier service than actually rendered.  
+• **Duplicate billing** – Multiple claims for the same service episode.  
+• **Unbundling** – Separating bundled services to inflate reimbursement.  
+• **Place‑boiler services** – Billing for procedures that were not performed.  
+
+───────────────────────────────────────────────────────────────────────
+3. PATTERNS OR CAUSES
+───────────────────────────────────────────────────────────────────────
+• The claim is for an outpatient service (Inpatient Status = 0) yet the deductible
+   paid ($2,000) is 40% of the total claim, suggesting potential over‑billing.  
+• Beneficiaries Count = 23: A relatively large beneficiary pool increases the
+   opportunity for cross‑billing or misallocation of services.  
+• The claim amount ($5,000) is above the average outpatient claim for this provider,
+   raising red flags for possible up‑coding or unbundling.
+
+───────────────────────────────────────────────────────────────────────
+4. RECOMMENDED ACTIONS
+───────────────────────────────────────────────────────────────────────
+• **Detailed audit** of the claim’s service codes, dates, and provider documentation.  
+• **Cross‑check** with the provider’s historical claim patterns for anomalies.  
+• **Verify beneficiary eligibility** and service dates to rule out duplicate or
+   phantom services.  
+• **Consult medical necessity records** to ensure the billed services were truly
+   required.  
+• **Implement targeted monitoring** for this provider in the next 6–12 months.  
+
+───────────────────────────────────────────────────────────────────────
+5. FINAL VERDICT
+───────────────────────────────────────────────────────────────────────
+The evidence points to a **Low‑Risk** status with a measurable fraud probability
+(≈10.98%).  While the potential savings are modest, the claim warrants a focused
+audit to confirm legitimacy.  Pending audit results, the provider may be
+maintained on a *watch list* for future claims.  
+
+───────────────────────────────────────────────────────────────────────
+```
+
+*Prepared by:*  
+*Fraud Analysis Team – Healthcare Division*  
+*Date:* *[Insert Date]*

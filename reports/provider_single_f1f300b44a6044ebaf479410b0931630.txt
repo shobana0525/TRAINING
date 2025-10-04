@@ -1,0 +1,73 @@
+=== Statistics ===
+{
+  "total_claims": 1,
+  "fraud_claims": 0,
+  "fraud_percentage": 10.98,
+  "fraud_probability": 0.1098,
+  "risk_level": "Low",
+  "potential_saving": 329.36,
+  "claim_amount": 5000,
+  "is_inpatient": 0,
+  "deductible_amt_paid": 2000,
+  "beneficiaries_count": 23
+}
+
+=== AI Summary ===
+**Fraud Investigation Report – Provider‑Level Analysis**  
+*(All figures in US dollars unless otherwise noted)*  
+
+```
+1. Overall Fraud Situation
+    ├─ Fraud Probability: 0.1098
+    ├─ Risk Level: Low
+    ├─ Potential Savings: $329.36
+    ├─ Claim Amount: $5,000
+    ├─ Deductible Amount Paid: $2,000
+    ├─ Inpatient Status: 0   (Outpatient)
+    └─ Beneficiaries Count: 23
+```
+
+```
+2. Likely Fraud Types
+    ├─ Upcoding of outpatient services
+    ├─ Duplicate billing for the same service
+    ├─ Unbundling of bundled procedures
+    └─ Billing for services not rendered (phantom services)
+```
+
+```
+3. Patterns or Causes
+    ├─ High deductible paid ($2,000) relative to claim size
+    ├─ Outpatient services with a probability >10% for fraud
+    ├─ Moderate beneficiary count (23) increases claim volume
+    └─ Low overall risk level but non‑zero probability suggests
+       possible systemic or isolated billing irregularities.
+```
+
+```
+4. Recommended Actions
+    ├─ Conduct a targeted audit of the 23 beneficiaries’ claims
+    ├─ Verify service dates, CPT codes, and provider credentials
+    ├─ Cross‑check billing with medical records for duplicate entries
+    ├─ Implement a data‑driven alert rule for outpatients with
+    │   deductibles >$1,500 and claim amounts >$4,000
+    └─ Schedule a quarterly review of provider billing patterns
+```
+
+```
+5. Final Verdict
+    ├─ The fraud probability (0.1098) combined with a low risk level
+    │   indicates a **low‑to‑moderate potential for fraud**.
+    ├─ Potential savings of $329.36 are modest compared to the
+    │   overall claim volume ($5,000).
+    ├─ Immediate high‑priority action is not warranted; however,
+    │   a focused audit and enhanced monitoring are recommended.
+    └─ Decision: **Proceed with monitoring and targeted audit**,
+       maintaining current claims processing procedures pending
+       audit findings.
+```
+
+*Prepared by:*  
+**[Fraud Analyst Name]**  
+*Date:* 2025‑10‑04  
+*Signature:* _____________________

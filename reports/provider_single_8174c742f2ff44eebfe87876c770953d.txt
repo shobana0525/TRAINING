@@ -1,0 +1,67 @@
+=== Statistics ===
+{
+  "total_claims": 1,
+  "fraud_claims": 0,
+  "fraud_percentage": 10.98,
+  "fraud_probability": 0.1098,
+  "risk_level": "Low",
+  "potential_saving": 329.36,
+  "claim_amount": 5000,
+  "is_inpatient": 0,
+  "deductible_amt_paid": 2000,
+  "beneficiaries_count": 23
+}
+
+=== AI Summary ===
+**Fraud Investigation Report**  
+================================
+
+**Provider:** *[Provider Identifier]*  
+**Date:** *[Date of Report]*  
+
+---
+
+**Key Metrics**  
+	- **Fraud Probability:** 0.1098  
+	- **Risk Level:** Low  
+	- **Potential Saving:** $329.36  
+	- **Claim Amount:** $5,000  
+	- **Deductible Amount Paid:** $2,000  
+	- **Inpatient Status:** 0 (Outpatient)  
+	- **Beneficiaries Count:** 23  
+
+---
+
+### 1. Overall Fraud Situation  
+	- The fraud probability score of **0.1098** places this claim in the *Low* risk category according to our predictive model.  
+	- The potential saving of **$329.36** represents the net amount that could be recovered if fraudulent activity were confirmed.  
+	- The claim totals **$5,000**, with **$2,000** already paid as deductible, leaving **$3,000** subject to scrutiny.  
+
+### 2. Likely Fraud Types  
+	- **Upcoding / Billing for Higher‑Level Services:** The outpatient status coupled with a high claim amount suggests possible coding for services that were not performed.  
+	- **Duplicate Billing:** With 23 beneficiaries, there is a risk of multiple claims for the same service or procedure.  
+	- **Unbundling / Unnecessary Services:** The deductible paid ($2,000) indicates a high deductible plan; providers may be adding non‑essential services to inflate the remaining claim amount.  
+
+### 3. Patterns or Causes  
+	- **High Claim Volume Relative to Beneficiaries:** A single claim of $5,000 for 23 beneficiaries averages ~$217 per beneficiary, which is above typical outpatient averages for standard procedures.  
+	- **Outpatient Setting:** All services were rendered in an outpatient context (Inpatient Status = 0), yet the claim amount is disproportionate to typical outpatient charges.  
+	- **Deductible Paid:** The full deductible payment suggests the provider may be attempting to meet deductible thresholds before applying higher‑level codes.  
+
+### 4. Recommended Actions  
+	- **Detailed Claim Review:** Request itemized service records, CPT codes, and dates of service to verify alignment with the billed amounts.  
+	- **Cross‑Check Beneficiary Records:** Confirm that each beneficiary received the services billed and that no duplicates exist.  
+	- **Audit Coding Practices:** Perform a coding audit for this provider, focusing on potential upcoding or unbundling patterns.  
+	- **Monitor Future Claims:** Flag the provider for elevated scrutiny on subsequent outpatient claims, especially those exceeding $4,000.  
+	- **Education & Compliance:** Offer compliance training on coding standards and the consequences of billing fraud.  
+
+### 5. Final Verdict  
+	- **Risk Assessment:** *Low*  
+	- **Action Required:** *Moderate Investigation*  
+	- **Recommendation:** Initiate a focused audit of the current claim, but no immediate suspension of provider privileges is warranted at this time.  
+	- **Potential Outcome:** If fraud is confirmed, recoverable savings of **$329.36** will offset the investigation cost and contribute to overall claim integrity.  
+
+---  
+
+*Prepared by:*  
+*Fraud Analyst – Healthcare Claims Division*  
+*Date:* *[Date]*

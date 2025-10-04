@@ -1,0 +1,110 @@
+=== Statistics ===
+{
+  "total_claims": 1,
+  "fraud_claims": 0,
+  "fraud_percentage": 10.98,
+  "fraud_probability": 0.1098,
+  "risk_level": "Low",
+  "potential_saving": 329.36,
+  "claim_amount": 5000,
+  "is_inpatient": 0,
+  "deductible_amt_paid": 2000,
+  "beneficiaries_count": 23
+}
+
+=== AI Summary ===
+**Fraud Investigation Report – Provider‑Level Analysis**  
+*Date: 2025‑10‑04*  
+
+```
+───────────────────────────────────────────────────────────────────────
+1. Overall Fraud Situation
+───────────────────────────────────────────────────────────────────────
+   • Fraud Probability: 0.1098  (≈ 10.98 % chance provider engaged in deceptive activity)
+   • Risk Level: Low
+   • Claim Amount: $5,000
+   • Deductible Paid: $2,000
+   • Inpatient Status: 0  (out‑patient claim)
+   • Beneficiaries Count: 23  (high beneficiary volume for a single claim)
+
+   Interpretation:
+   The provider demonstrates a moderate likelihood of fraudulent behavior
+   relative to the population of out‑patient claims.  The low risk level
+   indicates that, while the probability is not negligible, the potential
+   financial impact is modest ($329.36 savings if fraud is confirmed).
+
+2. Likely Fraud Types
+───────────────────────────────────────────────────────────────────────
+   • **Up‑coding / Code Mismatch**  
+     The claim amount ($5,000) far exceeds typical out‑patient procedure
+     billing for a single service; potential up‑coding of procedure
+     codes or inclusion of unrelated services.
+
+   • **Duplicate Billing**  
+     A single beneficiary count of 23 for one claim suggests possible
+     duplication across multiple beneficiaries or fictitious patients.
+
+   • **Phantom Services**  
+     The deductible paid ($2,000) is unusually high for an out‑patient
+     scenario, raising the possibility that services were rendered
+     but not actually provided.
+
+   • **Bundling / Unbundling Abuse**  
+     The claim may have illegally bundled multiple services into one
+     code or, conversely, unbundled services to inflate reimbursement.
+
+3. Patterns or Causes
+───────────────────────────────────────────────────────────────────────
+   • **High Beneficiary Count** – A single claim covering 23 beneficiaries
+     is atypical for out‑patient services; indicates potential data entry
+     errors or intentional inflation of patient counts.
+
+   • **Large Deductible Amount** – Deductible paid ($2,000) represents 40 % of
+     the claim amount, unusually high for standard out‑patient plans.
+
+   • **Zero Inpatient Flag** – Confirms the claim is out‑patient, yet the
+     claim size suggests inpatient‑level complexity; inconsistency
+     between service type and reimbursement.
+
+   • **Provider Volume** – If this claim is representative of the provider’s
+     overall file, there may be a systemic pattern of over‑billing.
+
+4. Recommended Actions
+───────────────────────────────────────────────────────────────────────
+   • **Detailed Claim Review**  
+     - Verify CPT/HCPCS codes against medical necessity and patient
+       records.  
+     - Cross‑check beneficiary identities and ICD‑10 diagnosis codes.
+
+   • **Data Integrity Audit**  
+     - Reconcile beneficiary count with enrollment data.  
+     - Validate deductible amounts against plan terms.
+
+   • **Provider Engagement**  
+     - Issue a formal audit notice to the provider.  
+     - Request documentation for the claimed services and dates.
+
+   • **Enhanced Monitoring**  
+     - Flag future claims from this provider for higher‑level scrutiny.  
+     - Implement automated rule‑based alerts for claims with > 10
+       beneficiaries and deductible > 30 % of total claim.
+
+   • **Financial Recovery Plan**  
+     - Estimate potential loss: $5,000 × 10.98 % ≈ $550.  
+     - Pursue recovery through denial, repayment, or legal action as
+       warranted.
+
+5. Final Verdict
+───────────────────────────────────────────────────────────────────────
+   The evidence suggests a **low‑risk but non‑negligible** fraud scenario.
+   The provider’s claim exhibits red flags—excessive beneficiary count,
+   unusually high deductible, and claim amount disproportionate to
+   out‑patient status.  While the potential savings ($329.36) is modest,
+   the integrity of the claims process warrants a thorough review
+   and appropriate remedial action.  The investigation should proceed
+   with the recommended audit measures, and the provider should be
+   notified of the findings and required to provide supporting
+   documentation.  Pending that, the claim will be placed on hold
+   until verification is complete.
+───────────────────────────────────────────────────────────────────────
+```

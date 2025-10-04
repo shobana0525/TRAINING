@@ -1,0 +1,73 @@
+=== Statistics ===
+{
+  "total_claims": 1,
+  "fraud_claims": 0,
+  "fraud_percentage": 10.98,
+  "fraud_probability": 0.1098,
+  "risk_level": "Low",
+  "potential_saving": 329.36,
+  "claim_amount": 5000,
+  "is_inpatient": 0,
+  "deductible_amt_paid": 2000,
+  "beneficiaries_count": 23
+}
+
+=== AI Summary ===
+**Fraud Investigation Report**  
+*Provider‑Level Review – Medical Insurance System*  
+
+| Item                     | Value          |
+|--------------------------|----------------|
+| Fraud Probability        | **0.1098**     |
+| Risk Level               | **Low**        |
+| Potential Saving         | **$329.36**    |
+| Claim Amount             | **$5,000**     |
+| Deductible Paid          | **$2,000**     |
+| Inpatient Status         | **0** (Outpatient) |
+| Beneficiaries Count      | **23**         |
+
+---
+
+### 1. Overall Fraud Situation  
+*Tabs* Fraud Probability (0.1098) indicates a **10.98 %** chance that this claim contains fraudulent activities.  
+*Tabs* The Risk Level is classified as **Low**, suggesting that while there is a measurable probability of fraud, the overall exposure is modest.  
+*Tabs* Potential Savings of **$329.36** relative to the $5,000 claim amount signals an opportunity for cost avoidance if fraudulent practices are confirmed.  
+*Tabs* The deductible paid ($2,000) is 40 % of the claim, which is typical for outpatient services but warrants verification to ensure that services billed match the deductible threshold.
+
+---
+
+### 2. Likely Fraud Types  
+*Tabs* **Up‑coding** – Billing for a higher‑tier service than actually rendered.  
+*Tabs* **Duplicate Billing** – Multiple claims for the same service or procedure.  
+*Tabs* **Unbundling** – Separating bundled services to inflate reimbursement.  
+*Tabs* **Phantom Services** – Billing for services that were never performed.  
+*Tabs* **Beneficiary Mis‑attribution** – Billing for a beneficiary different from the one who actually received care (possible with a beneficiary count of 23).
+
+---
+
+### 3. Patterns or Causes  
+*Tabs* **Outpatient Focus** – Inpatient Status = 0; all services are outpatient, increasing the risk of up‑coding and unbundling.  
+*Tabs* **High Beneficiary Count** – 23 beneficiaries suggest a large patient pool; higher volume can mask irregularities.  
+*Tabs* **Deductible Paid** – $2,000 deductible paid indicates that the provider may be billing for services that are not covered by the deductible, possibly to justify higher reimbursement.  
+*Tabs* **Claim Size** – $5,000 is moderate; fraud patterns often involve moderate‑size claims that are easier to conceal.
+
+---
+
+### 4. Recommended Actions  
+*Tabs* **Claim Scrutiny** – Conduct a detailed audit of the $5,000 claim, focusing on procedure codes, dates of service, and provider credentials.  
+*Tabs* **Cross‑Reference EHR** – Verify billed services against electronic health records for the 23 beneficiaries.  
+*Tabs* **Deductible Verification** – Confirm that the deductible amount paid aligns with the payer’s policy and the services rendered.  
+*Tabs* **Beneficiary Confirmation** – Ensure each beneficiary’s identity and coverage status match the claim details.  
+*Tabs* **Statistical Trend Analysis** – Compare this claim against the provider’s historical claims to detect anomalies in coding or billing frequency.  
+*Tabs* **Follow‑Up on Potential Fraud** – If evidence supports fraud, initiate corrective action and consider suspending the provider pending further investigation.  
+
+---
+
+### 5. Final Verdict  
+*Tabs* The fraud probability of 0.1098, while not negligible, is paired with a low risk classification and a modest potential saving ($329.36).  
+*Tabs* The evidence suggests **possible but not definitive fraud**; further verification is required before any punitive action.  
+*Tabs* **Recommendation**: Initiate a focused audit as outlined above. If post‑audit findings confirm irregularities, proceed with corrective measures; otherwise, maintain **low‑risk monitoring** status.  
+
+*Prepared by:*  
+Fraud Analysis Team  
+(Healthcare Insurance System)

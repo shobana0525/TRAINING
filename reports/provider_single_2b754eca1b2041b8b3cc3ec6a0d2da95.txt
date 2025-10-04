@@ -1,0 +1,82 @@
+=== Statistics ===
+{
+  "total_claims": 1,
+  "fraud_claims": 0,
+  "fraud_percentage": 10.98,
+  "fraud_probability": 0.1098,
+  "risk_level": "Low",
+  "potential_saving": 329.36,
+  "claim_amount": 5000,
+  "is_inpatient": 0,
+  "deductible_amt_paid": 2000,
+  "beneficiaries_count": 23
+}
+
+=== AI Summary ===
+**Fraud Investigation Report – Provider Level**  
+*Prepared by: Senior Healthcare Fraud Analyst*  
+*Date: 2025‑10‑04*  
+
+```
+┌───────────────────────────────────────────────────────────────────────┐
+│ 1. Overall Fraud Situation                                            │
+│   ├─ Fraud Probability: 0.1098 (≈ 10.98%)                              │
+│   ├─ Risk Level: Low                                                 │
+│   ├─ Potential Savings: $329.36                                      │
+│   ├─ Total Claim Amount: $5,000                                      │
+│   ├─ Deductible Paid by Provider: $2,000                             │
+│   ├─ Inpatient Status: 0 (Outpatient)                               │
+│   └─ Beneficiaries Count: 23                                         │
+└───────────────────────────────────────────────────────────────────────┘
+```
+
+```
+┌───────────────────────────────────────────────────────────────────────┐
+│ 2. Likely Fraud Types                                                │
+│   ├─ Up‑coding (billing for higher‑priced services than provided)    │
+│   ├─ Duplicate billing (multiple claims for the same service)       │
+│   ├─ Phantom services (billing for services never rendered)          │
+│   └─ Unbundling (splitting services to inflate charges)              │
+└───────────────────────────────────────────────────────────────────────┘
+```
+
+```
+┌───────────────────────────────────────────────────────────────────────┐
+│ 3. Patterns or Causes                                                │
+│   ├─ Outpatient setting with high deductible paid → potential for   │
+│   │   claim manipulation to cover deductible costs.                  │
+│   ├─ Moderate claim size ($5,000) but deductible accounts for 40%   │
+│   │   of total amount – a red flag for over‑billing.                │
+│   ├─ 23 beneficiaries under a single provider – high volume can     │
+│   │   mask irregularities.                                          │
+│   └─ Low fraud probability but consistent with known low‑risk      │
+│   │   provider patterns; requires targeted audit.                   │
+└───────────────────────────────────────────────────────────────────────┘
+```
+
+```
+┌───────────────────────────────────────────────────────────────────────┐
+│ 4. Recommended Actions                                               │
+│   ├─ Conduct a focused audit on all outpatient claims from this    │
+│   │   provider, emphasizing deductible allocations.                 │
+│   ├─ Cross‑check billed services against procedural codes for    │
+│   │   up‑coding and unbundling.                                     │
+│   ├─ Verify service dates and patient identifiers to rule out      │
+│   │   duplicate or phantom claims.                                 │
+│   ├─ Review the provider’s billing history for sudden increases   │
+│   │   in claim amounts or volume.                                   │
+│   └─ Implement automated flagging for future claims exceeding the  │
+│   │   30% threshold of deductible coverage.                       │
+└───────────────────────────────────────────────────────────────────────┘
+```
+
+```
+┌───────────────────────────────────────────────────────────────────────┐
+│ 5. Final Verdict                                                     │
+│   The provider presents a low overall fraud probability (10.98%)      │
+│   but exhibits several warning signs typical of low‑risk fraud.     │
+│   Targeted auditing and enhanced monitoring are recommended to      │
+│   prevent potential losses (~$329.36) and safeguard beneficiary      │
+│   interests.                                                        │
+└───────────────────────────────────────────────────────────────────────┘
+```

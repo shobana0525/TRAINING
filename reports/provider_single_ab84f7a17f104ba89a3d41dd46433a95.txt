@@ -1,0 +1,88 @@
+=== Statistics ===
+{
+  "total_claims": 1,
+  "fraud_claims": 0,
+  "fraud_percentage": 10.98,
+  "fraud_probability": 0.1098,
+  "risk_level": "Low",
+  "potential_saving": 329.36,
+  "claim_amount": 5000,
+  "is_inpatient": 0,
+  "deductible_amt_paid": 2000,
+  "beneficiaries_count": 23
+}
+
+=== AI Summary ===
+**Fraud Investigation Report – Provider‑Level Analysis**  
+&nbsp;  
+**Key Statistics**  
+| Metric | Value |
+|--------|-------|
+| Fraud Probability | **0.1098** |
+| Risk Level | **Low** |
+| Potential Savings | **$329.36** |
+| Claim Amount | **$5,000** |
+| Deductible Amount Paid | **$2,000** |
+| Inpatient Status | **0** (out‑patient) |
+| Beneficiaries Count | **23** |
+
+---
+
+### 1. Overall Fraud Situation  
+
+&nbsp;&nbsp;• The system flags a **10.98 %** probability that this claim contains fraudulent activity.  
+&nbsp;&nbsp;• The risk level is classified as **Low**, indicating that the likelihood of a substantial loss is minimal.  
+&nbsp;&nbsp;• Despite the low risk, the **potential savings of $329.36** suggests that a modest amount could be reclaimed if fraud is confirmed.  
+
+*Interpretation:*  
+The provider’s claim of $5,000, with $2,000 paid toward the deductible, raises a moderate suspicion but does not meet thresholds for high‑risk or high‑impact fraud. The low inpatient status and the number of beneficiaries (23) are typical of outpatient services, reducing the likelihood of complex billing schemes.
+
+---
+
+### 2. Likely Fraud Types  
+
+&nbsp;&nbsp;| Potential Fraud Type | Rationale | Typical Indicators |
+|-----------------------|------------|--------------------|
+| **Up‑coding** | The claim may be billed at a higher CPT code than services rendered. | Discrepancies between procedure codes and patient records; unusually high reimbursement relative to typical outpatient services. |
+| **Duplicate Billing** | Reuse of patient identifiers or service dates. | Identical claims submitted more than once; identical procedure codes with overlapping dates. |
+| **Kick‑back / Referral** | Compensation for referring patients to the provider. | Multiple beneficiaries linked to a single provider; unusually high volume of claims from the same demographic. |
+| **Phantom Services** | Billing for services never rendered. | Claims for procedures without supporting clinical documentation or lab results. |
+
+---
+
+### 3. Patterns or Causes  
+
+&nbsp;&nbsp;• **High Beneficiary Count (23)** – A large group of beneficiaries may indicate a bundled or mass‑billing scenario.  
+&nbsp;&nbsp;• **Out‑patient Claim** – The absence of inpatient status suggests the provider operates in a non‑hospital setting, which may limit complex fraud but can still involve billing manipulation.  
+&nbsp;&nbsp;• **Deductible Paid ($2,000)** – The deductible amount represents a significant portion of the claim; if the provider collected this in advance, it could mask lower actual service costs.  
+
+*Possible Causes:*  
+1. **Coding Misalignment** – Providers sometimes select higher‑reimbursed codes to maximize revenue.  
+2. **Documentation Gaps** – Insufficient clinical notes make it hard to verify claim validity.  
+3. **Bulk Billing Practices** – Low‑margin services aggregated under a single claim to reduce audit risk.  
+
+---
+
+### 4. Recommended Actions  
+
+&nbsp;&nbsp;• **Data Validation** – Cross‑check CPT codes against the provider’s service logs and patient charts.  
+&nbsp;&nbsp;• **Audit of Beneficiary Records** – Verify that each beneficiary actually received the billed services.  
+&nbsp;&nbsp;• **Review of Deductible Collection** – Confirm the timing and legitimacy of the $2,000 deductible payment.  
+&nbsp;&nbsp;• **Random Sampling** – Select a subset of the 23 beneficiaries for detailed chart review to spot inconsistencies.  
+&nbsp;&nbsp;• **Automated Alert Rules** – Implement thresholds for high‑value outpatient claims with low inpatient status to flag future anomalies.  
+&nbsp;&nbsp;• **Stakeholder Communication** – Notify the provider of the findings and request clarification or correction documentation.  
+
+---
+
+### 5. Final Verdict  
+
+&nbsp;&nbsp;**Assessment:** The evidence indicates a **low‑risk** fraud scenario with a **modest potential recovery**. While the probability (10.98 %) is non‑negligible, the impact remains limited.  
+
+&nbsp;&nbsp;**Outcome:**  
+1. **Proceed with targeted audit** as outlined above.  
+2. **If discrepancies are confirmed,** process a claim adjustment to recover the $329.36 potential savings.  
+3. **If no fraud is found,** maintain the current risk classification and monitor future claims for similar patterns.  
+
+**Prepared by:**  
+[Fraud Analyst Name]  
+[Date]

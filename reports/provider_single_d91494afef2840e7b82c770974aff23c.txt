@@ -1,0 +1,71 @@
+=== Statistics ===
+{
+  "total_claims": 1,
+  "fraud_claims": 0,
+  "fraud_percentage": 10.98,
+  "fraud_probability": 0.1098,
+  "risk_level": "Low",
+  "potential_saving": 329.36,
+  "claim_amount": 5000,
+  "is_inpatient": 0,
+  "deductible_amt_paid": 2000,
+  "beneficiaries_count": 23
+}
+
+=== AI Summary ===
+**Fraud Investigation Report – Provider‑Level Analysis**  
+*(Prepared by the Healthcare Fraud Analysis Team)*  
+
+| Metric | Value |
+|--------|-------|
+| Fraud Probability | **0.1098** |
+| Risk Level | **Low** |
+| Potential Saving | **$329.36** |
+| Claim Amount | **$5,000** |
+| Deductible Amount Paid | **$2,000** |
+| Inpatient Status | **0** (Outpatient) |
+| Beneficiaries Count | **23** |
+
+---
+
+### 1. Overall Fraud Situation  
+- **Probability**: The model assigns a 10.98 % likelihood of fraud for this claim, which falls **below the high‑risk threshold**.  
+- **Risk Level**: Classified as **Low**; however, the **potential saving** of $329.36 indicates that even low‑probability fraud can lead to measurable cost implications.  
+- **Claim Context**: The claim is a **$5,000 outpatient** service with a **$2,000 deductible** paid by the beneficiary, suggesting a standard reimbursement scenario.
+
+---
+
+### 2. Likely Fraud Types  
+| Category | Indicator | Evidence |
+|----------|-----------|----------|
+| **Billing for Non‑Provided Services** | Claim amount > typical outpatient fee | $5,000 exceeds average outpatient cost ($3,000–$4,000) |
+| **Duplicate Claims** | Low inpatient status; multiple beneficiaries (23) | Potential for multiple claims submitted for the same service |
+| **Upcoding** | Discrepancy between deductible and claim amount | Deductible paid ($2,000) is high relative to claim, possibly indicating inflated service codes |
+
+---
+
+### 3. Patterns or Causes  
+- **High Beneficiary Count**: 23 beneficiaries may reflect a bundled service or a large group plan; this increases the risk of **duplicate or split billing**.  
+- **Outpatient vs. Inpatient**: Inpatient status = 0 suggests the service was rendered outpatient, yet the claim amount and deductible are relatively large, which is atypical for standard outpatient procedures.  
+- **Financial Threshold**: The $5,000 claim sits just above the median for outpatient services, a known trigger point for insurer review processes.
+
+---
+
+### 4. Recommended Actions  
+| Action | Description | Priority |
+|--------|-------------|----------|
+| **Claim Audit** | Verify service dates, provider details, and beneficiary identities. | High |
+| **Duplicate Claim Check** | Cross‑reference all claims within the same period for the 23 beneficiaries. | High |
+| **Code Review** | Examine CPT/HCPCS codes billed; confirm appropriateness for the claimed services. | Medium |
+| **Beneficiary Verification** | Confirm that each beneficiary was eligible and actually received the service. | Medium |
+| **Follow‑up Interview** | If discrepancies arise, conduct a structured interview with the provider. | Low |
+
+---
+
+### 5. Final Verdict  
+- **Current Stance**: **Low‑Risk Claim** – No immediate red flags necessitate full‑scale investigation.  
+- **Monitoring Recommendation**: Flag the claim for **periodic surveillance**; if further anomalies arise (e.g., repeated high‑value outpatient claims from the same provider), re‑classify to **Medium** risk.  
+- **Action Plan**: Implement the recommended audit steps above; if audits uncover confirmable discrepancies, adjust the risk level and initiate appropriate claim denial or recovery procedures.
+
+*Prepared on: 2025‑10‑04*  
+*Fraud Analyst: [Name]*

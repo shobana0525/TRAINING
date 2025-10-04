@@ -1,0 +1,67 @@
+=== Statistics ===
+{
+  "total_claims": 1,
+  "fraud_claims": 0,
+  "fraud_percentage": 10.98,
+  "fraud_probability": 0.1098,
+  "risk_level": "Low",
+  "potential_saving": 329.36,
+  "claim_amount": 5000,
+  "is_inpatient": 0,
+  "deductible_amt_paid": 2000,
+  "beneficiaries_count": 23
+}
+
+=== AI Summary ===
+**Fraud Investigation Report – Provider Level Analysis**  
+**Provider ID:** *[Insert Provider ID]*  
+**Date of Report:** 2025‑10‑04  
+
+| Metric | Value |
+|--------|-------|
+| Fraud Probability | **0.1098** |
+| Risk Level | **Low** |
+| Potential Savings | **$329.36** |
+| Total Claim Amount | **$5,000.00** |
+| Deductible Paid | **$2,000.00** |
+| Inpatient Status | **0 (Outpatient)** |
+| Beneficiaries Count | **23** |
+
+---
+
+### 1. Overall Fraud Situation
+- The provider’s fraud probability score of **0.1098** places the case well below the threshold for high‑risk flags, corroborated by the assigned **Low** risk level.  
+- The potential savings of **$329.36** indicate that, even if a single claim were found to be fraudulent, the monetary impact would be moderate relative to the overall claim volume.  
+- With a claim amount of **$5,000** and a deductible paid of **$2,000**, the provider’s financial exposure per claim is substantial, but the current risk assessment suggests no immediate systemic abuse.
+
+### 2. Likely Fraud Types
+| Potential Fraud Type | Rationale |
+|---------------------|-----------|
+| **Up‑coding of services** | Outpatient services may be billed at higher CPT codes; a low probability suggests occasional misuse. |
+| **Duplicate billing** | 23 beneficiaries under one claim could hint at repeated claims for the same service. |
+| **Unbundling** | Submitting separate claims for bundled services; low likelihood given the risk level. |
+| **Phantom beneficiaries** | Inclusion of beneficiaries who did not receive the claimed service; again, low probability. |
+
+### 3. Patterns or Causes
+- **Outpatient Focus**: Inpatient Status = 0 signals all services rendered were outpatient. Outpatient settings often have higher rates of up‑coding.  
+- **Beneficiary Concentration**: 23 beneficiaries on a single claim may indicate a bulk claim strategy, potentially masking service duplication.  
+- **Deductible Discrepancy**: Deductible Paid ($2,000) is 40% of the claim amount, which is within normal ranges but warrants monitoring for consistency across similar claims.
+
+### 4. Recommended Actions
+| Action | Description | Priority |
+|--------|-------------|----------|
+| **Claim‑by‑claim audit** | Manually review the specific claim for coding accuracy and provider documentation. | High |
+| **Beneficiary verification** | Cross‑check each beneficiary’s eligibility and service receipt records. | Medium |
+| **Historical trend analysis** | Compare this claim to the provider’s past 12‑month claims to detect anomalies in billing volume or amounts. | Medium |
+| **Training update** | Reinforce coding guidelines for outpatient services with the provider’s billing team. | Low |
+| **Monitoring dashboard** | Add the provider to a low‑risk monitoring list with automated alerts for any future claims exceeding $5,000 or with >1 beneficiary. | Medium |
+
+### 5. Final Verdict
+- **Risk Assessment**: Low
+- **Fraud Probability**: 10.98% – within acceptable limits for routine oversight.  
+- **Recommendation**: No immediate punitive action is warranted. A targeted audit of the current claim and ongoing monitoring are advised to ensure continued compliance and to guard against incremental fraud.  
+
+*Prepared by:*  
+**[Fraud Analyst Name]**  
+**Healthcare Fraud Analysis Unit**  
+**[Contact Information]**

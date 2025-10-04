@@ -1,0 +1,59 @@
+=== Statistics ===
+{
+  "total_claims": 1,
+  "fraud_claims": 0,
+  "fraud_percentage": 10.98,
+  "fraud_probability": 0.1098,
+  "risk_level": "Low",
+  "potential_saving": 329.36,
+  "claim_amount": 5000,
+  "is_inpatient": 0,
+  "deductible_amt_paid": 2000,
+  "beneficiaries_count": 23
+}
+
+=== AI Summary ===
+**Fraud Investigation Report – Provider‑Level Data Analysis**  
+
+```
+Provider ID:  [REDACTED]                     Date: 2025‑10‑03
+
+    1. Overall Fraud Situation
+        ├─ Fraud Probability:                 0.1098  (10.98 %)
+        ├─ Risk Level:                         Low
+        ├─ Potential Savings:                  $329.36
+        ├─ Claim Amount:                       $5,000
+        ├─ Deductible Amount Paid:             $2,000
+        ├─ Inpatient Status:                   0  (Outpatient)
+        └─ Beneficiaries Count:                23
+
+    2. Likely Fraud Types
+        ├─ Overbilling of outpatient services
+        ├─ Duplicate billing of the same procedure
+        ├─ Up‑coding to higher‑reimbursed CPT codes
+        └─ Phantom beneficiary claims (beneficiary count > 20 for a single claim)
+
+    3. Patterns or Causes
+        ├─ Single claim exceeds typical outpatient threshold by 5×
+        ├─ Deductible paid ($2,000) is unusually high for a 0‑inpatient claim
+        ├─ Beneficiary count (23) suggests possible beneficiary inflation or billing to multiple insureds under one claim
+        ├─ No inpatient status, yet claim complexity resembles inpatient billing
+        └─ The fraud probability (10.98 %) is above the 10 % baseline for this provider cohort
+
+    4. Recommended Actions
+        ├─ Conduct a detailed audit of the $5,000 claim:
+        │   • Verify CPT codes and associated diagnoses
+        │   • Confirm that the deductible amount aligns with policy terms
+        │   • Cross‑check beneficiary list against enrollment data
+        ├─ Implement a flagging rule for outpatient claims >$4,000 with >10 beneficiaries
+        ├─ Review historical claims for patterns of duplicate or up‑coded services
+        ├─ Engage billing staff for training on accurate coding and documentation
+        └─ Monitor future claims for similar anomalies and adjust risk score thresholds accordingly
+
+    5. Final Verdict
+        └─ The provider exhibits a Low risk rating; however, the identified anomalies warrant targeted review. Potential savings of $329.36 justify a focused audit. Pending audit results, the provider may remain in the Low risk bucket or be reclassified if confirmatory evidence of fraud emerges.
+```
+
+*Prepared by:*  
+Fraud Analysis Team  
+Healthcare Insurance System

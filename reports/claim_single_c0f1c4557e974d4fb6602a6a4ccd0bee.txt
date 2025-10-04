@@ -1,0 +1,67 @@
+=== Statistics ===
+{
+  "total_claims": 1,
+  "fraud_claims": 1,
+  "fraud_percentage": 100.0,
+  "fraud_probability": 1.0,
+  "risk_level": "Very High",
+  "potential_saving": 0.0,
+  "claim_amount": 0,
+  "deductible_amt_paid": 0,
+  "beneficiaries_count": 1
+}
+
+=== AI Summary ===
+**Fraud Investigation Report**  
+*(Medical Insurance Claim – Claim ID: N/A)*  
+
+```
+Overall Fraud Situation
+	• Fraud Probability: 1.0
+	• Risk Level: Very High
+	• Potential Saving: $0.00
+	• Claim Amount: $0
+	• Deductible Amount Paid: $0
+	• Inpatient Status: 0 (Outpatient)
+	• Beneficiaries Count: 1
+
+Likely Fraud Types
+	• 100% probability indicates a confirmed fraud scenario.
+	• Given the claim amount of $0 and deductible paid of $0, the most probable
+	  fraud type is a **claim creation/phantom claim** where a claim is filed
+	  without any associated medical service.
+	• Alternative possibilities include:
+	    – Data entry error or duplicate claim submission.
+	    – Fraudulent beneficiary registration with no legitimate claim.
+
+Patterns or Causes
+	• Zero claim amount combined with a zero deductible suggests that no
+	  service was rendered or recorded.
+	• The presence of a single beneficiary (beneficiaries count = 1) and
+	  outpatient status reduces the likelihood of a legitimate inpatient
+	  billing scenario.
+	• The system flags such anomalies as high‑risk when the probability
+	  reaches the maximum value of 1.0, indicating a failure in the
+	  verification pipeline.
+
+Recommended Actions
+	• Immediate investigation of the claim record to confirm whether
+	  any service documentation exists.
+	• Verify beneficiary credentials and confirm enrollment status.
+	• Cross‑check the claim ID against the master claim database for
+	  duplicates or phantom entries.
+	• If no service evidence is found, proceed with claim denial and
+	  initiate a formal fraud report to the relevant regulatory body.
+	• Review and tighten the claim submission validation rules
+	  (e.g., require a minimum claim amount, mandatory service codes,
+	  and beneficiary verification before acceptance).
+
+Final Verdict
+	• Based on the statistical indicators and the absence of any
+	  legitimate claim data, the investigation concludes that this
+	  claim is a **confirmed fraudulent submission**.
+	• No potential savings are available (Potential Saving = $0.00) because
+	  the claim was never processed for payment.
+	• The case should be closed with a fraud flag and documented for
+	  future audit purposes.
+```

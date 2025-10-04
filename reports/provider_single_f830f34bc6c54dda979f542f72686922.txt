@@ -1,0 +1,87 @@
+=== Statistics ===
+{
+  "total_claims": 1,
+  "fraud_claims": 0,
+  "fraud_percentage": 10.98,
+  "fraud_probability": 0.1098,
+  "risk_level": "Low",
+  "potential_saving": 329.36,
+  "claim_amount": 5000,
+  "is_inpatient": 0,
+  "deductible_amt_paid": 2000,
+  "beneficiaries_count": 23
+}
+
+=== AI Summary ===
+**Fraud Investigation Report – Provider‑Level Review**  
+*Prepared by: Senior Healthcare Fraud Analyst*  
+*Date: 2025‑10‑04*  
+
+---
+
+### 1. Overall Fraud Situation  
+
+| Metric                     | Value |
+|----------------------------|-------|
+| Fraud Probability          | 0.1098 |
+| Risk Level                 | Low |
+| Potential Saving           | **$329.36** |
+| Claim Amount               | **$5,000** |
+| Deductible Amount Paid     | **$2,000** |
+| Inpatient Status           | 0 (Outpatient) |
+| Beneficiaries Count        | 23 |
+
+**Interpretation:**  
+- The fraud probability of **10.98 %** is modest but exceeds the typical threshold for a “low‑risk” designation.  
+- The provider’s claim totals **$5,000** with a deductible payment of **$2,000** (40 % of the claim).  
+- The absence of inpatient status suggests all services were rendered outpatient, reducing the likelihood of inpatient‑specific fraud schemes.  
+- With **23 beneficiaries** serviced, the provider’s volume is moderate, limiting large‑scale fraud potential but still warranting targeted scrutiny.
+
+---
+
+### 2. Likely Fraud Types  
+
+| Potential Fraud Type        | Rationale |
+|-----------------------------|-----------|
+| **Billing Errors / Duplicate Claims** | The deductible represents a significant portion of the claim, which can indicate duplicated billing or incorrect coding. |
+| **Up‑Coding of Services** | Outpatient services may be coded at higher levels than warranted, inflating reimbursements. |
+| **Unbundling / Service Splitting** | Claim structure could include unnecessary sub‑services to increase payment. |
+| **Misclassification of Beneficiaries** | A beneficiary count of 23 may hide misreported patient identities or duplicate claims. |
+
+---
+
+### 3. Patterns or Causes  
+
+- **High Deductible Relative to Claim:** A 40 % deductible is considerably high for an outpatient claim, potentially signaling an attempt to over‑charge or to justify a higher reimbursement.  
+- **Low Inpatient Status:** All services are outpatient, which typically have lower fraud risk; however, outpatient fraud (e.g., up‑coding, duplicate billing) remains a concern.  
+- **Moderate Beneficiary Volume:** With 23 beneficiaries, the provider has enough patient traffic to sustain fraud without attracting immediate detection.  
+- **Risk Level vs. Probability Discrepancy:** The low risk label may mask underlying issues due to the probability exceeding 10 %.  
+
+---
+
+### 4. Recommended Actions  
+
+| Action Item                     | Details |
+|---------------------------------|---------|
+| **Audit Claim Coding**          | Verify CPT/ICD codes against clinical documentation to detect up‑coding. |
+| **Duplicate Claim Review**      | Cross‑check claim IDs and beneficiary identifiers to ensure no repeated claims. |
+| **Deductible Verification**     | Confirm that the deductible amount aligns with policy limits and documented services. |
+| **Beneficiary Verification**    | Validate beneficiary identities and ensure no duplicate entries. |
+| **Flagging System Enhancement** | Update the automated fraud‑risk engine to elevate provider to “Moderate” risk when probability > 10 %. |
+| **Follow‑up Interviews**        | Conduct brief interviews with provider staff to understand billing practices. |
+| **Continuous Monitoring**       | Implement a rolling review of claims for the next 6 months. |
+
+---
+
+### 5. Final Verdict  
+
+- **Risk Status:** *Low* (current classification)  
+- **Fraud Probability:** 10.98 % – warrants closer monitoring.  
+- **Conclusion:** No definitive evidence of large‑scale fraud, but the statistical indicators and patterns suggest potential low‑level billing irregularities.  
+- **Verdict:** *Proceed with targeted audit and monitoring; no immediate punitive action required.*  
+
+**Prepared by:**  
+[Signature]  
+Senior Healthcare Fraud Analyst  
+
+---

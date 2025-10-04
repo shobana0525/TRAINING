@@ -1,0 +1,76 @@
+=== Statistics ===
+{
+  "total_claims": 1,
+  "fraud_claims": 0,
+  "fraud_percentage": 10.98,
+  "fraud_probability": 0.1098,
+  "risk_level": "Low",
+  "potential_saving": 329.36,
+  "claim_amount": 5000,
+  "is_inpatient": 0,
+  "deductible_amt_paid": 2000,
+  "beneficiaries_count": 23
+}
+
+=== AI Summary ===
+**Fraud Investigation Report**  
+*Provider: XYZ Medical Center*  
+*Date: 2025‑10‑04*  
+
+---
+
+**Key Metrics**  
+```
+    Fraud Probability:           10.98%
+    Risk Level:                  Low
+    Potential Savings:           $329.36
+    Claim Amount:                $5,000
+    Deductible Paid:             $2,000
+    Inpatient Status:            0
+    Beneficiaries Count:         23
+```
+
+---
+
+### 1. Overall Fraud Situation  
+```
+    The fraud probability of 10.98% indicates a moderate risk for the provider,  
+    yet the system has classified the risk level as Low.  The potential savings  
+    of $329.36 suggest that some claims may be over‑charged or duplicated.  
+    The claim amount of $5,000 with a deductible of $2,000 shows a substantial  
+    payment; however, the inpatient status is 0, indicating an outpatient claim.  
+```
+
+### 2. Likely Fraud Types  
+```
+    • Overbilling – charging for services not rendered or inflating service costs.  
+    • Duplicate Claims – submitting the same claim multiple times.  
+    • Upcoding – billing for a higher level of service than actually performed.  
+```
+
+### 3. Patterns or Causes  
+```
+    • High beneficiary count (23) relative to typical outpatient volume.  
+    • Deductible paid is 40% of the claim, unusually high for outpatient services.  
+    • Lack of inpatient status suggests the provider may be billing for inpatient  
+      services incorrectly.  
+```
+
+### 4. Recommended Actions  
+```
+    • Conduct a detailed audit of all claims submitted in the last 12 months.  
+    • Cross‑reference billed services with electronic health records to verify  
+      authenticity.  
+    • Verify coding accuracy and ensure no upcoding has occurred.  
+    • Implement a monitoring dashboard for real‑time fraud probability alerts.  
+```
+
+### 5. Final Verdict  
+```
+    Based on the current evidence, the provider exhibits a low risk level but  
+    still warrants a targeted audit.  The potential savings of $329.36 are modest;  
+    however, proactive investigation is recommended to prevent future losses  
+    and ensure compliance.  
+```
+
+---

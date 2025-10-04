@@ -1,0 +1,59 @@
+=== Statistics ===
+{
+  "total_claims": 1,
+  "fraud_claims": 0,
+  "fraud_percentage": 10.98,
+  "fraud_probability": 0.1098,
+  "risk_level": "Low",
+  "potential_saving": 329.36,
+  "claim_amount": 5000,
+  "is_inpatient": 0,
+  "deductible_amt_paid": 2000,
+  "beneficiaries_count": 23
+}
+
+=== AI Summary ===
+**Fraud Investigation Report – Provider‑Level Analysis**  
+**Date:** 2025‑10‑04  **Prepared by:** Fraud Analyst Unit  
+
+---
+
+**Key Statistics**  
+- Fraud Probability: 0.1098  
+- Risk Level: Low  
+- Potential Saving: $329.36  
+- Claim Amount: $5,000  
+- Deductible Amount Paid: $2,000  
+- Inpatient Status: 0 (Outpatient)  
+- Beneficiaries Count: 23  
+
+---
+
+### 1. Overall Fraud Situation  
+ • The calculated fraud probability (10.98 %) indicates a **low‑risk** scenario for this provider.  
+ • The potential savings of $329.36 represent the expected cost avoidance if fraudulent activity were identified and halted.  
+ • With a claim amount of $5,000 and a deductible paid of $2,000, the provider’s reimbursement shares a substantial portion of the claim, yet the overall risk remains low.
+
+### 2. Likely Fraud Types  
+ • **Overbilling** – Charges that exceed the standard fee schedule for outpatient services.  
+ • **Duplicate Claims** – Submitting multiple claims for the same service on the same beneficiary.  
+ • **Unnecessary Services** – Billing for procedures or tests that are medically unnecessary or not justified by the beneficiary’s clinical condition.  
+
+### 3. Patterns or Causes  
+ • The provider’s **outpatient status** (Inpatient Status = 0) suggests a focus on routine or non‑critical services, which may be more susceptible to coding and billing manipulation.  
+ • A **high deductible paid** relative to the claim amount indicates that the provider may be capturing a larger share of the cost‑sharing from beneficiaries, potentially incentivizing higher charges.  
+ • The **beneficiaries count (23)** is moderately high; larger beneficiary pools can increase opportunities for procedural repeat billing and data entry errors.  
+
+### 4. Recommended Actions  
+ • **Targeted Audit** – Review all claims submitted by this provider for consistency with the National Correct Coding Initiative (NCCI) guidelines.  
+ • **Code Verification** – Cross‑check CPT/ICD‑10 codes against the clinical documentation to ensure legitimacy.  
+ • **Denominator Analysis** – Compare the claim volume to the beneficiary count to identify any anomalous spikes.  
+ • **Beneficiary Feedback** – Solicit patient reports of duplicate or unnecessary services through survey or portal.  
+ • **Continuous Monitoring** – Implement automated flagging for claims exceeding typical cost thresholds or involving high deductible amounts.  
+
+### 5. Final Verdict  
+ - **Risk Assessment:** Low probability of fraud, but the provider’s billing patterns warrant proactive monitoring.  
+ - **Action Plan:** Initiate the recommended audits and verification steps; maintain surveillance for any emerging irregularities.  
+ - **Expected Outcome:** Capture potential savings of $329.36 while preserving legitimate billing practices and protecting beneficiary interests.  
+
+*End of Report*

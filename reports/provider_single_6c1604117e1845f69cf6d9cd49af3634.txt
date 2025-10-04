@@ -1,0 +1,74 @@
+=== Statistics ===
+{
+  "total_claims": 1,
+  "fraud_claims": 0,
+  "fraud_percentage": 10.98,
+  "fraud_probability": 0.1098,
+  "risk_level": "Low",
+  "potential_saving": 329.36,
+  "claim_amount": 5000,
+  "is_inpatient": 0,
+  "deductible_amt_paid": 2000,
+  "beneficiaries_count": 23
+}
+
+=== AI Summary ===
+**Fraud Investigation Report – Provider‑Level Analysis**  
+*Prepared by: Healthcare Fraud Analyst*  
+*Date: 2024‑06‑01*  
+
+---
+
+**Provider Summary**  
+| Metric | Value |
+|--------|-------|
+| Fraud Probability | **0.1098** |
+| Risk Level | **Low** |
+| Potential Saving | **$329.36** |
+| Claim Amount | **$5,000** |
+| Deductible Amount Paid | **$2,000** |
+| Inpatient Status | **0** (Outpatient) |
+| Beneficiaries Count | **23** |
+
+---
+
+### 1. Overall Fraud Situation  
+*The provider’s fraud probability score of 0.1098 indicates a modest risk level, classified as **Low**. The insurer could potentially recover **$329.36** by addressing identified irregularities. The claim in question is an outpatient service totaling **$5,000** with a deductible of **$2,000** paid by the beneficiary. Twenty‑three beneficiaries are associated with this provider.*
+
+---
+
+### 2. Likely Fraud Types  
+*Based on the available data, the following fraud typologies are most plausible:*
+
+| Fraud Type | Indicator | Rationale |
+|------------|-----------|-----------|
+| **Up‑coding** | Low claim amount relative to service complexity | Provider may bill for higher‑tier services than performed. |
+| **Duplicate Billing** | Single claim, 23 beneficiaries | Potential multiple claims for the same service. |
+| **Unbundling** | Outpatient claim, high deductible | Splitting services into separate claims to inflate reimbursement. |
+
+---
+
+### 3. Patterns or Causes  
+*The risk profile suggests the following patterns:*
+
+1. **Low claim volume, high beneficiary count** – Possible over‑billing across multiple beneficiaries.  
+2. **Outpatient status** – Outpatient services are less regulated, increasing vulnerability to coding manipulation.  
+3. **Deductible paid** – Indicates partial cost sharing; providers may seek to shift more cost onto the insurer.  
+
+*These patterns hint at systematic coding or billing practices rather than isolated incidents.*
+
+---
+
+### 4. Recommended Actions  
+| Action | Detail | Expected Outcome |
+|--------|--------|------------------|
+| **Audit Claims** | Review all claims from this provider in the past 12 months for coding consistency. | Identify coding discrepancies and quantify potential savings. |
+| **Cross‑Check Beneficiary Records** | Verify that each beneficiary received distinct services. | Detect duplicate or phantom services. |
+| **Training & Compliance** | Conduct refresher training on CPT coding and billing guidelines. | Reduce future coding errors and potential fraud. |
+| **Enhanced Monitoring** | Implement automated alerts for high‑deductible claims and outlier coding patterns. | Early detection of anomalous billing. |
+| **Stakeholder Communication** | Notify the provider of findings and required corrective actions. | Foster transparency and cooperation. |
+
+---
+
+### 5. Final Verdict  
+*The provider exhibits a **Low** fraud risk with a **0.1098** probability score. While the potential financial impact ($329.36) is modest, proactive measures—particularly targeted audits and compliance training—are warranted to mitigate the risk of future fraudulent activity and ensure sustained integrity of the billing process.*

@@ -1,0 +1,67 @@
+=== Statistics ===
+{
+  "total_claims": 1,
+  "fraud_claims": 0,
+  "fraud_percentage": 10.98,
+  "fraud_probability": 0.1098,
+  "risk_level": "Low",
+  "potential_saving": 329.36,
+  "claim_amount": 5000,
+  "is_inpatient": 0,
+  "deductible_amt_paid": 2000,
+  "beneficiaries_count": 23
+}
+
+=== AI Summary ===
+**Fraud Investigation Report – Provider‑Level Analysis**  
+*(All figures are expressed in U.S. dollars unless otherwise noted)*  
+
+| **Metric** | **Value**|------------|-----------|
+| Fraud Probability | 0.1098 (10.98 %) |
+| Risk Level | Low |
+| Potential Saving | $329.36 |
+| Claim Amount | $5,000 |
+| Deductible Amount Paid | $2,000 |
+| Inpatient Status | 0 (Outpatient) |
+| Beneficiaries Count | 23 |
+
+---
+
+### 1. Overall Fraud Situation  
+- **Probability Assessment**: The calculated fraud probability of **10.98 %** places this claim in the **Low‑Risk** category.  
+- **Financial Impact**: The *potential saving* figure of **$329.36** indicates that, if fraudulent activity were confirmed, the insurer could recover a modest amount relative to the claim size.  
+- **Contextual Factors**: The claim is an **outpatient** service (Inpatient Status = 0) and involves **23 beneficiaries**, suggesting a group setting (e.g., employer‑sponsored plan).  
+
+### 2. Likely Fraud Types  
+| **Fraud Type** | **Indicative Signs** | **Relevance to Current Claim** |
+|----------------|----------------------|--------------------------------|
+| **Upcoding** | Charge for a higher‑tier procedure than performed | No clear evidence; claim matches standard outpatient level |
+| **Duplicate Billing** | Same service billed multiple times | Not indicated – single claim listed |
+| **Billing for Non‑Performed Services** | Service listed but not rendered | Deductible paid ($2,000) suggests partial claim; no red flags |
+| **Unbundling** | Separate billing of services that should be bundled | Not applicable to a single outpatient claim |
+| **Kickback / Referral Fraud** | Payment for referrals | No referral data available |
+
+**Assessment**: Given the low probability and absence of classic red flags, the most plausible (though still unlikely) scenario would involve **billing for a non‑performed service** or a minor **upcoding** event.
+
+### 3. Patterns or Causes  
+- **Outpatient Setting**: Outpatient claims often carry lower scrutiny than inpatient ones; however, the modest claim size ($5,000) is typical for many outpatient procedures.  
+- **Beneficiary Volume**: With **23 beneficiaries**, the provider may be handling group claims, which can dilute individual oversight but also increase the chance of inadvertent billing errors.  
+- **Deductible Discrepancy**: The deductible paid ($2,000) is exactly 40 % of the claim amount, a standard ratio in many plans; no anomalous pattern emerges.  
+- **Risk Level Alignment**: The low risk level aligns with the lack of abnormal claim characteristics—no high‑cost services, no unusually high frequency, no prior fraud alerts.
+
+### 4. Recommended Actions  
+| **Action** | **Description** | **Priority** |
+|------------|-----------------|--------------|
+| **Detailed Claim Verification** | Cross‑check the procedure codes, dates, and provider credentials against the medical record. | High |
+| **Beneficiary Confirmation** | Verify that all 23 beneficiaries were indeed covered and that the claim pertains to a legitimate member. | Medium |
+| **Audit Historical Claims** | Review the provider’s past claims within the last 12 months for similar patterns or anomalies. | Medium |
+| **Stakeholder Notification** | Inform the provider of the investigation and request clarification on any disputed components. | Low |
+| **Document Findings** | Compile all evidence, including any corrections or re‑billing requests, for future reference. | High |
+
+### 5. Final Verdict  
+**Verdict:** *Low‑Risk – No Immediate Fraud Confirmation Required*  
+- The statistical analysis and preliminary review suggest that the claim does not exhibit significant fraud indicators.  
+- The potential saving of **$329.36** is relatively small compared to the claim size, and the risk level is classified as **Low**.  
+- A focused verification audit is recommended to confirm the legitimacy of the claim and to rule out any minor billing errors.  
+
+**Next Steps:** Initiate the “Detailed Claim Verification” action plan. If verification confirms compliance, close the case. If discrepancies are found, proceed with corrective billing or, if warranted, initiate a formal fraud investigation.

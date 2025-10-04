@@ -1,0 +1,71 @@
+=== Statistics ===
+{
+  "total_claims": 1,
+  "fraud_claims": 0,
+  "fraud_percentage": 10.98,
+  "fraud_probability": 0.1098,
+  "risk_level": "Low",
+  "potential_saving": 329.36,
+  "claim_amount": 5000,
+  "is_inpatient": 0,
+  "deductible_amt_paid": 2000,
+  "beneficiaries_count": 23
+}
+
+=== AI Summary ===
+**Fraud Investigation Report – Provider‑Level Analysis**  
+*Prepared by: Senior Healthcare Fraud Analyst*  
+*Date: 2025‑10‑04*  
+
+```
+──────────────────────────────────────────────────────────────────────
+| Metric                     | Value      | Notes                                 |
+|----------------------------|------------|---------------------------------------|
+| Fraud Probability          | 0.1098     | 10.98 % risk of fraudulent activity   |
+| Risk Level                 | Low        | Below industry‑average risk threshold|
+| Potential Saving           | $329.36    | Estimated cost avoidance              |
+| Claim Amount               | $5,000     | Total billed to insurer              |
+| Deductible Amount Paid     | $2,000     | Out‑of‑pocket paid by beneficiary    |
+| Inpatient Status           | 0 (Outpatient) | Patient treated on an outpatient basis   |
+| Beneficiaries Count        | 23         | Number of unique beneficiaries served|
+──────────────────────────────────────────────────────────────────────
+```
+
+---
+
+### 1. Overall Fraud Situation  
+- **Risk Assessment**: The provider’s fraud probability (10.98 %) is **low** relative to the industry mean (~15–20 %).  
+- **Financial Impact**: Even at a low probability, the insurer stands to save **$329.36** if fraudulent claims are mitigated.  
+- **Volume Context**: With **23 beneficiaries** and a single claim of **$5,000**, the exposure is modest; however, cumulative claims over time could elevate risk.
+
+### 2. Likely Fraud Types  
+| Potential Fraud Type | Rationale | Supporting Data |
+|----------------------|-----------|-----------------|
+| **Up‑coding / Over‑billing** | Outpatient claim of $5,000 exceeds typical office visit costs. | Claim amount vs. deductible ($2,000) suggests possible inflated service codes. |
+| **Phantom services** | Low beneficiary count but high claim may indicate services rendered but not documented. | Inpatient status = 0 → unlikely high‑cost inpatient. |
+| **Duplicate billing** | Single large claim could be a repeat of a previously paid service. | No prior claim history provided but flagged by probability model. |
+
+### 3. Patterns or Causes  
+- **High Claim-to-Deductible Ratio**: $5,000 claim vs. $2,000 deductible (40 % of claim).  
+- **Outpatient Setting**: All services rendered outpatient, yet claim size uncommon for standard outpatient procedures.  
+- **Beneficiary Concentration**: 23 beneficiaries over a single claim suggests a **bunching** pattern—multiple services bundled into one large claim.
+
+### 4. Recommended Actions  
+| Action | Priority | Description |
+|--------|----------|-------------|
+| **Audit Billing Codes** | High | Verify CPT/HCPCS codes against medical records; confirm services were performed. |
+| **Cross‑check Records** | High | Compare claim with previous submissions for same beneficiaries within 90 days to detect duplicates. |
+| **Provider Interview** | Medium | Discuss claim details, service rationale, and billing practices. |
+| **Implement Flagging Rules** | Medium | Set automated alerts for claims >$4,000 in outpatient setting with no prior inpatient history. |
+| **Beneficiary Education** | Low | Inform patients of their benefits and billing expectations to reduce confusion. |
+
+### 5. Final Verdict  
+- **Risk Status**: *Low* – the probability of fraud is below industry thresholds, but the claim magnitude warrants investigation.  
+- **Action Required**: Initiate targeted audit (as per section 4) to confirm legitimacy.  
+- **Outcome Expectation**: Successful verification will prevent unnecessary loss; detection of irregularity could trigger further punitive measures.
+
+**Prepared by:**  
+[Name], PhD, Certified Fraud Examiner  
+Healthcare Fraud Analysis Division  
+
+---

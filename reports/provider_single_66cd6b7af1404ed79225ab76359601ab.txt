@@ -1,0 +1,70 @@
+=== Statistics ===
+{
+  "total_claims": 1,
+  "fraud_claims": 0,
+  "fraud_percentage": 10.98,
+  "fraud_probability": 0.1098,
+  "risk_level": "Low",
+  "potential_saving": 329.36,
+  "claim_amount": 5000,
+  "is_inpatient": 0,
+  "deductible_amt_paid": 2000,
+  "beneficiaries_count": 23
+}
+
+=== AI Summary ===
+**Fraud Investigation Report – Provider‑Level Analysis**  
+*Prepared by: Healthcare Fraud Analyst*  
+*Date: 2025‑10‑04*
+
+---
+
+**1. Overall Fraud Situation**  
+&nbsp;&nbsp;• **Fraud Probability:** 0.1098 (≈ 10.98 %)  
+&nbsp;&nbsp;• **Risk Level:** Low  
+&nbsp;&nbsp;• **Potential Savings if Fraud Uncovered:** $329.36  
+&nbsp;&nbsp;• **Total Claim Amount:** $5,000  
+&nbsp;&nbsp;• **Deductible Paid:** $2,000  
+&nbsp;&nbsp;• **Inpatient Status (0 = outpatient):** 0  
+&nbsp;&nbsp;• **Beneficiaries Count:** 23  
+
+The provider’s overall fraud risk is modest, with a probability just below 11 %. The financial impact of a confirmed fraud scenario is limited ($329.36), suggesting isolated or low‑volume violations.
+
+---
+
+**2. Likely Fraud Types**  
+&nbsp;&nbsp;| **Type** | **Indicators** | **Probability** | **Potential Impact** |
+&nbsp;&nbsp;|-----------|----------------|-----------------|---------------------|
+&nbsp;&nbsp;| **Up‑coding** | Claim amount ($5,000) > typical outpatient rates for similar services | Moderate | $329.36 |
+&nbsp;&nbsp;| **Duplicate Claims** | Deductible paid ($2,000) against a single claim | Low | $329.36 |
+&nbsp;&nbsp;| **Billing for Non‑Provided Services** | Inpatient status = 0 but claim resembles inpatient billing | Low | $329.36 |
+&nbsp;&nbsp;| **Phantom Services** | 23 beneficiaries but claim covers only one service | Low | $329.36 |
+
+---
+
+**3. Patterns or Causes**  
+&nbsp;&nbsp;• The claim exceeds average outpatient reimbursement thresholds, hinting at **up‑coding**.  
+&nbsp;&nbsp;• Deductible paid at $2,000 is unusually high for a single outpatient claim, raising a **duplicate or phantom** billing flag.  
+&nbsp;&nbsp;• The provider’s beneficiary count (23) suggests a large patient pool; a single claim covering all beneficiaries may indicate **bundling or misrepresentation** of services.  
+&nbsp;&nbsp;• No inpatient indicator, yet the claim amount resembles inpatient reimbursement, suggesting **service level misclassification**.
+
+---
+
+**4. Recommended Actions**  
+&nbsp;&nbsp;• **Claim Verification** – Cross‑check the submitted claim against service logs and electronic health records for the specific beneficiary.  
+&nbsp;&nbsp;• **Deductible Audit** – Validate that the $2,000 deductible was truly incurred and not duplicated across multiple claims.  
+&nbsp;&nbsp;• **Provider Interview** – Conduct a brief interview to clarify billing practices and confirm service levels.  
+&nbsp;&nbsp;• **Historical Review** – Examine prior claims from the same provider for similar patterns (up‑coding, duplicate billing).  
+&nbsp;&nbsp;• **Risk‑Based Monitoring** – Flag the provider for enhanced monitoring in the next audit cycle.  
+
+---
+
+**5. Final Verdict**  
+&nbsp;&nbsp;*Based on the available data, the fraud risk is low but not negligible.*  
+&nbsp;&nbsp;*The most plausible scenario involves up‑coding or duplicate billing, with a modest potential saving of $329.36 if confirmed.*  
+&nbsp;&nbsp;*The recommended verification steps should resolve uncertainty. Pending those checks, no immediate punitive action is warranted.*  
+
+*Prepared by:*  
+[Signature]  
+Healthcare Fraud Analyst  
+---

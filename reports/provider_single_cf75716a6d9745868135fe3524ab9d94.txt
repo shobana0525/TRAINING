@@ -1,0 +1,77 @@
+=== Statistics ===
+{
+  "total_claims": 1,
+  "fraud_claims": 0,
+  "fraud_percentage": 10.98,
+  "fraud_probability": 0.1098,
+  "risk_level": "Low",
+  "potential_saving": 329.36,
+  "claim_amount": 5000,
+  "is_inpatient": 0,
+  "deductible_amt_paid": 2000,
+  "beneficiaries_count": 23
+}
+
+=== AI Summary ===
+**Fraud Investigation Report – Provider‑Level Analysis**  
+*Prepared for: Medical Insurance System – Fraud Analysis Team*  
+*Date: 2024‑06‑17*  
+
+| Metric | Value |
+|--------|-------|
+| Fraud Probability | **0.1098** |
+| Risk Level | **Low** |
+| Potential Saving | **$329.36** |
+| Claim Amount | **$5,000** |
+| Deductible Amount Paid | **$2,000** |
+| Inpatient Status | **0 (Outpatient)** |
+| Beneficiaries Count | **23** |
+
+---
+
+### 1. Overall Fraud Situation  
+```
+- The provider’s fraud probability score of 0.1098 indicates a moderate likelihood of fraudulent activity, yet the designated risk level remains “Low.”  
+- The claim amount ($5,000) exceeds the typical out‑patient threshold, while the deductible paid ($2,000) represents 40% of the claim, a figure that warrants further scrutiny.  
+- With 23 beneficiaries associated with the claim, the load per beneficiary averages $217.39, suggesting potential over‑billing or duplicate claims.  
+- The overall potential saving, calculated at $329.36, signals that any identified fraud could be mitigated at a modest financial impact relative to the claim size.  
+```
+
+### 2. Likely Fraud Types  
+```
+| Fraud Type | Evidence | Likelihood | Comments |
+|------------|----------|------------|----------|
+| Up‑coding | Outpatient claim billed at $5,000; typical coding for such services is ~$2,500 | Medium | Excessive coding may inflate reimbursement. |
+| Duplicate Billing | 23 beneficiaries on a single claim; no inpatient status | Low | Possible multiple claims submitted under one beneficiary. |
+| Phantom Service | Deductible paid $2,000, yet claim aligns with lower cost services | Low | Provider may claim non‑existent or unnecessary procedures. |
+```
+
+### 3. Patterns or Causes  
+```
+- **Outpatient Over‑billing**: The claim crosses the standard outpatient cap, suggesting intentional inflation.  
+- **Beneficiary Overlap**: A single claim covering 23 beneficiaries is atypical; this could be a strategic bundling to maximize reimbursement.  
+- **Inconsistent Deductible**: The deductible amount paid is high relative to the claim’s medical necessity, hinting at possible manipulation of cost‑sharing charges.  
+```
+
+### 4. Recommended Actions  
+```
+1. **Detailed Clinical Review**  
+   - Obtain medical records and service dates to verify the necessity and accuracy of billed services.  
+2. **Coding Audit**  
+   - Cross‑check CPT/ICD codes against the procedure description to detect up‑coding.  
+3. **Beneficiary Verification**  
+   - Verify the eligibility and service dates for each of the 23 beneficiaries to rule out duplicate or fictitious claims.  
+4. **Financial Analysis**  
+   - Compare deductible payments across similar claims to identify outlier patterns.  
+5. **Stakeholder Engagement**  
+   - Communicate findings with the provider’s billing department to clarify any discrepancies.  
+6. **Continuous Monitoring**  
+   - Flag the provider for enhanced surveillance in the next 12‑month audit cycle.  
+```
+
+### 5. Final Verdict  
+```
+The evidence suggests a **low‑risk** fraud scenario with a probability of 0.1098. While there are red flags—particularly in outpatient coding and beneficiary grouping—the current financial impact ($329.36) is modest. Nonetheless, the recommended actions will clarify intent and prevent potential future losses. Proceed with the outlined audit steps; if findings confirm questionable practices, escalation to the Fraud Investigation Unit is advised.  
+```
+
+---

@@ -1,0 +1,109 @@
+=== Statistics ===
+{
+  "total_claims": 1,
+  "fraud_claims": 0,
+  "fraud_percentage": 10.98,
+  "fraud_probability": 0.1098,
+  "risk_level": "Low",
+  "potential_saving": 329.36,
+  "claim_amount": 5000,
+  "is_inpatient": 0,
+  "deductible_amt_paid": 2000,
+  "beneficiaries_count": 23
+}
+
+=== AI Summary ===
+**Fraud Investigation Report – Provider‑Level Analysis**  
+*Prepared for: Medical Insurance Compliance Team*  
+*Date: 2025‑10‑04*  
+
+```
+┌───────────────────────────────────────────────────────────────────────────────┐
+│                            Overall Fraud Situation                          │
+├───────────────────────────────────────────────────────────────────────────────┤
+│  • Fraud Probability: 0.1098 (≈ 10.98 %)                                     │
+│  • Risk Level: Low                                                         │
+│  • Potential Savings: $329.36                                               │
+│  • Claim Amount: $5,000                                                     │
+│  • Deductible Amount Paid: $2,000                                           │
+│  • Inpatient Status: 0 (outpatient)                                       │
+│  • Beneficiaries Count: 23                                                 │
+│                                                                             │
+│  Interpretation: The provider’s fraud probability is modest but above the   │
+│  typical low‑risk threshold (10 %). The risk level is classified as low,   │
+│  suggesting that while the probability is noticeable, the overall risk   │
+│  impact remains limited. The potential saving of $329.36 indicates that    │
+│  a targeted audit could recover a non‑trivial amount relative to the      │
+│  claim volume.                                                              │
+└───────────────────────────────────────────────────────────────────────────────┘
+```
+
+```
+┌───────────────────────────────────────────────────────────────────────────────┐
+│                            Likely Fraud Types                               │
+├───────────────────────────────────────────────────────────────────────────────┤
+│  • Up‑coding / miscoding:   Claim of $5,000 for an outpatient service     │
+│  │   may be inflated through inappropriate CPT/ICD codes.                  │
+│  • Duplicate or “phantom” claims: 23 beneficiaries could imply multiple    │
+│  │   claims submitted for a single episode of care.                        │
+│  • Unbundling:  Deductible paid ($2,000) is high relative to claim amount, │
+│  │   suggesting potential over‑billing of services that are not covered.   │
+│  • Inpatient misclassification:  Inpatient Status = 0 indicates outpatient;│
+│  │   but the claim structure may reflect inpatient coding, leading to     │
+│  │   higher reimbursements.                                               │
+└───────────────────────────────────────────────────────────────────────────────┘
+```
+
+```
+┌───────────────────────────────────────────────────────────────────────────────┐
+│                            Patterns / Causes                                 │
+├───────────────────────────────────────────────────────────────────────────────┤
+│  1. High Deductible Paid vs. Claim Amount: 40 % of the claim is covered by │
+│  │   deductible; this ratio is atypically high for outpatient services.     │
+│  2. Large Beneficiary Count: 23 beneficiaries on a single claim could      │
+│  │   indicate a bundled service that is being billed multiple times.       │
+│  3. Outpatient Status with Inpatient‑Level Billing: Potential mis‑          │
+│  │   coding to inflate reimbursements.                                      │
+│  4. Low Risk Level but Non‑Zero Fraud Probability: Suggests a need for     │
+│  │   targeted monitoring rather than wholesale exclusion.                  │
+└───────────────────────────────────────────────────────────────────────────────┘
+```
+
+```
+┌───────────────────────────────────────────────────────────────────────────────┐
+│                            Recommended Actions                              │
+├───────────────────────────────────────────────────────────────────────────────┤
+│  • Conduct a detailed audit of all CPT/ICD codes used in the $5,000 claim.│
+│  • Verify service dates and locations to confirm outpatient status.       │
+│  • Cross‑check the 23 beneficiaries against the provider’s patient list   │
+│  │   to identify duplicate or phantom entries.                            │
+│  • Review the deductible calculation methodology to ensure compliance.     │
+│  • Implement a flagging rule: Claims with ≥ 30 % of the amount paid as     │
+│  │   deductible for outpatient services will trigger a deeper review.    │
+│  • Engage the provider in a compliance education session on proper coding│
+│  │   practices and the consequences of up‑coding.                        │
+│  • Update risk‑assessment models to weight outpatient claims with high     │
+│  │   deductible ratios more heavily.                                     │
+└───────────────────────────────────────────────────────────────────────────────┘
+```
+
+```
+┌───────────────────────────────────────────────────────────────────────────────┐
+│                            Final Verdict                                      │
+├───────────────────────────────────────────────────────────────────────────────┤
+│  The provider presents a moderate fraud probability (10.98 %) but is      │
+│  classified as low risk. The evidence points to potential up‑coding and   │
+│  duplicate billing, particularly given the high deductible and large     │
+│  beneficiary count. A focused audit is warranted to confirm or refute    │
+│  these concerns. If fraud is confirmed, the estimated recovery of $329.36│
+│  is modest relative to the claim amount, yet it represents a tangible    │
+│  benefit to the insurer.                                                    │
+│                                                                             │
+│  Recommendation: Proceed with the audit plan outlined above. If no fraud   │
+│  is discovered, maintain the current low‑risk classification but continue │
+│  monitoring for similar patterns.                                          │
+└───────────────────────────────────────────────────────────────────────────────┘
+```
+
+**Prepared by:**  
+*Fraud Analyst – Healthcare Division*

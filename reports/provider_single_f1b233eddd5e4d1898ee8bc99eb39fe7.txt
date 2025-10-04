@@ -1,0 +1,99 @@
+=== Statistics ===
+{
+  "total_claims": 1,
+  "fraud_claims": 0,
+  "fraud_percentage": 10.98,
+  "fraud_probability": 0.1098,
+  "risk_level": "Low",
+  "potential_saving": 329.36,
+  "claim_amount": 5000,
+  "is_inpatient": 0,
+  "deductible_amt_paid": 2000,
+  "beneficiaries_count": 23
+}
+
+=== AI Summary ===
+**Fraud Investigation Report**  
+*Provider‑Level Review – Medical Insurance System*  
+
+| Metric | Value |
+|--------|-------|
+| Fraud Probability | **0.1098** (10.98 %) |
+| Risk Level | **Low** |
+| Potential Saving | **$329.36** |
+| Claim Amount | **$5,000** |
+| Deductible Amount Paid | **$2,000** |
+| Inpatient Status | **0** (Outpatient) |
+| Beneficiaries Count | **23** |
+
+---
+
+### 1. Overall Fraud Situation  
+- **Probability**: The computed fraud probability of 0.1098 suggests a moderate likelihood that the claim contains fraudulent elements, despite the system’s overall “Low” risk classification.  
+- **Financial Impact**: If the claim is found fraudulent, the insurer stands to recover approximately **$329.36**.  
+- **Claim Characteristics**: A single $5,000 outpatient claim with a $2,000 deductible paid. Only 23 beneficiaries are associated with the provider, yet the claim reflects a large single‑service payment.
+
+---
+
+### 2. Likely Fraud Types  
+| Potential Fraud Type | Rationale |
+|----------------------|-----------|
+| **Billing for Services Not Rendered** | High claim amount for an outpatient service where no inpatient services were recorded. |
+| **Duplicate Billing** | One large claim against a provider with many beneficiaries may indicate multiple identical claims merged into one. |
+| **Up‑coding/Up‑billing** | Claim amount disproportionate to typical outpatient services; potential elevation of service level codes. |
+| **Collusion/Provider‑Patient Partnerships** | Single large claim among many beneficiaries could signal a coordinated effort to inflate costs. |
+
+---
+
+### 3. Patterns or Causes  
+- **Outpatient Claim Size**: $5,000 is substantially above average for outpatient services in the dataset.  
+- **Deductible vs. Total Claim**: A $2,000 deductible paid on a $5,000 claim implies a high cost‑sharing burden, raising suspicion that the claim may be inflated.  
+- **Beneficiary Concentration**: 23 beneficiaries linked to only one claim; typical patterns involve multiple smaller claims across beneficiaries.  
+- **Inpatient Status = 0**: No inpatient services recorded, yet the claim amount suggests a high‑resource procedure.  
+
+These patterns collectively point to potential billing irregularities rather than genuine medical necessity.
+
+---
+
+### 4. Recommended Actions  
+```
+1. Verify Service Documentation
+    ├─ Obtain the provider’s EHR records for the claim period
+    ├─ Confirm that the billed procedure was performed
+    └─ Cross‑check CPT/HCPCS codes with actual services
+
+2. Conduct a Duplicate Claim Audit
+    ├─ Search the claim database for identical or near‑identical claims
+    ├─ Review timestamps and provider identifiers
+    └─ Flag any clustering of high‑value claims
+
+3. Evaluate Coding Accuracy
+    ├─ Verify that the codes used reflect the actual clinical service level
+    ├─ Re‑code where necessary and compare against standard cost weights
+    └─ Document any evidence of up‑coding
+
+4. Engage the Provider
+    ├─ Issue a formal request for clarification on the $5,000 outpatient claim
+    ├─ Follow up with a provider interview if needed
+    └─ Document all communications
+
+5. Monitor Future Claims
+    ├─ Place the provider on a surveillance list for the next 12 months
+    ├─ Set automated alerts for claims >$3,000
+    └─ Review beneficiary patterns quarterly
+
+6. Update Risk Score
+    ├─ Re‑calculate fraud probability after audit findings
+    └─ Adjust risk level accordingly
+```
+
+---
+
+### 5. Final Verdict  
+- **Risk Assessment**: While the overall risk level remains *Low*, the fraud probability of **10.98 %** and the identified patterns justify a focused audit.  
+- **Action Needed**: Immediate verification of the claim and provider documentation is recommended.  
+- **Outcome Expectation**: If the audit confirms legitimate billing, the claim will be paid. If fraudulent activity is detected, the insurer can recover **$329.36** and may consider further disciplinary action against the provider.  
+
+*Prepared by:*  
+Healthcare Fraud Analyst – [Name]  
+Date: [Insert Date]
