@@ -5,6 +5,11 @@
   <title>Fraud Detection Portal</title>
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" />
+  <style>
+    .hidden { display: none; }
+    .result { margin-top: 10px; }
+    pre { white-space: pre-wrap; word-wrap: break-word; background:#f5f5f5; padding:8px; border-radius:4px; }
+  </style>
 </head>
 <body>
   <div class="wrap">
@@ -29,7 +34,7 @@
 
         <!-- Batch -->
         <div class="batch-panel hidden" data-type="provider">
-          <p>Upload CSV or JSON (first row should contain columns). Required fields (best-effort): <strong>is_inpatient, is_groupcode, ChronicCond_rheumatoidarthritis, Beneficiaries_Count, DeductibleAmtPaid, InscClaimAmtReimbursed, ChronicCond_Alzheimer, ChronicCond_IschemicHeart, Days_Admitted, ChronicCond_stroke</strong></p>
+          <p>Upload CSV or JSON. Required fields: <strong>is_inpatient, is_groupcode, ChronicCond_rheumatoidarthritis, Beneficiaries_Count, DeductibleAmtPaid, InscClaimAmtReimbursed, ChronicCond_Alzheimer, ChronicCond_IschemicHeart, Days_Admitted, ChronicCond_stroke</strong></p>
           <input type="file" id="provider_batch_file" />
           <button id="provider_batch_analyze">Analyse</button>
           <div id="provider_batch_result" class="result"></div>
@@ -51,6 +56,8 @@
             <button type="submit">Analyse</button>
           </form>
           <div id="provider_single_result" class="result"></div>
+          <h4>AI Summary</h4>
+          <pre id="provider_ai_summary_stream"></pre>
         </div>
       </section>
 
@@ -64,7 +71,7 @@
 
         <!-- Batch -->
         <div class="batch-panel hidden" data-type="claim">
-          <p>Upload CSV or JSON with fields: <strong>Total_Claims_Per_Bene, TimeInHptal, Provider_Claim_Frequency, ChronicCond_stroke_Yes, DeductibleAmtPaid, OPD_Flag_Yes, Diagnosis_Count, ChronicDisease_Count, Age</strong></p>
+          <p>Upload CSV or JSON. Required fields: <strong>Total_Claims_Per_Bene, TimeInHptal, Provider_Claim_Frequency, ChronicCond_stroke_Yes, DeductibleAmtPaid, OPD_Flag_Yes, Diagnosis_Count, ChronicDisease_Count, Age</strong></p>
           <input type="file" id="claim_batch_file" />
           <button id="claim_batch_analyze">Analyse</button>
           <div id="claim_batch_result" class="result"></div>
@@ -85,6 +92,8 @@
             <button type="submit">Analyse</button>
           </form>
           <div id="claim_single_result" class="result"></div>
+          <h4>AI Summary</h4>
+          <pre id="claim_ai_summary_stream"></pre>
         </div>
       </section>
     </main>
