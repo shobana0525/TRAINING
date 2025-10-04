@@ -1,0 +1,55 @@
+=== Statistics ===
+{
+  "total_claims": 1,
+  "fraud_claims": 0,
+  "fraud_percentage": 10.98,
+  "fraud_probability": 0.1098,
+  "risk_level": "Low",
+  "potential_saving": 329.36,
+  "claim_amount": 5000,
+  "is_inpatient": 0,
+  "deductible_amt_paid": 2000,
+  "beneficiaries_count": 23
+}
+
+=== AI Summary ===
+───────────────────────────────  
+🔹 AI FRAUD DETECTION REPORT  
+───────────────────────────────  
+
+📁 **PROVIDER DETAILS**  
+───────────────────────────────  
+&nbsp;&nbsp;&nbsp;&nbsp;• Total Claims                 : 1  
+&nbsp;&nbsp;&nbsp;&nbsp;• Fraudulent Claims            : 0  (≈ 10.98 %)  
+&nbsp;&nbsp;&nbsp;&nbsp;• Legitimate Claims            : 1  (≈ 89.02 %)  
+&nbsp;&nbsp;&nbsp;&nbsp;• Claim Amount                 : $5,000.00  
+&nbsp;&nbsp;&nbsp;&nbsp;• Deductible Amount Paid       : $2,000.00  
+&nbsp;&nbsp;&nbsp;&nbsp;• Inpatient Status             : 0  (Outpatient)  
+&nbsp;&nbsp;&nbsp;&nbsp;• Beneficiaries Count          : 23  
+&nbsp;&nbsp;&nbsp;&nbsp;• Potential Savings            : $329.36  
+&nbsp;&nbsp;&nbsp;&nbsp;• Fraud Probability            : 10.98 %  
+&nbsp;&nbsp;&nbsp;&nbsp;• Risk Level                   : Low  
+
+───────────────────────────────  
+🔍 **KEY FINDINGS & FRAUD PATTERNS**  
+───────────────────────────────  
+&nbsp;&nbsp;&nbsp;&nbsp;• The claim involves a high deductible ($2,000 on a $5,000 service), a typical red‑flag for **up‑coding** or **unbundling** when the provider seeks to maximize reimbursement.  
+&nbsp;&nbsp;&nbsp;&nbsp;• A single outpatient claim with a 10.98 % fraud probability suggests a **case‑by‑case** risk profile rather than systematic abuse.  
+&nbsp;&nbsp;&nbsp;&nbsp;• The presence of 23 beneficiaries on a single provider record raises the possibility of **phantom patients** or **duplicate billing** if subsequent claims are filed.  
+&nbsp;&nbsp;&nbsp;&nbsp;• The provider’s risk level is currently classified as **Low**, yet the modest potential saving of $329.36 indicates that an audit could still yield cost containment for the insurer.  
+
+───────────────────────────────  
+🛠️ **RECOMMENDED ACTIONS**  
+───────────────────────────────  
+&nbsp;&nbsp;&nbsp;&nbsp;• Request the provider’s **itemized service list** and compare CPT codes against the diagnosis codes to confirm coding accuracy.  
+&nbsp;&nbsp;&nbsp;&nbsp;• Perform a **cross‑check** of the 23 beneficiaries against the insurer’s member database to detect any duplicate or fictitious entries.  
+&nbsp;&nbsp;&nbsp;&nbsp;• Conduct a **random audit** on other outpatient claims from the same provider to assess consistency in coding and billing practices.  
+&nbsp;&nbsp;&nbsp;&nbsp;• If the provider’s from the same network, schedule a **facilitated negotiation** to educate on correct coding and reduce future risk.  
+&nbsp;&nbsp;&nbsp;&nbsp;• Document the audit findings in the provider’s file and update the fraud probability score accordingly.  
+
+───────────────────────────────  
+✅ **FINAL VERDICT**  
+───────────────────────────────  
+&nbsp;&nbsp;&nbsp;&nbsp;The provider’s present claim exhibits a low overall fraud risk (10.98 % probability) with no confirmed fraudulent activity. However, the identified patterns warrant a targeted audit to confirm coding integrity and prevent potential over‑reimbursement.  
+
+───────────────────────────────

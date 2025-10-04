@@ -1,0 +1,62 @@
+=== Statistics ===
+{
+  "total_claims": 4,
+  "fraud_claims": 0,
+  "fraud_percentage": 0.0,
+  "fraud_probability": 0.01949431002140045,
+  "risk_level": "Low",
+  "potential_saving": 0.0
+}
+
+=== AI Summary ===
+```
+Fraud Investigation Report – Provider Level
+Date: _______________________________
+Provider ID: _________________________
+
+
+1. Overall Fraud Situation
+   ├─ Fraud Probability: 0.01949431002140045  (≈ 1.95 %)
+   ├─ Risk Level: Low
+   ├─ Potential Saving: $0.00
+   ├─ Claim Amount: $0
+   ├─ Deductible Amount Paid: $0
+   ├─ Inpatient Status: 0
+   └─ Beneficiaries Count: 0
+
+
+2. Likely Fraud Types
+   ├─ None identified – the dataset contains no claims, beneficiaries, or paid amounts.
+   ├─ With a zero‑claim record, typical fraud schemes such as billing for nonexistent services,
+   │   up‑coding, or phantom beneficiaries cannot be substantiated.
+   └─ The low probability value appears to be a statistical artifact rather than evidence of
+       malicious activity.
+
+
+3. Patterns or Causes
+   ├─ Absence of all key activity metrics (claims, payments, inpatient status) indicates a
+   │   dormant or inactive provider profile.
+   ├─ No transactional volume eliminates the possibility of volume‑based fraud patterns.
+   └─ The probability figure may arise from a default baseline calculation applied to
+       providers with zero activity; it does not reflect actual risk.
+
+
+4. Recommended Actions
+   ├─ Perform a routine data‑quality check to confirm that the provider’s record is
+   │   correctly populated (e.g., verify provider ID, active status, and network
+   │   participation).
+   ├─ Flag the provider for periodic review in the next cycle of fraud monitoring to
+   │   capture any future activity.
+   ├─ Ensure that the low‑probability flag is documented as “data‑artifact” so that
+   │   analysts are not misled by a false positive.
+   └─ No immediate investigative resources are required; maintain standard monitoring
+   │   procedures.
+
+
+5. Final Verdict
+   └─ No evidence of fraudulent activity is present. The provider’s record is inactive
+       with no claims or beneficiaries, and the calculated fraud probability is a
+       statistical artifact. The risk remains low, and the provider should continue
+       to be monitored as part of routine oversight without allocating special
+       investigative resources.
+```

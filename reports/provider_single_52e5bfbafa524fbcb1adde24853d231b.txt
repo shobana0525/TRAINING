@@ -1,0 +1,56 @@
+=== Statistics ===
+{
+  "total_claims": 1,
+  "fraud_claims": 0,
+  "fraud_percentage": 10.98,
+  "fraud_probability": 0.1098,
+  "risk_level": "Low",
+  "potential_saving": 329.36,
+  "claim_amount": 5000,
+  "is_inpatient": 0,
+  "deductible_amt_paid": 2000,
+  "beneficiaries_count": 23
+}
+
+=== AI Summary ===
+**Fraud Investigation Report**  
+(Provider‑Level Review – Medical Insurance System)  
+
+| Statistic | Value |
+|-----------|-------|
+| **Fraud Probability** | 0.1098 (10.98 %) |
+| **Risk Level** | Low |
+| **Potential Saving** | USD 329.36 |
+| **Claim Amount** | USD 5,000 |
+| **Deductible Amount Paid** | USD 2,000 |
+| **Inpatient Status** | 0 (Outpatient) |
+| **Beneficiaries Count** | 23 |
+
+---
+
+### 1. Overall Fraud Situation  
+&nbsp;&nbsp;&nbsp;• The model assigns a **10.98 % probability of fraud** for the examined claim, which places this case **below the medium threshold** and thus is classified as **Low risk**.  
+&nbsp;&nbsp;&nbsp;• With a **potential saving of USD 329.36**, the financial impact, while modest, is still significant given the large beneficiary base (23).  
+&nbsp;&nbsp;&nbsp;• The claim was filed for an **outpatient service (Inpatient Status = 0)**, suggesting that the risk profile is consistent with typical outpatient fraud patterns.
+
+### 2. Likely Fraud Types  
+&nbsp;&nbsp;&nbsp;| Category | Indicator | Rationale |
+|-----------|-----------|-----------|
+| **Up‑coding** | Claim amount (USD 5,000) exceeds typical outpatient service costs. | Up‑coding inflates reimbursement by selecting higher‑tier CPT codes. |
+| **Duplicate Billing** | Deductible paid USD 2,000; potential double‑claiming of the same service. | Duplicate submissions may occur if the provider submits multiple claims for the same episode. |
+| **Unbundling** | Low risk score, but the presence of a high deductible suggests possible unbundling to increase net reimbursement. | Splitting bundled services into separate claims can inflate totals. |
+
+### 3. Patterns or Causes  
+&nbsp;&nbsp;&nbsp;• **High deductible paid** relative to the overall claim may signal an attempt to maximize patient out‑of‑pocket contributions while still securing higher insurer payouts.  
+&nbsp;&nbsp;&nbsp;• **Beneficiary concentration** (23 patients) could facilitate coordinated billing practices across a small patient cohort, increasing the risk of pattern‑based fraud.  
+&nbsp;&nbsp;&nbsp;• **Outpatient setting** tends to have less stringent audit controls compared to inpatient care, making it an attractive target for low‑risk fraud.
+
+### 4. Recommended Actions  
+&nbsp;&nbsp;&nbsp;1. **Targeted Review** – Conduct a manual audit of the claim’s CPT codes and associated provider notes to confirm coding accuracy.  
+&nbsp;&nbsp;&nbsp;2. **Duplicate Claim Check** – Cross‑reference claim identifiers with the provider’s previous submissions within the last 90 days.  
+&nbsp;&nbsp;&nbsp;3. **Beneficiary Analysis** – Examine the 23 beneficiaries for overlapping service dates or identical procedural codes.  
+&nbsp;&nbsp;&nbsp;4. **Enhanced Monitoring** – Flag the provider for increased surveillance in future claims, particularly those exceeding USD 4,000.  
+&nbsp;&nbsp;&nbsp;5. **Stakeholder Communication** – Notify the provider’s compliance officer of the findings and request clarification on the deductible application.
+
+### 5. Final Verdict  
+&nbsp;&nbsp;&nbsp;While the fraud probability is low (10.98 %) and the risk level is classified as **Low**, the identified indicators warrant a **moderate investigative effort**. The financial exposure (USD 329.36) is not negligible given the beneficiary count. Therefore, a **focused audit** and **strengthened monitoring** are recommended to mitigate potential fraud and preserve payer integrity.

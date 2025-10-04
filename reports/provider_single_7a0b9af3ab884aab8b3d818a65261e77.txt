@@ -1,0 +1,72 @@
+=== Statistics ===
+{
+  "total_claims": 1,
+  "fraud_claims": 0,
+  "fraud_percentage": 10.98,
+  "fraud_probability": 0.1098,
+  "risk_level": "Low",
+  "potential_saving": 329.36,
+  "claim_amount": 5000,
+  "is_inpatient": 0,
+  "deductible_amt_paid": 2000,
+  "beneficiaries_count": 23
+}
+
+=== AI Summary ===
+**Fraud Investigation Report**  
+*Provider‑Level Review – Medical Insurance System*  
+
+| Statistic                     | Value     |
+|------------------------------ |---------- |
+| Fraud Probability             | 0.1098    |
+| Risk Level                    | Low       |
+| Potential Savings (USD)       | 329.36    |
+| Claim Amount (USD)            | 5,000     |
+| Deductible Amount Paid (USD)  | 2,000     |
+| Inpatient Status (0=Outpatient) | 0       |
+| Beneficiaries Count           | 23        |
+
+---
+
+### 1. Overall Fraud Situation  
+*   The calculated fraud probability of **10.98 %** places the provider in the **Low** risk tier.  
+*   Although the probability is modest, the potential savings of **$329.36** per claim suggests that even a small number of fraudulent claims can accrue significant cost to the insurer.  
+*   The claim amount of **$5,000** is well above average outpatient services, warranting closer scrutiny despite the low risk classification.  
+
+### 2. Likely Fraud Types  
+*   **Billing Over‑coding** – Up‑coding services to higher‑reimbursement CPT/ICD codes.  
+*   **Duplicate Billing** – Multiple claims for the same service or procedure.  
+*   **Phantom Claims** – Claims for services rendered to nonexistent beneficiaries.  
+*   **Eligibility Mis‑representation** – Billing for a beneficiary counted in the provider’s file but not actually covered.  
+
+### 3. Patterns or Causes  
+*   **High Deductible Paid (US$2,000)**  
+    *   Indicates that the provider frequently bills high‑cost outpatient procedures.  
+    *   Could mask up‑coding if the deductible is a fixed amount per patient.  
+*   **Beneficiaries Count (23)**  
+    *   A relatively small patient pool for a provider with a $5,000 claim suggests a concentration of high‑value services.  
+    *   Raises the possibility of billing for multiple services to a single beneficiary.  
+*   **Inpatient Status = 0**  
+    *   Confirms all services are outpatient; therefore, inpatient fraud patterns (e.g., unnecessary admissions) are excluded.  
+
+### 4. Recommended Actions  
+*   **Audit the Provider’s Billing Patterns**  
+    *   Cross‑reference CPT codes with the actual procedures performed.  
+    *   Verify that the deductible was applied correctly and consistently.  
+*   **Validate Beneficiary Records**  
+    *   Confirm that each beneficiary listed in the claim is active, enrolled, and correctly matched to the service dates.  
+*   **Implement Threshold Alerts**  
+    *   Flag any claim > $4,000 for manual review, given the provider’s typical claim size.  
+*   **Review Historical Claims**  
+    *   Look for clusters of identical or very similar claims that may indicate duplicate billing.  
+*   **Educate Provider**  
+    *   Offer training on correct coding and documentation to reduce inadvertent over‑coding.  
+
+### 5. Final Verdict  
+*   The provider’s fraud probability remains **low**; however, the combination of high claim amounts, substantial deductible payments, and a limited beneficiary base warrants **targeted monitoring**.  
+*   Recommended to **maintain routine audits** for this provider, with a focus on the identified high‑risk patterns.  
+*   No immediate action (e.g., claim denial or provider suspension) is necessary, but a **scheduled review in 6 months** will ensure continued compliance and cost savings.  
+
+*Prepared by:*  
+Fraud Analyst – Healthcare Division  
+[Date]

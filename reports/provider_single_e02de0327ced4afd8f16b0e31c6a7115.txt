@@ -1,0 +1,62 @@
+=== Statistics ===
+{
+  "total_claims": 1,
+  "fraud_claims": 0,
+  "fraud_percentage": 10.98,
+  "fraud_probability": 0.1098,
+  "risk_level": "Low",
+  "potential_saving": 329.36,
+  "claim_amount": 5000,
+  "is_inpatient": 0,
+  "deductible_amt_paid": 2000,
+  "beneficiaries_count": 23
+}
+
+=== AI Summary ===
+**Fraud Investigation Report**  
+*(Provider‑Level Analysis – Medical Insurance System)*  
+
+---
+
+### 1. Overall Fraud Situation  
+ • **Fraud Probability:** `0.1098`                       `10.98%`  
+ • **Risk Level:** `Low`  
+ • **Potential Savings if Fraud Detected:** `$329.36`  
+ • **Claim Amount:** `$5,000`  
+ • **Deductible Amount Paid:** `$2,000`  
+ • **Inpatient Status:** `0`  *(Outpatient claim)*  
+ • **Beneficiaries Count:** `23`  
+
+**Interpretation** – The probability of fraudulent activity on this claim is modest, placing it in the *Low* risk category. The potential savings of $329.36 represent the portion of the claim that could be recovered if fraud were confirmed.  
+
+---
+
+### 2. Likely Fraud Types  
+ • **Up‑coding / Service Misclassification** – Over‑billing for services not rendered or higher‑tier codes used for lower‑tier services.  
+ • **Duplicate Billing** – Multiple claims for the same service or procedure.  
+ • **Unbundling/Bundle Abuse** – Separating services that should be billed together to inflate reimbursement.  
+ • **Beneficiary Misrepresentation** – Billing for services to beneficiaries who did not actually receive care, possibly due to identity confusion (23 beneficiaries in a single claim is atypical for a single outpatient visit).  
+
+---
+
+### 3. Patterns or Causes  
+ • **High Beneficiary Count** – 23 beneficiaries on an outpatient claim raises a red flag; typical outpatient visits involve 1–2 beneficiaries.  
+ • **Deductible Coverage** – Deductible paid ($2,000) is 40% of the total claim, which is unusually high for a standard outpatient procedure, suggesting possible over‑billing or incorrect service levels.  
+ • **Inpatient Status = 0** – Confirms the claim is outpatient, yet the volume of beneficiaries and deductible amount suggest a potential mismatch between service type and billing.  
+
+---
+
+### 4. Recommended Actions  
+ • **Detailed Claim Review** – Re‑examine the CPT/ICD codes, dates of service, and provider notes for consistency.  
+ • **Beneficiary Verification** – Confirm each beneficiary’s identity and verify that services were actually rendered to all 23 individuals.  
+ • **Audit Billing History** – Cross‑check the provider’s historical claim patterns for similar bursts of beneficiaries and high deductibles.  
+ • **Implement Threshold Alerts** – Set alerts for claims with >10 beneficiaries on a single outpatient claim in future.  
+ • **Stakeholder Communication** – Notify the provider of the findings and request an explanation or correction if necessary.  
+
+---
+
+### 5. Final Verdict  
+**Verdict:** *Suspicion of Fraud – Moderate* (Despite the Low risk level, the anomaly in beneficiary count and deductible payment warrants a focused audit).  
+**Action Plan:** Initiate a targeted audit as outlined above. If evidence of fraudulent activity is confirmed, proceed with recovery of $329.36 and update the provider’s risk profile accordingly.  
+
+---

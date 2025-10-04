@@ -1,0 +1,61 @@
+=== Statistics ===
+{
+  "total_claims": 1,
+  "fraud_claims": 0,
+  "fraud_percentage": 10.98,
+  "fraud_probability": 0.1098,
+  "risk_level": "Low",
+  "potential_saving": 329.36,
+  "claim_amount": 5000,
+  "is_inpatient": 0,
+  "deductible_amt_paid": 2000,
+  "beneficiaries_count": 23
+}
+
+=== AI Summary ===
+**Fraud Investigation Report – Provider‑Level Review**  
+
+```
+Provider Summary
+	• Fraud Probability          : 0.1098  (≈ 10.98 %)
+	• Risk Level                 : Low
+	• Potential Saving           : $329.36
+	• Claim Amount               : $5 000
+	• Deductible Paid            : $2 000
+	• Inpatient Status           : 0  (Outpatient)
+	• Beneficiaries Count        : 23
+```
+
+---
+
+### 1. Overall Fraud Situation  
+- **Probability Assessment** – The model flags the claim with a 10.98 % probability of fraud, which is modest but noteworthy given the provider’s overall low risk rating.  
+- **Financial Impact** – With a claim of $5 000 and a deductible payment of $2 000, the provider potentially over‑billed by $2 000. The projected saving of $329.36 suggests that, after accounting for legitimate charges, this is the amount that could be recovered if fraud is confirmed.  
+- **Context** – The claim is an **outpatient** service (Inpatient Status = 0) covering **23 beneficiaries**, indicating a large, multi‑patient transaction that warrants close scrutiny.
+
+### 2. Likely Fraud Types  
+| Indicator | Potential Fraud Type | Rationale |
+|-----------|----------------------|-----------|
+| High deductible relative to total claim | **Duplicate Billing / Extra Charged Services** | Deductible of $2 000 on a $5 000 claim implies $3 000 in payable services; any excess over the actual service cost may be inflated. |
+| Outpatient claim with many beneficiaries | **Unbundling / Up‑coding** | Providers may bill for higher‑level procedures or add services not actually rendered to multiple patients. |
+| Low risk rating but non‑zero probability | **Phantom Services** | Small probability could arise from services billed that were never performed, especially in large beneficiary groups. |
+
+### 3. Patterns or Causes  
+- **Bulk Claims for Many Beneficiaries** – The provider submitted a single claim covering 23 patients; this concentration is a common pattern for bulk billing fraud.  
+- **Outpatient Setting** – Outpatient services are more susceptible to coding manipulation due to less stringent monitoring compared to inpatient wards.  
+- **Deductible Payment** – A deductible of $2 000 against a $5 000 claim is disproportionate; if the deductible is higher than typical for the services rendered, it may indicate over‑billing or misclassification of services.  
+
+### 4. Recommended Actions  
+| Action | Objective | Implementation |
+|--------|-----------|----------------|
+| **Detailed Claim Audit** | Verify each service line and beneficiary data. | Cross‑reference CPT/HCPCS codes, dates of service, and provider identifiers. |
+| **Duplicate Service Check** | Identify repeated codes for the same patient/date. | Use automated duplicate detection algorithms and manual review. |
+| **Outpatient Coding Review** | Ensure coding aligns with actual services. | Engage a clinical coder to validate up‑coding claims against medical records. |
+| **Beneficiary Verification** | Confirm that all listed beneficiaries actually received the services. | Match claim data with enrollment and encounter records. |
+| **Follow‑up on Deductible** | Confirm that deductible amounts are legitimate. | Compare deductible amounts to plan policy limits and typical patient responsibility. |
+| **Monitoring & Flagging** | Prevent future low‑probability fraud. | Implement real‑time alerts for claims exceeding the 10 % probability threshold. |
+
+### 5. Final Verdict  
+- **Risk Assessment** – The claim presents a **low‑risk** status but carries a **sub‑10 % fraud probability**. The potential saving of $329.36 is modest relative to the claim size, indicating that while fraud could exist, it is not catastrophic.  
+- **Recommended Course** – Proceed with the outlined audit steps to confirm or refute the fraud indicators. If discrepancies are found, pursue corrective actions and potential reimbursement.  
+- **Ongoing Surveillance** – Maintain monitoring of this provider, especially for future large‑beneficiary claims, to ensure early detection of any escalation in fraudulent activity.

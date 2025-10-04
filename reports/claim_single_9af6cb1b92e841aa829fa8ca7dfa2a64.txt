@@ -1,0 +1,68 @@
+=== Statistics ===
+{
+  "total_claims": 1,
+  "fraud_claims": 1,
+  "fraud_percentage": 100.0,
+  "fraud_probability": 1.0,
+  "risk_level": "Very High",
+  "potential_saving": 0.0,
+  "claim_amount": 0,
+  "deductible_amt_paid": 0,
+  "beneficiaries_count": 1
+}
+
+=== AI Summary ===
+**Fraud Investigation Report**  
+───────────────────────────────────  
+
+**Claim Summary**  
+```
+	Fraud Probability    : 1.0
+	Risk Level           : Very High
+	Potential Saving     : $0.00
+	Claim Amount         : $0
+	Deductible Paid      : $0
+	Inpatient Status     : 0 (Outpatient)
+	Beneficiaries Count  : 1
+```
+
+---
+
+### 1. Overall Fraud Situation  
+The fraud probability metric is at its maximum (1.0) and the risk level is flagged as **Very High**.  
+- **Claim amount and deductible paid are both zero**, indicating no monetary benefit was realized.  
+- The claim involves **one beneficiary** and is classified as **outpatient**.  
+- Despite the absence of a financial payout, the system flags the claim as anomalous, suggesting a potential *data-entry or reporting* error, or a *non‑monetary fraud* scenario (e.g., identity theft, data manipulation).
+
+### 2. Likely Fraud Types  
+| Fraud Type | Indicators | Notes |
+|------------|------------|-------|
+| **Identity Misuse** | Zero claim value with high fraud probability | Possible use of beneficiary’s credentials for a phantom claim. |
+| **Data Manipulation** | Zero payout yet flagged as high risk | Claim details may have been altered to trigger fraud alerts. |
+| **Administrative Abuse** | Inpatient status mismatch (0 for outpatient) | Misclassification could be an attempt to route claims through higher‑payout channels. |
+| **Systematic Reporting Error** | All monetary fields zero | System glitch or erroneous data import. |
+
+### 3. Patterns or Causes  
+- **Zero monetary values** combined with a **maximum fraud probability** is highly atypical; normally, fraud alerts correlate with substantial payouts.  
+- The claim’s **single beneficiary** and **outpatient status** suggest a routine claim, yet the system’s risk engine has flagged it as anomalous.  
+- Potential causes include:  
+  - **Data entry errors** (e.g., wrong claim type, zero amounts entered by mistake).  
+  - **Exploit of system thresholds** (creating claims that trigger alerts but result in no payout).  
+  - **Identity theft** where an unauthorized user submits a claim that is later denied but still raises suspicion.
+
+### 4. Recommended Actions  
+| Action | Priority | Responsibility | Deadline |
+|--------|----------|----------------|----------|
+| **Validate claim data** – Confirm all fields (amounts, beneficiary ID, service codes). | High | Claims Processing Team | 2 business days |
+| **Audit beneficiary records** – Check for prior suspicious activity or duplicate registrations. | High | Fraud Analytics Unit | 3 business days |
+| **Review system logs** – Identify any abnormal activity around the time of claim submission. | Medium | IT Security | 5 business days |
+| **Cross‑reference with external databases** – Verify beneficiary identity and history. | Medium | Compliance Department | 5 business days |
+| **Issue a formal investigation notice** – Notify the claimant (if applicable) and request clarification. | Low | Legal/Compliance | 7 business days |
+| **Implement a temporary hold** on similar claims until review is complete. | High | Claims Management | Immediate |
+
+### 5. Final Verdict  
+Given the **maximum fraud probability** and **very high risk level**, the claim is **flagged for immediate investigation**. While no financial loss has occurred, the anomaly warrants thorough scrutiny to rule out identity misuse, data manipulation, or systemic errors. Pending the completion of the recommended actions, the claim will be **suspended** and the beneficiary’s profile will be **monitored** for further irregularities.  
+
+*Prepared by:*  
+Healthcare Fraud Analysis Team  
+Date: *[Insert Date]*

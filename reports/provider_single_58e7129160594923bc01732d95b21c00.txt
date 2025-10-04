@@ -1,0 +1,52 @@
+=== Statistics ===
+{
+  "total_claims": 1,
+  "fraud_claims": 0,
+  "fraud_percentage": 10.98,
+  "fraud_probability": 0.1098,
+  "risk_level": "Low",
+  "potential_saving": 329.36,
+  "claim_amount": 5000,
+  "is_inpatient": 0,
+  "deductible_amt_paid": 2000,
+  "beneficiaries_count": 23
+}
+
+=== AI Summary ===
+───────────────────────────────  
+🔹 AI FRAUD DETECTION REPORT  
+───────────────────────────────  
+
+📁 PROVIDER  
+───────────────────────────────  
+ • Total Claims          : 1  
+ • Fraud Probability      : 0.1098  
+ • Risk Level          : Low  
+ • Potential Saving       : $329.36  
+ • Claim Amount         : $5,000.00  
+ • Deductible Paid       : $2,000.00  
+ • Inpatient Status      : 0 (Outpatient)  
+ • Beneficiaries Count     : 23  
+
+───────────────────────────────  
+🔍 KEY FINDINGS & FRAUD PATTERNS  
+───────────────────────────────  
+ • **Single high‑value claim** – One claim of $5,000 against a provider with only one submission makes the fraud probability appear inflated; isolated anomalies are less credible.  
+ • **Low deductible relative to claim** – Deductible paid ($2,000) is 40 % of the claim, which is typical for outpatient services; no evidence of over‑billing.  
+ • **High beneficiary count** – 23 beneficiaries linked to a single claim suggests a large group plan; the provider may be servicing a corporate or multi‑member plan, reducing the likelihood of individual mis‑billing.  
+ • **Outpatient status** – Inpatient services are absent; outpatients generally exhibit lower fraud risk, consistent with the “Low” risk level.  
+ • **Fraud probability vs. actual fraud** – The system flags ~10.98 % fraud probability, but with only one claim the statistical confidence is minimal; this aligns with the low risk assessment.  
+
+───────────────────────────────  
+🛠️ RECOMMENDED ACTIONS  
+───────────────────────────────  
+ • **Verify beneficiary alignment** – Cross‑check the 23 beneficiaries against the provider’s enrollment records to ensure all services were authorized.  
+ • **Audit claim documentation** – Review the claim’s supporting medical records, CPT codes, and provider notes to confirm that the billed services correspond to the claimed amounts.  
+ • **Monitor future claims** – Flag the provider for enhanced surveillance on the next 3–6 months, focusing on high‑value outpatient claims and any sudden increases in claim volume.  
+ • **Educate the provider** – Issue a reminder about proper coding practices and the impact of high deductible payments on fraud detection thresholds.  
+ • **Update risk model** – Incorporate this provider’s single‑claim data into the broader analytics to recalibrate the fraud probability for similar profiles.  
+
+───────────────────────────────  
+✅ FINAL VERDICT  
+───────────────────────────────  
+ The provider exhibits a low overall fraud risk with a calculated probability of 10.98 %. Given the single, high‑value outpatient claim, the evidence does not substantiate any fraudulent activity. Continued monitoring and documentation review are recommended to maintain confidence in the provider’s compliance.

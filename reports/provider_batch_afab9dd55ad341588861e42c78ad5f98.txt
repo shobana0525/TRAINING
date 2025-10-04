@@ -1,0 +1,61 @@
+=== Statistics ===
+{
+  "total_claims": 4,
+  "fraud_claims": 0,
+  "fraud_percentage": 0.0,
+  "fraud_probability": 0.01949431002140045,
+  "risk_level": "Low",
+  "potential_saving": 0.0
+}
+
+=== AI Summary ===
+**Fraud Investigation Report – Provider‑Level Review**  
+*(Prepared by the Healthcare Fraud Analysis Team)*  
+
+| **Parameter**               | **Value** | **Interpretation**                                 |
+|-----------------------------|-----------|----------------------------------------------------|
+| Fraud Probability           | 0.0195    | 1.95 % chance of fraudulent activity               |
+| Risk Level                  | Low       | Minimal risk according to current scoring algorithm |
+| Potential Saving (USD)      | 0.0       | No anticipated cost recovery at present           |
+| Claim Amount (USD)          | 0         | No claims filed for this provider                 |
+| Deductible Amount Paid (USD)| 0         | No deductible payment recorded                    |
+| Inpatient Status (Flag)    | 0         | No inpatient services reported                     |
+| Beneficiaries Count         | 0         | No beneficiaries linked to this provider          |
+
+---
+
+### 1. Overall Fraud Situation  
+- **Current Status** – No claims or payments have been processed for the provider in the reviewed period.  
+- **Probability Assessment** – The model assigns a 1.95 % probability of fraud, which falls within the *Low* risk category.  
+- **Implication** – With zero claim activity and no financial transactions, the likelihood of detectable fraud is effectively negligible.
+
+### 2. Likely Fraud Types  
+| **Fraud Category** | **Probability** | **Evidence** |
+|--------------------|-----------------|--------------|
+| Billing Manipulation | 0.0195          | No billing data available |
+| Phantom Claims | 0.0195          | No claims submitted |
+| Duplicate Claims | 0.0195          | No duplicate records |
+| Up‑coding | 0.0195          | No service codes reported |
+
+*Conclusion*: In the absence of claim data, no specific fraud type can be implicated.
+
+### 3. Patterns or Causes  
+- **Data Gaps** – The provider’s profile is incomplete; no claim history or beneficiary links exist.  
+- **Process Visibility** – Lack of transaction records prevents pattern detection.  
+- **Risk Drivers** – The probability score likely reflects historical provider risk metrics rather than current activity.
+
+### 4. Recommended Actions  
+| **Action**                                   | **Priority** | **Details**                                                                 |
+|----------------------------------------------|--------------|-----------------------------------------------------------------------------|
+| **Complete Provider Profile**                | Medium       | Ensure all billing, beneficiary, and service data are captured.           |
+| **Implement Transaction Monitoring**         | High         | Set up real‑time alerts for any future claim submissions.                 |
+| **Review Historical Data**                   | Low          | Cross‑check older claim records for inconsistencies or anomalies.           |
+| **Educate Provider Staff**                   | Medium       | Conduct training on accurate billing and coding practices.                  |
+| **Periodic Risk Re‑assessment**              | Low          | Recalculate fraud probability quarterly as new data becomes available.      |
+
+### 5. Final Verdict  
+- **Risk Assessment** – The provider currently presents a *Low* fraud risk with a 1.95 % probability score.  
+- **Evidence of Fraud** – None; all financial metrics are zero.  
+- **Actionable Insight** – No immediate fraud mitigation required; focus should shift to data completeness and monitoring to preempt potential future issues.  
+
+*Report generated on 2025‑10‑04.*

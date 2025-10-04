@@ -1,0 +1,64 @@
+=== Statistics ===
+{
+  "total_claims": 1,
+  "fraud_claims": 0,
+  "fraud_percentage": 10.98,
+  "fraud_probability": 0.1098,
+  "risk_level": "Low",
+  "potential_saving": 329.36,
+  "claim_amount": 5000,
+  "is_inpatient": 0,
+  "deductible_amt_paid": 2000,
+  "beneficiaries_count": 23
+}
+
+=== AI Summary ===
+**Provider‑Level Fraud Investigation Report**  
+**Date:** 2025‑10‑04  
+**Provider ID:** \<Insert Provider ID\>  
+
+---
+
+### 1. Overall Fraud Situation  
+ • **Fraud Probability:** 0.1098  
+ • **Risk Level:** Low  
+ • **Potential Savings:** $329.36  
+ • **Claim Amount:** $5,000  
+ • **Deductible Paid:** $2,000  
+ • **Inpatient Status:** 0 (Outpatient)  
+ • **Beneficiaries Count:** 23  
+
+The calculated fraud probability of 10.98 % falls within the low‑risk tier, indicating that while the claim warrants scrutiny, it is not an immediate red flag. The potential savings of $329.36 suggest that any fraudulent activity, if present, would be modest relative to the claim size.
+
+---
+
+### 2. Likely Fraud Types  
+ • **Up‑coding** – Billing for higher‑tier services than actually rendered.  
+ • **Duplicate Billing** – Submitting the same service multiple times.  
+ • **Unbundling** – Separating bundled services to inflate reimbursement.  
+ • **Billing for Non‑Performed Services** – Claiming services that were not delivered.  
+ • **Phantom Beneficiaries** – Adding fictitious beneficiaries to inflate totals.  
+
+---
+
+### 3. Patterns or Causes  
+ • **High Beneficiary Count vs. Outpatient Claim** – 23 beneficiaries on a single outpatient claim may signal bulk billing or phantom beneficiaries.  
+ • **Claim Amount vs. Deductible** – The deductible ($2,000) is 40 % of the claim; a disproportionately high claim relative to deductible can indicate up‑coding or unbundling.  
+ • **Low Inpatient Ratio** – Inpatient status is 0, yet the claim size is typical of inpatient services, suggesting possible misclassification.  
+
+---
+
+### 4. Recommended Actions  
+ • **Verify Service Codes & Dates** – Cross‑check CPT/HCPCS codes and dates of service against provider records.  
+ • **Audit Beneficiary List** – Confirm that all 23 beneficiaries are legitimate and that each has an associated claim.  
+ • **Compare Historical Claims** – Analyze the provider’s historical claim patterns for anomalies in volume or coding.  
+ • **Perform Detail‑Level Review** – Examine itemized claim details for evidence of up‑coding or unbundling.  
+ • **Engage Provider** – Request a detailed explanation and supporting documentation for the claim.  
+ • **Monitor Future Claims** – Flag the provider for enhanced surveillance over the next 12 months.  
+
+---
+
+### 5. Final Verdict  
+The data indicate a **low‑risk** scenario with a modest potential savings of $329.36. While the fraud probability is non‑zero, the risk level does not warrant immediate punitive action. However, the identified patterns (high beneficiary count, outpatient claim size, and deductible ratio) warrant a **targeted audit** and **ongoing monitoring** to ensure compliance and protect against potential incremental fraud.  
+
+**Recommendation:** Initiate a detailed review of the claim as outlined above and maintain enhanced surveillance on future claims from this provider.

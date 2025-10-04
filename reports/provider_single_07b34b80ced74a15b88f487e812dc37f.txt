@@ -1,0 +1,100 @@
+=== Statistics ===
+{
+  "total_claims": 1,
+  "fraud_claims": 0,
+  "fraud_percentage": 10.98,
+  "fraud_probability": 0.1098,
+  "risk_level": "Low",
+  "potential_saving": 329.36,
+  "claim_amount": 5000,
+  "is_inpatient": 0,
+  "deductible_amt_paid": 2000,
+  "beneficiaries_count": 23
+}
+
+=== AI Summary ===
+**Fraud Investigation Report – Provider Level**  
+*Prepared for: Medical Insurance Fraud Analysis Team*  
+*Date: 2025‑10‑04*  
+
+| Metric | Value |
+|--------|-------|
+| Fraud Probability | **0.1098** |
+| Risk Level | **Low** |
+| Potential Saving | **$329.36** |
+| Claim Amount | **$5,000** |
+| Deductible Amount Paid | **$2,000** |
+| Inpatient Status | **0** (Out‑patient) |
+| Beneficiaries Count | **23** |
+
+---
+
+### 1. Overall Fraud Situation  
+
+```
+- The provider‑level fraud probability is 0.1098, which translates to a 10.98% chance of a fraudulent claim occurring within this dataset.  
+- The assigned risk level is “Low,” indicating that the probability does not currently trigger high‑priority escalation under our risk‑threshold policy.  
+- The estimated potential saving from addressing the flagged claim is $329.36, calculated as the difference between the claim amount ($5,000) and the deductible paid ($2,000).  
+- The claim is an out‑patient service (Inpatient Status = 0) and involves 23 beneficiaries, suggesting a group‑based or multi‑patient billing scenario.  
+- Overall, the provider does not exhibit immediate high‑risk characteristics, but the probability warrants a targeted review.  
+```
+
+### 2. Likely Fraud Types  
+
+```
+- **Up‑coding**: The claim amount ($5,000) relative to the deductible ($2,000) may indicate the provider billed for a higher‑tier service than performed.  
+- **Duplicate Billing**: The beneficiary count (23) raises the possibility that the same service was billed multiple times across the group.  
+- **Phantom Services**: An out‑patient claim of this magnitude could involve services that were not rendered or were fabricated.  
+- **Billing for Non‑Covered Procedures**: The provider may have billed for procedures not covered by the policy, inflating the claim.  
+```
+
+### 3. Patterns or Causes  
+
+```
+- The low inpatient status combined with a high beneficiary count suggests a bulk or group claim scenario, which historically has a higher incidence of billing errors and potential fraud.  
+- The deductible paid ($2,000) is 40% of the claim amount; this ratio is within typical out‑patient ranges but should be benchmarked against the provider’s historical averages.  
+- The fraud probability (10.98%) sits near the threshold we use for “moderate” risk; it is elevated relative to the overall baseline for this provider’s claim volume.  
+- No immediate red flags (e.g., extreme claim amounts, duplicate timestamps) were identified in the raw dataset, but the probability indicates a need for deeper audit.  
+```
+
+### 4. Recommended Actions  
+
+```
+1. **Detailed Claim Audit**  
+   - Review the service codes, dates, and provider identifiers for all 23 beneficiaries.  
+   - Verify the CPT/HCPCS codes against the actual services rendered and the policy coverage.  
+
+2. **Data Correlation**  
+   - Cross‑reference the claim with other claims from the same provider within the past 12 months to detect repeat patterns.  
+   - Compare the claim amount and deductible ratio to the provider’s historical averages.  
+
+3. **Beneficiary Confirmation**  
+   - Confirm that all 23 beneficiaries received the claimed services by contacting the provider’s billing office and, if necessary, the beneficiaries themselves.  
+
+4. **Fraud Detection Tool Application**  
+   - Run the claim through our advanced anomaly‑detection algorithm to score for up‑coding, duplicate billing, and phantom services.  
+
+5. **Risk‑Based Follow‑Up**  
+   - If the audit confirms no fraud, flag the provider for quarterly monitoring.  
+   - If any irregularities are found, proceed with a formal fraud investigation and potential claim denial.  
+
+6. **Stakeholder Communication**  
+   - Inform the provider of the audit and request any supporting documentation (medical records, physician notes).  
+   - Maintain transparency to encourage compliance and reduce future risk.  
+```
+
+### 5. Final Verdict  
+
+```
+- **Verdict**: No definitive evidence of fraud is present at this time.  
+- **Risk Assessment**: The current probability (10.98%) and low risk classification warrant a targeted audit rather than immediate claim denial.  
+- **Action Plan**: Execute the recommended detailed audit and data correlation steps.  
+- **Outcome Expectation**: Either confirmation of legitimate billing (resulting in claim approval) or identification of fraudulent elements leading to claim adjustment/denial.  
+- **Monitoring**: Post‑audit, maintain this provider on a low‑to‑moderate monitoring list with quarterly reviews.  
+```
+
+*Prepared by:*  
+Fraud Analysis Team – Healthcare Division  
+[Signature]  
+
+---

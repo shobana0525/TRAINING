@@ -1,0 +1,79 @@
+=== Statistics ===
+{
+  "total_claims": 1,
+  "fraud_claims": 0,
+  "fraud_percentage": 10.98,
+  "fraud_probability": 0.1098,
+  "risk_level": "Low",
+  "potential_saving": 329.36,
+  "claim_amount": 5000,
+  "is_inpatient": 0,
+  "deductible_amt_paid": 2000,
+  "beneficiaries_count": 23
+}
+
+=== AI Summary ===
+**Fraud Investigation Report – Provider‑Level Analysis**  
+*(Prepared for the Healthcare Fraud Review Team)*
+
+---
+
+### 1. Overall Fraud Situation  
+```
+    • Fraud Probability: 0.1098  (≈ 11 % risk of fraud)
+    • Risk Level: Low
+    • Potential Savings: $329.36
+    • Total Claim Amount: $5,000
+    • Deductible Amount Paid: $2,000
+    • Inpatient Status: 0 (out‑patient service)
+    • Beneficiaries Count: 23
+```
+- The provider‑specific risk score (0.1098) is modest but non‑negligible, signaling a potential for cost‑overruns or billing discrepancies.  
+- The low risk classification indicates that, while the probability exists, the magnitude of expected fraud is comparatively small.  
+
+### 2. Likely Fraud Types  
+```
+    • Up‑coding / Unbundling: Charging for higher‑tier services than rendered.
+    • Duplicate Claims: Submitting multiple claims for the same service.
+    • Phantom Claims: Billing for services never actually performed.
+    • Over‑utilization: Inflating the number of services or procedures.
+```
+- The over‑utilization and up‑coding risks are most consistent with out‑patient claim patterns and a deductible that is partially covered.  
+
+### 3. Patterns or Causes  
+```
+    • High Beneficiary Volume: 23 beneficiaries increase exposure for billing errors.
+    • Out‑patient Focus: Inpatient Status = 0 suggests reliance on office‑based procedures.
+    • Deductible Coverage: $2,000 paid out of a $5,000 claim leaves a $3,000 residual that may be inflated.
+    • Low Savings Gap: $329.36 potential savings is small relative to the claim amount, yet could accumulate across providers.
+```
+- These factors point to a systemic issue where billing practices may not be tightly monitored, especially in high‑volume outpatient settings.  
+
+### 4. Recommended Actions  
+```
+    1. Auditing & Data Validation
+        • Perform a detailed review of the 23 beneficiary claims for coding consistency.
+        • Cross‑check procedural codes against actual service dates and provider notes.
+    2. Provider Training
+        • Conduct a refresher workshop on correct coding and documentation standards.
+        • Emphasize the financial impact of up‑coding and duplicate submissions.
+    3. System Controls
+        • Implement automated flagging for claims exceeding typical outpatient thresholds.
+        • Enforce mandatory double‑verification of services when the deductible is partially met.
+    4. Follow‑Up & Monitoring
+        • Schedule quarterly reviews of this provider’s claims to ensure trend improvement.
+        • Apply the same risk assessment methodology to similar providers for benchmarking.
+```
+- These steps aim to mitigate risk, reduce potential savings loss, and prevent recurrence.  
+
+### 5. Final Verdict  
+```
+    • Current risk level is categorized as Low, but the probability of fraud (≈ 11 %) warrants proactive oversight.
+    • Targeted audits and enhanced controls will likely reduce the fraud probability further.
+    • Pending implementation of recommended actions, the provider can be placed under a “watch‑list” status with reduced monitoring intensity, revisiting in six months.
+```
+*Prepared by:*  
+Fraud Analyst – Healthcare Systems Division  
+*Date:* 4 Oct 2025  
+
+---

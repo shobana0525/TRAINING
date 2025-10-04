@@ -1,0 +1,66 @@
+=== Statistics ===
+{
+  "total_claims": 4,
+  "fraud_claims": 0,
+  "fraud_percentage": 0.0,
+  "fraud_probability": 0.01949431002140045,
+  "risk_level": "Low",
+  "potential_saving": 0.0
+}
+
+=== AI Summary ===
+**Fraud Investigation Report – Provider‑Level Review**  
+*(Prepared by: Experienced Healthcare Fraud Analyst)*  
+
+| Metric | Value |
+|--------|-------|
+| Fraud Probability | 0.01949431002140045 |
+| Risk Level | Low |
+| Potential Saving | 0.0 |
+| Claim Amount | 0 |
+| Deductible Amount Paid | 0 |
+| Inpatient Status | 0 |
+| Beneficiaries Count | 0 |
+
+---
+
+### 1. Overall Fraud Situation  
+- The probability of fraud for this provider is **1.95 %**, which falls under the *Low* risk category.  
+- No claims were submitted, and therefore the potential savings from fraud mitigation are **$0.0**.  
+- The absence of claim activity suggests either a very small provider network or a provider that has not yet filed claims during the review period.
+
+### 2. Likely Fraud Types  
+Given the data, the following fraud types are *unlikely* but worth monitoring if future claims appear:  
+
+| Fraud Type | Reason for Low Likelihood |
+|------------|---------------------------|
+| **Billing for Non‑Provided Services** | No claim history; no billing codes to analyze. |
+| **Duplicate Billing** | No claim entries to duplicate. |
+| **Up‑coding / Unbundling** | No claims to review for coding patterns. |
+| **Phantom Providers / Identity Theft** | No provider‑level claims recorded. |
+
+### 3. Patterns or Causes  
+- **Zero Activity**: The provider has no inpatient or outpatient claims, no beneficiaries, and no deductible payments.  
+- **Potential Causes**:  
+  - *Inactive Provider*: The provider may have been recently added to the system but has not yet engaged in billing activities.  
+  - *Data Entry Delay*: Claims might be pending submission or delayed processing.  
+  - *System Error*: The provider’s records could be mis‑linked or omitted from the reporting dataset.  
+
+### 4. Recommended Actions  
+| Action | Rationale | Priority |
+|--------|-----------|----------|
+| **Verify Provider Status** | Confirm that the provider is active, correctly indexed, and authorized to submit claims. | High |
+| **Audit Claim Submission Process** | Ensure the provider’s claims are being captured and processed correctly, especially if new to the system. | Medium |
+| **Monitor for Future Claims** | Even a low probability requires vigilance; set up alerts for any new claim activity. | Medium |
+| **Data Integrity Check** | Cross‑reference provider identifiers against external registries to rule out data mismatches. | Low |
+| **Update Risk Profile** | Re‑calculate fraud probability after any new activity to maintain an accurate risk assessment. | Low |
+
+### 5. Final Verdict  
+- **Risk Assessment**: *Low*  
+- **Fraud Probability**: 1.95 % – acceptable for a low‑risk designation.  
+- **Action Required**: Minimal monitoring; focus on verifying provider status and ensuring data integrity.  
+- **Conclusion**: **No evidence of fraud** at this time. The provider’s lack of claim activity, combined with a low fraud probability, indicates a negligible risk. However, maintain routine checks to capture any future changes in activity.  
+
+---  
+
+*Prepared for internal use only. All findings are based on the current dataset and subject to revision pending new claim data.*

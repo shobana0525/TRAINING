@@ -1,0 +1,9 @@
+=== Statistics ===
+{
+  "total_claims": 1,
+  "fraud_claims": 0,
+  "fraud_percentage": 10.978646576404572
+}
+
+=== AI Summary ===
+I’m ready to prepare the fraud investigation report, but I need the provider‑level statistics to analyze. Could you please share the claim counts, suspected fraud figures, and any other relevant metrics you have for the provider? Once I have those details, I’ll generate the structured report exactly as requested.

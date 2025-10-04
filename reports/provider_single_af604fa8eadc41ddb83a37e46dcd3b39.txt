@@ -1,0 +1,75 @@
+=== Statistics ===
+{
+  "total_claims": 1,
+  "fraud_claims": 0,
+  "fraud_percentage": 10.98,
+  "fraud_probability": 0.1098,
+  "risk_level": "Low",
+  "potential_saving": 329.36,
+  "claim_amount": 5000,
+  "is_inpatient": 0,
+  "deductible_amt_paid": 2000,
+  "beneficiaries_count": 23
+}
+
+=== AI Summary ===
+**Fraud Investigation Report**  
+*Provider Level – Medical Insurance System*  
+*Prepared by: Healthcare Fraud Analyst*  
+*Date: 2025‑10‑04*  
+
+---
+
+### 1. Overall Fraud Situation  
+ • **Fraud Probability**              0.1098  
+ • **Risk Level**                   Low  
+ • **Potential Saving**              $329.36  
+ • **Claim Amount**               $5,000  
+ • **Deductible Amount Paid**         $2,000  
+ • **Inpatient Status**             0 (Outpatient)  
+ • **Beneficiaries Count**          23  
+
+**Interpretation**  
+The calculated fraud probability of **10.98 %** indicates a modest likelihood of fraudulent activity. Coupled with a **Low** risk classification, the provider’s overall fraud risk is considered manageable, yet the potential savings of **$329.36** warrant targeted attention.
+
+---
+
+### 2. Likely Fraud Types  
+ • **Claim Exaggeration / Up‑coding**  
+  - Deductible paid ($2,000) is 40 % of the claim ($5,000), a higher-than‑average ratio that may suggest over‑billing for services.  
+ • **Duplicate Claim Submission**  
+  - A single outpatient claim with a beneficiary count of 23 raises the possibility of multiple claims processed under a single patient record.  
+ • **False Beneficiary Reporting**  
+  - 23 beneficiaries for an outpatient claim is atypical; potential misrepresentation of patient or family coverage.  
+
+---
+
+### 3. Patterns or Causes  
+ • **Outpatient Focus** – Inpatient status is 0, implying all services were delivered in an outpatient setting; fraud is more prevalent in this category due to lower oversight.  
+ • **High Deductible Relative to Claim** – The 40 % deductible-to-claim ratio exceeds the industry average (~25 %), suggesting possible billing inflation.  
+ • **Large Beneficiary Count** – 23 beneficiaries for a single claim is anomalous for outpatient services; could indicate data entry errors or intentional manipulation.  
+
+---
+
+### 4. Recommended Actions  
+ • **Detailed Claim Audit**  
+  - Verify service codes, dates, and provider details against the patient’s medical record.  
+  - Confirm that the deductible amount aligns with the contracted rate for the services rendered.  
+ • **Beneficiary Verification**  
+  - Cross‑check the beneficiary list against enrollment data to confirm legitimacy.  
+ • **Duplicate Claim Monitoring**  
+  - Implement automated flagging for multiple claims with identical service codes and provider identifiers within a 30‑day window.  
+ • **Stakeholder Engagement**  
+  - Conduct a meeting with the provider’s billing department to discuss findings and clarify any discrepancies.  
+ • **Policy Review**  
+  - Re‑evaluate the provider contract to tighten deductible definitions and enhance audit clauses.  
+
+---
+
+### 5. Final Verdict  
+The provider exhibits a **Low** risk profile with a **10.98 %** fraud probability. While the current risk level is acceptable, the identified patterns—particularly the high deductible ratio and unusually large beneficiary count—necessitate focused audits to mitigate potential losses.  
+
+**Actionable Conclusion:**  
+Proceed with the recommended audit and monitoring procedures. If the audit confirms discrepancies, enforce corrective measures and consider contract renegotiation. Otherwise, maintain the status quo with routine surveillance.
+
+---

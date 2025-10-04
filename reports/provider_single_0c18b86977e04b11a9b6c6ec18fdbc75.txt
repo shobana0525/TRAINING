@@ -1,0 +1,56 @@
+=== Statistics ===
+{
+  "total_claims": 1,
+  "fraud_claims": 0,
+  "fraud_percentage": 10.98,
+  "fraud_probability": 0.1098,
+  "risk_level": "Low",
+  "potential_saving": 329.36,
+  "claim_amount": 5000,
+  "is_inpatient": 0,
+  "deductible_amt_paid": 2000,
+  "beneficiaries_count": 23
+}
+
+=== AI Summary ===
+**Fraud Investigation Report**  
+================================  
+
+Provider: _________________________  
+Date: _____________________________  
+
+---
+
+### 1. Overall Fraud Situation  
+\t- **Fraud Probability:** 0.1098 (≈ 10.98 %)  
+\t- **Risk Level:** Low  
+\t- **Potential Savings:** **$329.36**  
+\t- **Claim Amount:** **$5,000**  
+\t- **Deductible Amount Paid:** **$2,000**  
+\t- **Inpatient Status:** Outpatient (0)  
+\t- **Beneficiaries Count:** 23  
+
+### 2. Likely Fraud Types  
+\t- **Upcoding** (billing for higher‑priced services than rendered)  
+\t- **Duplicate Billing** (multiple claims for the same service)  
+\t- **Unbundling** (separating bundled services to inflate reimbursement)  
+
+### 3. Patterns or Causes  
+\t- **High deductible relative to claim** – deductible ($2,000) is 40 % of the claim, suggesting possible cost‑shifting tactics.  
+\t- **Predominantly outpatient services** – no inpatient stays, yet claim volume is high for 23 beneficiaries.  
+\t- **Multiple beneficiaries** – 23 distinct patients in a single claim could indicate beneficiary misrepresentation or pooling.  
+
+### 4. Recommended Actions  
+\t- **Audit Service Codes** – verify CPT/HCPCS codes against documented procedures.  
+\t- **Validate Beneficiary Eligibility** – confirm each beneficiary’s enrollment status and dates of service.  
+\t- **Cross‑Check Medical Records** – ensure billed services match clinical documentation.  
+\t- **Flag Similar Claims** – set up automated alerts for any future claims with comparable characteristics.  
+
+### 5. Final Verdict  
+\t- **Risk Level:** Low – no definitive evidence of fraud.  
+\t- **Action Required:** None immediate, but continue routine monitoring and periodic audits of claims with similar features.  
+
+---  
+*Prepared by:* __________________________  
+*Title:* Healthcare Fraud Analyst  
+*Signature:* ___________________________

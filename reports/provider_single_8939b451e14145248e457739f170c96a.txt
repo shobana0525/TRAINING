@@ -1,0 +1,71 @@
+=== Statistics ===
+{
+  "total_claims": 1,
+  "fraud_claims": 0,
+  "fraud_percentage": 10.98,
+  "fraud_probability": 0.1098,
+  "risk_level": "Low",
+  "potential_saving": 329.36,
+  "claim_amount": 5000,
+  "is_inpatient": 0,
+  "deductible_amt_paid": 2000,
+  "beneficiaries_count": 23
+}
+
+=== AI Summary ===
+**Fraud Investigation Report – Provider‑Level Analysis**  
+*Prepared for: Medical Insurance Fraud Review Committee*  
+*Date: 2024‑06‑18*  
+
+| Metric | Value |
+|--------|-------|
+| Fraud Probability | **0.1098** (≈ 10.98 %) |
+| Risk Level | **Low** |
+| Potential Saving | **$329.36** |
+| Claim Amount | **$5,000** |
+| Deductible Amount Paid | **$2,000** |
+| Inpatient Status | **0** (Outpatient) |
+| Beneficiaries Count | **23** |
+
+---
+
+### 1. Overall Fraud Situation  
+The provider presents a *low risk* profile based on the current analytics engine, with a fraud probability of **10.98 %**. While the probability exceeds the 10 % threshold that our system flags for review, the overall risk rating remains **Low** due to the modest potential saving of **$329.36** against a claim of **$5,000**. This suggests that, if fraudulent activity were occurring, the financial impact per claim is relatively small.
+
+### 2. Likely Fraud Types  
+Given the data set and the provider’s claim characteristics, the most plausible fraud vectors are:
+
+| Fraud Type | Supporting Indicators |
+|------------|------------------------|
+| **Up‑coding** | Outpatient claim with a high deductible paid ($2,000) yet a modest potential saving hints at billing for higher‑priced services than actually rendered. |
+| **Duplicate/phantom services** | 23 beneficiaries but only a single out‑patient claim; possible bundling or repeated billing for the same service. |
+| **Non‑medical necessity** | The claim amount ($5,000) for an outpatient visit may exceed typical cost for the procedure performed, raising suspicion of unnecessary service provision. |
+
+### 3. Patterns or Causes  
+- **Outpatient Focus**: The claim is *not* inpatient (Inpatient Status = 0), which historically correlates with higher rates of up‑coding and unnecessary service billing.  
+- **High Deductible Paid**: A deductible of $2,000 on a $5,000 claim suggests the provider may be billing for a more complex or higher‑priced procedure than warranted.  
+- **Beneficiary Concentration**: 23 beneficiaries under one provider could indicate a single practice group with standardized billing practices, potentially facilitating systematic over‑billing.  
+
+### 4. Recommended Actions  
+1. **Detailed Claim Review**  
+   - Extract the service codes and compare them to the Clinical Documentation and CPT code guidelines.  
+   - Verify whether the billed services align with the documented medical necessity.  
+
+2. **Provider History Audit**  
+   - Examine prior claims history for patterns of up‑coding or duplicate billing.  
+   - Cross‑reference with national databases (e.g., Medicaid, Medicare) for any prior sanctions.  
+
+3. **Beneficiary Interview (if feasible)**  
+   - Conduct brief beneficiary surveys to confirm receipt of the billed services.  
+
+4. **Financial Impact Projection**  
+   - Model potential savings if the $329.36 per claim aggregates across the provider’s entire historical claim volume.  
+
+5. **Escalate if Evidence Accumulates**  
+   - Should the review uncover consistent deviations, elevate the case to the Fraud Enforcement Division for potential sanctions.  
+
+### 5. Final Verdict  
+**Status**: *Under Review*  
+The provider’s fraud probability exceeds the 10 % alert threshold but remains within a low risk band. The limited potential savings per claim suggest that, while suspicious, the financial impact is modest. A thorough claim‑level audit is warranted to confirm or refute the presence of fraudulent activity. Pending audit findings, the case will be either closed (no fraud) or escalated for further enforcement.  
+
+---

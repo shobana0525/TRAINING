@@ -1,0 +1,49 @@
+=== Statistics ===
+{
+  "total_claims": 1,
+  "fraud_claims": 0,
+  "fraud_percentage": 10.98,
+  "fraud_probability": 0.1098,
+  "risk_level": "Low",
+  "potential_saving": 329.36,
+  "claim_amount": 5000,
+  "is_inpatient": 0,
+  "deductible_amt_paid": 2000,
+  "beneficiaries_count": 23
+}
+
+=== AI Summary ===
+**Fraud Investigation Report – Provider Level**
+
+---
+
+**Overall Fraud Situation**  
+&nbsp;&nbsp;&nbsp;&nbsp;Fraud Probability:   0.1098  
+&nbsp;&nbsp;&nbsp;&nbsp;Risk Level:     Low  
+&nbsp;&nbsp;&nbsp;&nbsp;Potential Saving:  $329.36  
+&nbsp;&nbsp;&nbsp;&nbsp;Claim Amount:   $5,000  
+&nbsp;&nbsp;&nbsp;&nbsp;Deductible Amount Paid: $2,000  
+&nbsp;&nbsp;&nbsp;&nbsp;Inpatient Status:  0 (Outpatient)  
+&nbsp;&nbsp;&nbsp;&nbsp;Beneficiaries Count: 23  
+
+**Likely Fraud Types**  
+&nbsp;&nbsp;&nbsp;&nbsp;1. Billing overage (excess charges beyond allowable limits)  
+&nbsp;&nbsp;&nbsp;&nbsp;2. Duplicate billing (same service billed multiple times)  
+&nbsp;&nbsp;&nbsp;&nbsp;3. Upcoding (billing higher‑level codes than services rendered)  
+
+**Patterns or Causes**  
+&nbsp;&nbsp;&nbsp;&nbsp;• Overbilling linked to a high deductible threshold (deductible paid = $2,000).  
+&nbsp;&nbsp;&nbsp;&nbsp;• Inconsistent use of billing codes across the 23 beneficiaries.  
+&nbsp;&nbsp;&nbsp;&nbsp;• Limited internal audit and oversight mechanisms.  
+
+**Recommended Actions**  
+&nbsp;&nbsp;&nbsp;&nbsp;1. Conduct a detailed audit of all billing codes for the claim period.  
+&nbsp;&nbsp;&nbsp;&nbsp;2. Cross‑check billed services against medical records and provider documentation.  
+&nbsp;&nbsp;&nbsp;&nbsp;3. Implement stricter payment verification protocols (e.g., automated code‑matching).  
+&nbsp;&nbsp;&nbsp;&nbsp;4. Provide targeted training to billing staff on coding accuracy and fraud prevention.  
+&nbsp;&nbsp;&nbsp;&nbsp;5. Set up a monitoring dashboard to flag anomalies in future claims.  
+
+**Final Verdict**  
+&nbsp;&nbsp;&nbsp;&nbsp;The provider’s current risk assessment is **Low**, with a fraud probability of **10.98 %**.  
+&nbsp;&nbsp;&nbsp;&nbsp;No direct evidence of fraud has surfaced; however, the identified patterns warrant preventive measures.  
+&nbsp;&nbsp;&nbsp;&nbsp;Proceed with the recommended actions and maintain ongoing surveillance to safeguard against potential fraudulent activity.

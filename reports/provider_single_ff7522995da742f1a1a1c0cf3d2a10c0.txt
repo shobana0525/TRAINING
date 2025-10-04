@@ -1,0 +1,76 @@
+=== Statistics ===
+{
+  "total_claims": 1,
+  "fraud_claims": 0,
+  "fraud_percentage": 10.98,
+  "fraud_probability": 0.1098,
+  "risk_level": "Low",
+  "potential_saving": 329.36,
+  "claim_amount": 5000,
+  "is_inpatient": 0,
+  "deductible_amt_paid": 2000,
+  "beneficiaries_count": 23
+}
+
+=== AI Summary ===
+**Fraud Investigation Report**  
+*Provider‑Level Analysis – Medical Insurance System*  
+
+| Statistic | Value |
+|-----------|-------|
+| Fraud Probability | 0.1098 |
+| Risk Level | Low |
+| Potential Savings | **$329.36** |
+| Claim Amount | **$5,000** |
+| Deductible Amount Paid | **$2,000** |
+| Inpatient Status | 0 |
+| Beneficiaries Count | 23 |
+
+---  
+
+### 1. Overall Fraud Situation  
+```
+    • The calculated fraud probability (0.1098) indicates a 10.98 % chance that the claim contains deceptive elements.  
+    • Risk level is classified as *Low*, suggesting that while suspicious activity exists, the magnitude of potential loss is modest.  
+    • The provider’s claim total is $5,000, with $2,000 covered by the deductible—leaving $3,000 subject to payer scrutiny.  
+    • Beneficiaries count (23) reflects a relatively small patient cohort, reducing the complexity of monitoring but increasing the impact of any single fraudulent event.  
+```
+
+### 2. Likely Fraud Types  
+```
+    ├─ Billing Misrepresentation (e.g., up‑coding of services).  
+    ├─ Duplicate Claim Submissions.  
+    ├─ Phantom Patient Claims (services billed for non‑existent patients).  
+    └─ Inappropriate Deductible Application (over‑claiming deductible coverage).  
+```
+
+ 3. Patterns or Causes  
+```
+    • Inpatient Status = 0 indicates all services were rendered outpatient.  
+    • The deductible paid ($2,000) is 40 % of the claim amount, a higher proportion than typical outpatient claims, which may signal an attempt to inflate deductible coverage.  
+    • Low beneficiary count increases the risk of over‑billing a small group of patients, especially if provider data shows repeated encounters for the same services.  
+    • The modest potential saving ($329.36) suggests the fraudulent activity, if present, is not large‑scale but may still be recurrent.  
+```
+
+### 4. Recommended Actions  
+```
+    1. Conduct a targeted audit of the provider’s outpatient billing codes for the period in question.  
+    2. Verify patient identities and ensure that all billed services correspond to legitimate medical encounters.  
+    3. Cross‑check the deductible amounts claimed against the payer’s policy limits and actual patient eligibility.  
+    4. Implement automated flagging for claims where deductible paid > 35 % of total claim amount.  
+    5. Engage the provider in a compliance review meeting to discuss findings and reinforce accurate coding practices.  
+    6. Monitor subsequent claims for the next 12 months with a higher scrutiny threshold (≥ 0.15 fraud probability).  
+```
+
+### 5. Final Verdict  
+```
+    The evidence indicates a low‑risk scenario with a moderate probability of deceptive billing.  
+    While the potential financial impact ($329.36) is limited, the presence of atypical deductible patterns warrants proactive investigation.  
+    Therefore, the provider should be placed under *enhanced monitoring* status, with the recommended audit and compliance actions undertaken promptly.  
+```
+
+---  
+
+*Prepared by:*  
+**[Fraud Analyst Name]**  
+*Date:* **October 4, 2025**

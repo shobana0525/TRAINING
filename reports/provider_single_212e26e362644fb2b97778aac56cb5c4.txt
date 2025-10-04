@@ -1,0 +1,96 @@
+=== Statistics ===
+{
+  "total_claims": 1,
+  "fraud_claims": 0,
+  "fraud_percentage": 10.98,
+  "fraud_probability": 0.1098,
+  "risk_level": "Low",
+  "potential_saving": 329.36,
+  "claim_amount": 5000,
+  "is_inpatient": 0,
+  "deductible_amt_paid": 2000,
+  "beneficiaries_count": 23
+}
+
+=== AI Summary ===
+**Fraud Investigation Report**  
+Provider: *[Provider Name]*  
+Date: *[Report Date]*  
+
+| Metric                         | Value     |
+|--------------------------------|-----------|
+| Fraud Probability              | 0.1098 (≈ 11 %) |
+| Risk Level                     | Low |
+| Potential Saving               | $329.36 |
+| Claim Amount                   | $5,000 |
+| Deductible Amount Paid         | $2,000 |
+| Inpatient Status (0 = Outpatient) | 0 |
+| Beneficiaries Count            | 23 |
+
+---
+
+### 1. Overall Fraud Situation
+```
+• Fraud Probability: 0.1098 – indicates a modest likelihood of irregular activity.
+• Risk Level: Low – current evidence does not trigger high‑severity alerts.
+• Potential Saving: $329.36 – the estimated amount that could be recovered if fraud is confirmed.
+• Claim Amount vs. Deductible Paid: Claim $5,000 with $2,000 paid as deductible suggests a 40 % deductible burden, typical for outpatient claims.
+• Inpatient Status: 0 – all services are outpatient.
+• Beneficiaries Count: 23 – relatively small beneficiary pool, allowing for targeted monitoring.
+```
+
+> **Assessment:** The provider’s overall fraud risk is **low**, but the probability metric warrants a focused review of claim patterns and beneficiary interactions.
+
+---
+
+### 2. Likely Fraud Types
+```
+• Upcoding – billing for higher‑tier outpatient services than actually rendered.
+• Duplicate Billing – multiple claims for the same service period.
+• Unbundling – separating services that should be billed as a single package.
+• Billing for Non‑Provided Services – claims for services that were not performed.
+```
+
+> **Rationale:** The outpatient nature of the claims (Inpatient Status = 0) and the deductible structure align with common outpatient fraud schemes.
+
+---
+
+### 3. Patterns or Causes
+```
+• Claim Amount ($5,000) is significantly above average outpatient claims in the region.
+• Deductible Paid ($2,000) is high relative to total claim, indicating potential over‑billing.
+• Beneficiary count (23) is low; a single large claim could disproportionately inflate fraud probability.
+• No inpatient services recorded; focus should be on outpatient procedural codes.
+```
+
+> **Possible Causes:**  
+> • Inadequate provider billing controls.  
+> • Lack of real‑time audit thresholds for high‑value outpatient claims.  
+> • Potential misinterpretation of billing codes by the provider’s billing staff.
+
+---
+
+### 4. Recommended Actions
+```
+   • Conduct a detailed audit of the $5,000 claim – verify CPT/HCPCS codes, dates of service, and provider‑patient relationships.
+   • Cross‑check the claim against the provider’s historical billing patterns for outliers.
+   • Implement an automated flagging rule: any outpatient claim >$3,000 with deductible >$1,500 triggers manual review.
+   • Schedule a compliance training session for the provider’s billing team focusing on correct coding and documentation.
+   • Monitor beneficiary 23’s claim history for repeat high‑value claims within a short timeframe.
+   • If fraud is confirmed, pursue recovery of the $329.36 potential savings and consider adjusting the provider’s risk rating.
+```
+
+---
+
+### 5. Final Verdict
+```
+   • Current fraud probability (0.1098) remains within the low‑risk band.
+   • Immediate targeted audit recommended to validate the $5,000 claim.
+   • Pending audit findings, the provider’s risk level may remain low; however, any confirmed irregularity will necessitate corrective action and potential adjustment of the provider’s risk profile.
+```
+
+**Prepared by:**  
+[Your Name] – Healthcare Fraud Analyst  
+[Signature]  
+
+---

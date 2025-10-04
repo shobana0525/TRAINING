@@ -1,0 +1,75 @@
+=== Statistics ===
+{
+  "total_claims": 1,
+  "fraud_claims": 0,
+  "fraud_percentage": 10.98,
+  "fraud_probability": 0.1098,
+  "risk_level": "Low",
+  "potential_saving": 329.36,
+  "claim_amount": 5000,
+  "is_inpatient": 0,
+  "deductible_amt_paid": 2000,
+  "beneficiaries_count": 23
+}
+
+=== AI Summary ===
+**Fraud Investigation Report**  
+**Provider:** XYZ Health  
+**Date:** 2025‑10‑04
+
+---
+
+### Provider‑Level Summary  
+
+| Metric                     | Value          |
+|----------------------------|----------------|
+| Fraud Probability          | 0.1098         |
+| Risk Level                 | Low            |
+| Potential Savings          | $329.36        |
+| Claim Amount               | $5,000         |
+| Deductible Paid            | $2,000         |
+| Inpatient Status (0=Outpatient) | 0          |
+| Beneficiaries Count        | 23             |
+
+---
+
+#### 1. Overall Fraud Situation  
+\t• **Fraud Probability:** 10.98 % indicates a modest likelihood that the claim contains irregularities.  
+\t• **Risk Level:** Classified as *Low* by the scoring engine, suggesting that the claim is more likely a benign error than a deliberate fraud.  
+\t• **Financial Impact:**  
+  - **Claim Amount:** $5,000  
+  - **Deductible Paid:** $2,000 – a significant portion of the claim was settled at the deductible level.  
+  - **Potential Savings:** $329.36 if the claim is invalidated or adjusted.  
+\t• **Patient Context:** 23 beneficiaries served, all outpatient (Inpatient Status = 0), which reduces complexity but raises questions about volume‑based anomalies.
+
+#### 2. Likely Fraud Types  
+\t• **Up‑coding / Service Misclassification** – Outpatient services may be billed at higher CPT levels than actually provided.  
+\t• **Duplicate Billing** – A single service billed multiple times across the 23 beneficiaries.  
+\t• **Unbundling Misuse** – Services bundled incorrectly, inflating the deductible payment.  
+\t• **Phantom Beneficiary Claims** – Billing for beneficiaries not present or not covered under the policy.
+
+#### 3. Patterns or Causes  
+\t• **High Deductible Payment Ratio:** $2,000 out of $5,000 (40 %) is unusually high for a single outpatient claim.  
+\t• **Beneficiary Concentration:** 23 beneficiaries linked to one claim may indicate a group or family plan, increasing the risk of group‑billing errors.  
+\t• **Outpatient Setting:** Lower oversight compared to inpatient, making miscoding more probable.  
+\t• **Historical Data:** If prior claims from this provider show similar patterns, it points to systemic coding practices rather than isolated incidents.
+
+#### 4. Recommended Actions  
+\t• **Clinical Review** – Request detailed medical records and CPT codes to confirm service levels.  
+\t• **Duplicate Check** – Cross‑reference claim IDs and dates of service against the provider’s transaction log.  
+\t• **Data Validation** – Verify beneficiary identities and enrollment status to rule out phantom claims.  
+\t• **Audit Trail** – Examine the claim’s processing timeline for any rapid approvals or exceptions.  
+\t• **Provider Education** – If coding errors are confirmed, conduct a brief training session on outpatient billing standards.  
+\t• **Escalation** – If fraud is substantiated, proceed with denial and potential legal action per policy guidelines.
+
+#### 5. Final Verdict  
+\t• **Preliminary Assessment:** The claim exhibits risk factors consistent with modest coding irregularities.  
+\t• **Action Required:** A focused audit is warranted to confirm or refute the suspected fraud.  
+\t• **Projected Outcome:** If the claim is invalidated, the insurer stands to recover approximately $329.36, aligning with the potential savings estimate.  
+\t• **Status:** *Pending Detailed Review* – Not yet classified as fraudulent; investigation underway.
+
+---  
+
+**Prepared by:**  
+Fraud Analyst Team  
+XYZ Health Insurance – Fraud Investigation Unit

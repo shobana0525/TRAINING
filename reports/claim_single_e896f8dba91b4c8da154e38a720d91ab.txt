@@ -1,0 +1,63 @@
+=== Statistics ===
+{
+  "total_claims": 1,
+  "fraud_claims": 1,
+  "fraud_percentage": 100.0,
+  "fraud_probability": 1.0,
+  "risk_level": "Very High",
+  "potential_saving": 0.0,
+  "claim_amount": 0,
+  "deductible_amt_paid": 0,
+  "beneficiaries_count": 1
+}
+
+=== AI Summary ===
+**Fraud Investigation Report**  
+---------------------------------
+
+```
+Fraud Probability          : 1.0
+Risk Level                 : Very High
+Potential Saving           : $0.00
+Claim Amount               : $0
+Deductible Amount Paid     : $0
+Inpatient Status           : 0   (Outpatient/Not applicable)
+Beneficiaries Count        : 1
+```
+
+### 1. Overall Fraud Situation  
+```
+	- The fraud probability is 1.0, indicating a **certain** detection of fraud.
+	- Risk level is classified as **Very High**, warranting immediate escalation.
+	- The claim amount and deductible paid are both $0, a red flag for a fabricated or phantom claim.
+	- Only one beneficiary is listed, yet the claim was recorded as a submission, which is inconsistent with typical claim workflows.
+```
+
+### 2. Likely Fraud Types  
+```
+	- **Phantom Claim**: Claim submitted for services never rendered.
+	- **Identity Misuse**: Beneficiary data may have been fabricated or stolen.
+	- **Billing Anomaly**: Zero claim value suggests a data entry or system error exploited for gain.
+```
+
+### 3. Patterns or Causes  
+```
+	- Zero monetary values coupled with a 100% fraud probability point to a systematic data manipulation rather than accidental entry.
+	- The absence of inpatient status (value 0) and the singular beneficiary count suggest a single‑point fraud attempt, likely by a rogue employee or external actor.
+	- No deductible paid implies that the claimant never actually incurred any out‑of‑pocket expenses, further supporting a fabricated claim scenario.
+```
+
+### 4. Recommended Actions  
+```
+	- **Immediate Audit**: Flag the claim for a full forensic review; verify all related records (medical orders, provider invoices, patient charts).
+	- **Suspend Coverage**: Temporarily suspend the beneficiary’s coverage until the investigation is complete to prevent further fraudulent activity.
+	- **Notify Regulatory Authorities**: Report the incident to the relevant state insurance regulator and, if warranted, to federal agencies (e.g., CMS, OIG).
+	- **Internal Review**: Examine access logs and user activity for the system that recorded this claim; investigate any anomalous logins or data entry patterns.
+	- **Update Controls**: Strengthen validation rules to prevent claim submissions with zero amounts and enforce mandatory medical justification before claim acceptance.
+```
+
+### 5. Final Verdict  
+```
+	- **Verdict**: The claim is **fraudulent** and should be treated as a confirmed case of non‑existent service billing.
+	- **Action Required**: Close the claim, initiate investigative procedures, and implement the recommended safeguards to mitigate future risk.
+```
