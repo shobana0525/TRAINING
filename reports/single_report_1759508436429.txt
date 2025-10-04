@@ -1,0 +1,8 @@
+AI Fraud Report (Generated Locally) - 2025-10-03T16:20:45.379153
+Analysis ID: 1759508436429
+Analysis type: single
+Total suspicious records: 0
+
+Top suspicious records (preview):
+
+NOTE: This is a local placeholder report. Replace with Grok/Gemini API integration if desired.
