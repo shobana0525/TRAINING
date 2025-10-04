@@ -1,0 +1,72 @@
+=== Statistics ===
+{
+  "total_claims": 1,
+  "fraud_claims": 0,
+  "fraud_percentage": 10.98,
+  "fraud_probability": 0.1098,
+  "risk_level": "Low",
+  "potential_saving": 329.36,
+  "claim_amount": 5000,
+  "is_inpatient": 0,
+  "deductible_amt_paid": 2000,
+  "beneficiaries_count": 23
+}
+
+=== AI Summary ===
+**Fraud Investigation Report – Provider Level**  
+*(Prepared by: Healthcare Fraud Analyst)*  
+
+| **Statistic**                 | **Value**   |
+|-------------------------------|-------------|
+| Fraud Probability             | 0.1098 (≈ 11 %) |
+| Risk Level                    | Low |
+| Potential Saving (USD)        | 329.36 |
+| Claim Amount (USD)            | 5 000 |
+| Deductible Amount Paid (USD)  | 2 000 |
+| Inpatient Status (Binary)     | 0 (Outpatient) |
+| Beneficiaries Count           | 23 |
+
+---
+
+### 1. Overall Fraud Situation  
+- **Fraud Probability** of 0.1098 indicates that the claim falls into the *low‑risk* category, yet the probability is non‑negligible.  
+- The **potential saving** of $329.36 suggests that, if fraud were confirmed, the insurer could recover a modest amount relative to the $5 000 claim.  
+- The claim is **outpatient** (Inpatient Status = 0), which typically presents fewer high‑volume fraud opportunities compared to inpatient services.  
+- The **deductible** of $2 000 has already been paid, implying the insurer covered a substantial portion of the claim before the potential fraud assessment.
+
+---
+
+### 2. Likely Fraud Types  
+| **Fraud Type** | **Probability of Occurrence** | **Rationale** |
+|----------------|------------------------------|---------------|
+| **Up‑coding**  | Medium | Outpatient claim with high deductible may incentivize providers to bill for higher‑tier services. |
+| **Duplicate Billing** | Low | Beneficiaries Count = 23; duplication is less likely but still possible in multi‑patient claims. |
+| **Phantom Services** | Low | No inpatient services; phantom services would be harder to disguise in an outpatient setting. |
+| **Unbundling** | Low | Unbundling is more common in inpatient procedures; risk is lower here. |
+
+---
+
+### 3. Patterns or Causes  
+- **High Deductible Paid**: The $2 000 deductible payment suggests the insurer may be more aggressive in reviewing claims where the provider has already absorbed a large portion of the cost.  
+- **Single Outpatient Claim**: A single outpatient claim of $5 000 is within normal limits, but the presence of a high deductible could trigger automated alerts.  
+- **Beneficiaries Count**: 23 beneficiaries on the claim may indicate a bundled claim or a group of patients under a single provider; however, no inpatient services were reported, reducing complexity.  
+
+---
+
+### 4. Recommended Actions  
+| **Action** | **Priority** | **Description** |
+|------------|--------------|-----------------|
+| **Detailed Claim Audit** | High | Review itemized billing, CPT codes, and provider notes to confirm coding accuracy. |
+| **Cross‑Check with Prior Claims** | Medium | Verify that the same services were not billed previously for any of the 23 beneficiaries. |
+| **Provider Interview** | Medium | Engage the provider to clarify any ambiguous coding or documentation. |
+| **Data Correlation** | Low | Compare this claim with similar outpatient claims in the same period to identify any statistical outliers. |
+| **Update Fraud Detection Rules** | Low | Adjust the algorithm thresholds for outpatient claims with high deductibles to reduce false positives in the future. |
+
+---
+
+### 5. Final Verdict  
+- **Assessment**: The claim is classified as **Low‑Risk** with a fraud probability of 0.1098.  
+- **Conclusion**: No immediate evidence of fraud is present, but the potential saving of $329.36 warrants a **targeted audit** to confirm coding integrity.  
+- **Recommendation**: Proceed with the **Detailed Claim Audit** (Action 1). If no discrepancies are found, the claim can be closed as legitimate. If discrepancies arise, further investigative steps should be initiated as outlined above.
+
+---
