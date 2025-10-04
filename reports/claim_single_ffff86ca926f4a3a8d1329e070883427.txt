@@ -1,0 +1,15 @@
+=== Statistics ===
+{
+  "total_claims": 1,
+  "fraud_claims": 1,
+  "fraud_percentage": 100.0,
+  "fraud_probability": 1.0,
+  "risk_level": "Very High",
+  "potential_saving": 0.0,
+  "claim_amount": 0,
+  "deductible_amt_paid": 0,
+  "beneficiaries_count": 1
+}
+
+=== AI Summary ===
+(AI Summary Error: 401 Client Error: Unauthorized for url: https://openrouter.ai/api/v1/chat/completions)
