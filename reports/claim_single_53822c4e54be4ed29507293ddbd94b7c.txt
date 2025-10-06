@@ -1,0 +1,60 @@
+=== Statistics ===
+{
+  "total_claims": 1,
+  "fraud_claims": 0,
+  "fraud_percentage": 0.32,
+  "fraud_probability": 0.0032,
+  "risk_level": "Low",
+  "potential_saving": 0.01,
+  "claim_amount": 4,
+  "deductible_amt_paid": 2,
+  "beneficiaries_count": 1
+}
+
+=== AI Summary ===
+**Fraud Investigation Report**  
+*Claim‑Level Analysis – Medical Insurance System*  
+
+| Metric | Value |
+|--------|-------|
+| **Fraud Probability** | 0.0032 |
+| **Risk Level** | Low |
+| **Potential Saving** | $0.01 |
+| **Claim Amount** | $4 |
+| **Deductible Amount Paid** | $2 |
+| **Inpatient Status** | 0 (Outpatient) |
+| **Beneficiaries Count** | 1 |
+
+---
+
+**1. Overall Fraud Situation**  
+ • The system flags the claim with a **fraud probability of 0.32 %**, which falls well below the typical threshold for high‑risk alerts.  
+ • The risk assessment is classified as **Low**, indicating that, based on current data, the claim is unlikely to represent fraudulent activity.  
+ • The **potential saving** identified (if the claim were fraudulent) is only **$0.01**, suggesting that even a misclassification would have a negligible financial impact.  
+
+**2. Likely Fraud Types**  
+ • *Up‑coding / Service Misclassification*: The claim lists a $4 charge with an inpatient flag of 0, implying an outpatient procedure; however, the $2 deductible paid may indicate a mis‑coded service level.  
+ • *Duplicate Billing*: With only one beneficiary and a single claim amount, duplication risks are minimal.  
+ • *Adjourned / Partial Payment Abuse*: The deductible paid ($2) is exactly 50 % of the claim amount, which could reflect a standard policy but might also signal a split‑payment strategy if the remaining $2 were paid elsewhere.  
+
+**3. Patterns or Causes**  
+ • **Low Claim Volume**: A single claim with very small dollar values is inherently low risk.  
+ • **Outpatient Context**: Inpatient status = 0 removes typical inpatient fraud patterns such as unnecessary hospital stays.  
+ • **Beneficiary Count**: Only one beneficiary reduces complexity and potential for collusion.  
+ • **Deductible Alignment**: The deductible constitutes a fixed fraction (50 %) of the claim, consistent with many plan designs, reducing suspicion.  
+
+**4. Recommended Actions**  
+ 1. **Maintain Routine Monitoring** – Continue automatic flagging and include this claim in regular audit cycles.  
+ 2. **Verify Coding Accuracy** – Cross‑check the CPT/ICD codes associated with the $4 charge against the provider’s practice profile.  
+ 3. **Confirm Deductible Application** – Ensure the $2 deductible was applied in accordance with the policy’s deductible schedule.  
+ 4. **Document Findings** – Record the review process and outcome in the claim’s audit trail for future reference.  
+ 5. **Set Threshold Review** – If the system’s fraud probability exceeds 0.5 % for similar low‑value claims, trigger a higher‑level investigation.  
+
+**5. Final Verdict**  
+ • **Status**: No evidence of fraud detected.  
+ • **Risk**: Low.  
+ • **Action**: Claim approved for payment; no further investigation required at this time.  
+
+*Prepared by:*  
+**[Fraud Analyst Name]**  
+**[Date]**

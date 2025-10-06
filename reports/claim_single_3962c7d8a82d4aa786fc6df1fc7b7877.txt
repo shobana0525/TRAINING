@@ -1,0 +1,76 @@
+=== Statistics ===
+{
+  "total_claims": 1,
+  "fraud_claims": 1,
+  "fraud_percentage": 61.33,
+  "fraud_probability": 0.6133,
+  "risk_level": "Medium",
+  "potential_saving": 785.96,
+  "claim_amount": 2136,
+  "deductible_amt_paid": 1068,
+  "beneficiaries_count": 1
+}
+
+=== AI Summary ===
+**Fraud Investigation Report – Claim Review**  
+*(All figures are in USD unless otherwise noted)*  
+
+| Metric | Value |
+|--------|-------|
+| **Fraud Probability** | 0.6133 |
+| **Risk Level** | Medium |
+| **Potential Saving** | 785.96 |
+| **Claim Amount** | 2136 |
+| **Deductible Paid** | 1068 |
+| **Inpatient Status** | 0 (Outpatient) |
+| **Beneficiaries Count** | 1 |
+
+---
+
+### 1. Overall Fraud Situation  
+ The analytics engine flags this claim with a **high fraud probability of 61.33 %** and classifies it as **Medium‑Risk**.  
+ The claim’s **deductible payment (1068)** is **50 % of the total claim amount (2136)**, leaving only 1,068 USD for the insurer.  
+ A potential **savings of 785.96 USD** suggests that, if fraud is confirmed, the insurer could recover nearly **37 %** of the paid amount.  
+
+---
+
+### 2. Likely Fraud Types  
+ Based on the profile and statistical patterns, the following fraud scenarios are most probable:  
+
+| Fraud Type | Indicator | Likely Scenario |
+|------------|-----------|-----------------|
+| **Up‑coding / Code Inflation** | Outpatient claim with high deductible | Provider billed for a higher‑tier service than actually rendered. |
+| **Duplicate Billing** | Single beneficiary, single claim, high deductible | Multiple submissions for the same service disguised under different codes. |
+| **Billing for Non‑Rendered Services** | Deductible equals half the claim | Provider may have fabricated an entire episode of care. |
+| **Misclassification of Service Level** | Inpatient status = 0 | Services billed as outpatient when inpatient treatment would be more appropriate, inflating reimbursement. |
+
+---
+
+### 3. Patterns or Causes  
+1. **Excessive Deductible Relative to Claim Size** – A 50 % deductible is unusually high for a single outpatient service; typically deductibles are a smaller fraction of the claim.  
+2. **Single Beneficiary, Single Provider** – No multi‑beneficiary pattern, but the claim is large enough to warrant scrutiny.  
+3. **Outpatient Coding with High Charges** – Outpatient services rarely justify such high payments unless bundled or coded incorrectly.  
+4. **No Prior Claims History Provided** – Lack of historical data may indicate an attempt to conceal patterns.  
+
+---
+
+### 4. Recommended Actions  
+| Action | Purpose | Owner |
+|--------|---------|-------|
+| **Request Detailed Service Documentation** | Verify that billed services were actually performed. | Claims Adjuster |
+| **Cross‑Reference Provider’s Billing History** | Detect repeat patterns of high deductibles or outlier claims. | Fraud Analyst |
+| **Audit Coding Accuracy** | Ensure CPT/ICD codes match the documented services. | Clinical Reviewer |
+| **Validate Patient’s Medical Records** | Confirm claimant’s eligibility and medical necessity. | Medical Records Officer |
+| **Implement Automated Flagging for Similar Claims** | Prevent future high‑deductible outpatient claims. | Data Engineering |
+| **Consider Claim Denial Pending Verification** | Protect insurer funds. | Senior Claims Manager |
+
+---
+
+### 5. Final Verdict  
+ Given the **high fraud probability (61.33 %)** and the **medium risk classification**, this claim warrants **immediate investigative action**.  
+ If the investigation confirms any of the outlined fraud types, the insurer stands to recover **approximately 786 USD**, significantly mitigating the financial impact.  
+ Pending investigation, the claim should be **temporarily suspended** and a **denial recommended** until supporting evidence is obtained.  
+
+**Prepared by:**  
+*Fraud Analytics Team*  
+*Date: [Insert Date]*

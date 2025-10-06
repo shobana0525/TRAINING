@@ -1,0 +1,65 @@
+=== Statistics ===
+{
+  "total_claims": 1,
+  "fraud_claims": 0,
+  "fraud_percentage": 1.22,
+  "fraud_probability": 0.0122,
+  "risk_level": "Low",
+  "potential_saving": 0.01,
+  "claim_amount": 1,
+  "is_inpatient": 1,
+  "deductible_amt_paid": 1,
+  "beneficiaries_count": 1
+}
+
+=== AI Summary ===
+**Fraud Investigation Report – Provider‑Level Review**  
+
+---
+
+**1. Overall Fraud Situation**  
+&nbsp;&nbsp;• **Fraud Probability:** 0.0122 (1.22 %)  
+&nbsp;&nbsp;• **Risk Level:** Low  
+&nbsp;&nbsp;• **Potential Savings:** 0.01 (1 %)  
+&nbsp;&nbsp;• **Claim Details:**  
+&nbsp;&nbsp;&nbsp;&nbsp;– Claim Amount: $1  
+&nbsp;&nbsp;&nbsp;&nbsp;– Deductible Paid: $1  
+&nbsp;&nbsp;&nbsp;&nbsp;– Inpatient Status: Yes (1)  
+&nbsp;&nbsp;• **Beneficiaries Count:** 1  
+
+The probability of fraud remains well below industry thresholds, and the risk assessment is classified as *Low*. The potential savings are modest, indicating limited financial impact at this provider level.
+
+---
+
+**2. Likely Fraud Types**  
+&nbsp;&nbsp;| Fraud Category | Evidence | Likelihood | Remarks |
+|-----------------|----------|------------|---------|
+| **Billing Misrepresentation** | Claim amount equals deductible; no additional charges | Low | The claim appears to be a simple inpatient fee, no evidence of inflated charges. |
+| **Duplicate Billing** | Single beneficiary, single claim | Very Low | No duplicate entries detected. |
+| **Upcoding** | Inpatient status present; no higher tier codes | Low | Upcoding not indicated. |
+| **False Claims** | No supporting documentation flagged | Very Low | Insufficient data to confirm. |
+
+---
+
+**3. Patterns or Causes**  
+&nbsp;&nbsp;• The claim is a **single inpatient service** with an amount equal to the deductible, suggesting a *straight‑forward* claim.  
+&nbsp;&nbsp;• The **beneficiary count is one**, aligning with typical single‑patient encounters.  
+&nbsp;&nbsp;• No **historical anomalies** (e.g., repeated high‑value claims, unusual coding patterns) are present in the dataset.  
+&nbsp;&nbsp;• The **low fraud probability** may stem from consistent adherence to billing guidelines in this provider’s records.
+
+---
+
+**4. Recommended Actions**  
+&nbsp;&nbsp;• **Continue Monitoring** – Maintain baseline surveillance; flag any future claims that deviate from this pattern.  
+&nbsp;&nbsp;• **Data Enrichment** – Incorporate additional data points (e.g., procedure codes, provider identifiers) to refine risk scoring.  
+&nbsp;&nbsp;• **Audit Sampling** – Perform a periodic audit of inpatient claims to ensure compliance, even though the risk is low.  
+&nbsp;&nbsp;• **Stakeholder Communication** – Inform the provider of the low risk assessment; encourage transparent reporting of any changes in service patterns.  
+
+---
+
+**5. Final Verdict**  
+&nbsp;&nbsp;After reviewing the available statistics, the provider exhibits **low fraud risk** with no substantive indicators of fraudulent activity.  
+&nbsp;&nbsp;The **fraud probability (1.22 %)** and **potential savings (1 %)** confirm that any impact is minimal.  
+&nbsp;&nbsp;The recommended course is to **maintain standard monitoring** and **enhance data granularity** for future assessments, while acknowledging that the current claim is deemed legitimate.
+
+---

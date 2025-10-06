@@ -1,0 +1,72 @@
+=== Statistics ===
+{
+  "total_claims": 1,
+  "fraud_claims": 0,
+  "fraud_percentage": 0.37,
+  "fraud_probability": 0.0037,
+  "risk_level": "Low",
+  "potential_saving": 0.01,
+  "claim_amount": 4,
+  "deductible_amt_paid": 2,
+  "beneficiaries_count": 1
+}
+
+=== AI Summary ===
+**Fraud Investigation Report – Claim Level Analysis**  
+*Prepared for: Medical Insurance Fraud Review Team*  
+*Date: 2024‑06‑28*  
+
+| **Metric**                         | **Value** |
+|-----------------------------------|-----------|
+| Fraud Probability                 | 0.0037 (0.37 %) |
+| Risk Level                        | Low |
+| Potential Savings                  | $0.01 |
+| Claim Amount (USD)                | $4.00 |
+| Deductible Amount Paid (USD)      | $2.00 |
+| Inpatient Status (0 = Outpatient) | 0 |
+| Beneficiaries Count               | 1 |
+
+---
+
+### 1. Overall Fraud Situation  
+The claim under review exhibits a **fraud probability of 0.0037**, translating to a **0.37 % chance of fraudulent activity**. This places the claim firmly in the **“Low” risk** category. The **potential savings** identified through this assessment is minimal, at **$0.01**, indicating that, if any fraudulent activity exists, the monetary impact is negligible.
+
+---
+
+### 2. Likely Fraud Types  
+Given the low risk score and minimal financial impact, the following low‑severity fraud scenarios are considered most plausible:
+
+| **Fraud Type**                      | **Justification** |
+|------------------------------------|-------------------|
+| **Duplicate Billing**              | The claim amount ($4) is extremely low and the deductible paid ($2) is 50 % of the claim—consistent with a potential duplicate entry for a small service. |
+| **Up‑coding / Minor Over‑billing** | The claim amount is only slightly higher than the deductible, suggesting a minor up‑coding of a service or procedure. |
+| **Billing for Non‑existent Service** | With a single beneficiary and outpatient status, a $4 claim could be for a nominal, non‑essential service that may not have been rendered. |
+
+---
+
+### 3. Patterns or Causes  
+- **Outpatient Service**: Inpatient status = 0 indicates the claim is for an outpatient visit, which typically involves lower amounts and higher susceptibility to low‑level billing errors.  
+- **Small Monetary Value**: $4.00 is an unusually low claim amount for medical services, potentially hinting at rounding errors or misclassification.  
+- **High Deductible-to-Claim Ratio**: The deductible paid constitutes 50 % of the claim, an atypical ratio that warrants scrutiny.  
+- **Single Beneficiary**: With only one beneficiary, the claim is less likely to involve complex billing scenarios or multiple parties.
+
+---
+
+### 4. Recommended Actions  
+| **Action** | **Priority** | **Description** |
+|------------|--------------|-----------------|
+| **Validate Service Rendered** | High | Confirm via provider records or patient confirmation that a service was indeed rendered. |
+| **Cross‑Check Billing Codes** | Medium | Verify that the CPT/ICD codes billed correspond accurately to the claimed service and its cost. |
+| **Audit Duplicate Entries** | Low | Review the insurer’s database for duplicate claims with identical details. |
+| **Enhance Data Quality Controls** | Low | Implement automated checks for unusually low claim amounts and high deductible ratios. |
+| **Provide Provider Feedback** | Low | If discrepancies are found, communicate with the billing provider to correct any errors and prevent recurrence. |
+
+---
+
+### 5. Final Verdict  
+- **Risk Classification**: Low  
+- **Fraud Likelihood**: Very low (0.37 % probability)  
+- **Financial Impact**: Negligible ($0.01 potential saving)  
+- **Action Recommendation**: Proceed with targeted verification of service delivery and billing codes; no immediate large‑scale investigation required.
+
+The claim presents **minimal risk** and **minimal financial impact**. Continued monitoring for similar low‑value claims is advised to ensure this remains a rare occurrence.

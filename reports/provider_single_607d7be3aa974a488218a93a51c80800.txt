@@ -1,0 +1,64 @@
+=== Statistics ===
+{
+  "total_claims": 1,
+  "fraud_claims": 0,
+  "fraud_percentage": 6.38,
+  "fraud_probability": 0.0638,
+  "risk_level": "Low",
+  "potential_saving": 4.67,
+  "claim_amount": 122,
+  "is_inpatient": 1,
+  "deductible_amt_paid": 232,
+  "beneficiaries_count": 12
+}
+
+=== AI Summary ===
+**Fraud Investigation Report**  
+*Provider‑Level Data – 2025‑10‑05*  
+
+```
+Metric               	Value
+Fraud Probability    	0.0638
+Risk Level           	Low
+Potential Saving     	$4.67
+Claim Amount         	$122
+Deductible Paid      	$232
+Inpatient Status     	1
+Beneficiaries Count  	12
+```
+
+---
+
+### 1. Overall Fraud Situation  
+&nbsp;&nbsp;• The fraud probability score of **0.0638** places the claim in the *Low* risk category.  
+&nbsp;&nbsp;• With a potential saving of **$4.67**, the financial impact of any identified irregularity is modest.  
+&nbsp;&nbsp;• Nevertheless, the discrepancy between the deductible paid ($232) and the claim amount ($122) warrants a closer look.
+
+---
+
+### 2. Likely Fraud Types  
+&nbsp;&nbsp;• **Upcoding** – billing for a higher‑priced service than was actually rendered.  
+&nbsp;&nbsp;• **Unnecessary inpatient admission** – the claim is marked inpatient (status = 1) despite a low overall amount.  
+&nbsp;&nbsp;• **Duplicate billing** – the same service may have been billed more than once for the 12 beneficiaries.
+
+---
+
+### 3. Patterns or Causes  
+&nbsp;&nbsp;• **Deductible > Claim** – the deductible paid exceeds the actual claim amount, suggesting possible billing error or overbilling.  
+&nbsp;&nbsp;• **Low claim, inpatient status** – an inpatient claim of only $122 is atypical; this may reflect an unwarranted inpatient stay.  
+&nbsp;&nbsp;• **High beneficiary count** – 12 beneficiaries on a single claim increase administrative complexity and the risk of coding mistakes.
+
+---
+
+### 4. Recommended Actions  
+&nbsp;&nbsp;• **Verify inpatient necessity** – review clinical records to confirm that an inpatient stay was medically required.  
+&nbsp;&nbsp;• **Reconcile deductible** – cross‑check the deductible amount against the provider’s billing ledger to ensure accurate payment.  
+&nbsp;&nbsp;• **Audit coding** – audit the CPT/HCPCS codes for upcoding and duplicate services.  
+&nbsp;&nbsp;• **Targeted audit** – perform a focused audit of similar claims within the same provider network to detect systemic issues.
+
+---
+
+### 5. Final Verdict  
+&nbsp;&nbsp;• The overall fraud risk is classified as **Low**.  
+&nbsp;&nbsp;• Despite the low probability, the noted inconsistencies merit routine audit procedures to maintain compliance and protect against even modest losses.  
+&nbsp;&nbsp;• No immediate intervention is required, but the provider should be flagged for a periodic review.

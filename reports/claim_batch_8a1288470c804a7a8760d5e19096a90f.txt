@@ -1,0 +1,77 @@
+=== Statistics ===
+{
+  "total_claims": 4,
+  "fraud_claims": 3,
+  "fraud_percentage": 75.0,
+  "fraud_probability": 0.6116293668746948,
+  "risk_level": "Medium",
+  "potential_saving": 3135.45,
+  "deductible_amt_paid": 4272.0,
+  "claim_amount": 8544.0
+}
+
+=== AI Summary ===
+**Fraud Investigation Report**  
+*Claim ID:  [***Insert Claim Number***]*  
+*Date of Report: [***Insert Date***]*  
+
+---
+
+### 1. Overall Fraud Situation  
+| Metric | Value | Interpretation |
+|--------|-------|----------------|
+| **Fraud Probability** | **0.61** | Indicates a *high likelihood* that the claim is fraudulent. |
+| **Risk Level** | **Medium** | Despite the elevated probability, systemic risk remains *moderate* given current controls. |
+| **Claim Amount** | **$8,544.00** | Substantial out‑of‑pocket expense for the insured. |
+| **Deductible Paid** | **$4,272.00** | Equal to 50 % of the claim amount, suggesting full coverage post‑deductible. |
+| **Potential Saving** | **$3,135.45** | Estimated amount that could be recuperated if fraud is confirmed and claim is voided. |
+| **Inpatient Status** | **0** | Claim is for *outpatient* services. |
+| **Beneficiaries Count** | **0** | No dependents listed; claim pertains solely to the primary policyholder. |
+
+**Summary:**  
+The claim exhibits a *high fraud probability* (61 %) coupled with a substantial potential saving ($3,135.45). The outpatient nature and 50 % deductible indicate a typical service pattern, but the high probability warrants a focused investigation.
+
+---
+
+### 2. Likely Fraud Types  
+| Category | Possible Indicators | Rationale |
+|----------|---------------------|-----------|
+| **Up‑Coding** | Services billed at a higher CPT code than performed | High claim amount relative to typical outpatient costs. |
+| **Duplicate Billing** | Same provider or service listed twice | Probability suggests potential double‑charging. |
+| **Phantom Services** | Services listed that were never rendered | Unusual for outpatient claims; high probability raises suspicion. |
+| **Provider Collusion** | Multiple claims from the same provider with similar patterns | Risk level medium, but the high probability warrants scrutiny of provider history. |
+
+---
+
+### 3. Patterns or Causes  
+- **High Claim Amount vs. Deductible**: The claim amount ($8,544) is double the deductible ($4,272), a ratio often seen in legitimate outpatient claims but can also signal *up‑coding* when compared to average outpatient bills.  
+- **Zero Beneficiaries**: The absence of dependents suggests the claim is for a single individual, limiting potential beneficiary fraud but raising the possibility of *self‑billing* or *identification fraud*.  
+- **Inpatient Status = 0**: Confirms outpatient, narrowing the scope of fraud to *outpatient billing irregularities* rather than inpatient over‑utilization.  
+- **Risk Level Medium**: Suggests that while controls are in place, they may not fully capture this type of fraud, allowing for potential *latent anomalies*.
+
+---
+
+### 4. Recommended Actions  
+
+| Action | Description | Priority |
+|--------|-------------|----------|
+| **Provider Credential Verification** | Confirm the provider’s licensure, scope, and recent disciplinary actions. | High |
+| **Service Confirmation** | Cross‑reference billed CPT codes with medical records, imaging, and provider notes. | High |
+| **Duplicate Claim Check** | Search the system for identical service dates or provider IDs in the same policy cycle. | Medium |
+| **Audit Trail Review** | Examine claim submission timestamps, edits, and approvals for irregularities. | Medium |
+| **Beneficiary Verification** | Validate the insured’s identity and coverage details to rule out impersonation. | Low |
+| **Potential Recovery Plan** | Prepare documentation for claim denial and reimbursement of potential savings ($3,135.45). | High |
+
+---
+
+### 5. Final Verdict  
+**Verdict:** *Fraud Suspected – Investigation Required*  
+
+The statistical indicators (Fraud Probability = 0.61, Medium risk level, and a significant potential saving) collectively point to a *strong likelihood* of fraudulent activity, most plausibly involving up‑coding or duplicate billing. Immediate investigative actions are essential to confirm the claim’s validity and to initiate recovery procedures if fraud is substantiated.  
+
+---
+
+*Prepared by:*  
+**[Your Name]** – Senior Fraud Analyst  
+**[Company/Organization]**  
+**[Contact Information]**

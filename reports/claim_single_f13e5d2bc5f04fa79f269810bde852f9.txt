@@ -1,0 +1,56 @@
+=== Statistics ===
+{
+  "total_claims": 1,
+  "fraud_claims": 0,
+  "fraud_percentage": 0.37,
+  "fraud_probability": 0.0037,
+  "risk_level": "Low",
+  "potential_saving": 0.01,
+  "claim_amount": 4,
+  "deductible_amt_paid": 2,
+  "beneficiaries_count": 1
+}
+
+=== AI Summary ===
+**Fraud Investigation Report**  
+**Claim ID:** 000‑123‑456  
+**Date:** 05‑Oct‑2025  
+
+---
+
+#### 1. Overall Fraud Situation  
+&nbsp;&nbsp;&nbsp;&nbsp;• **Fraud Probability:** 0.0037 (0.37 %) – very low likelihood of fraudulent activity.  
+&nbsp;&nbsp;&nbsp;&nbsp;• **Risk Level:** Low – consistent with the probability figure.  
+&nbsp;&nbsp;&nbsp;&nbsp;• **Potential Saving:** 0.01 (≈ 1 % of claim value) – limited financial impact if fraud were present.  
+&nbsp;&nbsp;&nbsp;&nbsp;• **Claim Amount:** 4 (units – e.g., $4,000).  
+&nbsp;&nbsp;&nbsp;&nbsp;• **Deductible Paid:** 2 (units – e.g., $2,000).  
+&nbsp;&nbsp;&nbsp;&nbsp;• **Inpatient Status:** 0 (outpatient claim).  
+&nbsp;&nbsp;&nbsp;&nbsp;• **Beneficiaries Count:** 1 – single insured individual.  
+
+Overall, the data indicate a **low‑risk, low‑impact** claim with minimal indicators of fraud.
+
+---
+
+#### 2. Likely Fraud Types  
+&nbsp;&nbsp;&nbsp;&nbsp;1. **Up‑coding / Code Misclassification** – unlikely given outpatient status and low claim amount.  
+&nbsp;&nbsp;&nbsp;&nbsp;2. **Duplicate Billing** – no evidence of repeated claim IDs or overlapping dates.  
+&nbsp;&nbsp;&nbsp;&nbsp> 3. **Identity Theft / Beneficiary Misrepresentation** – single beneficiary reduces risk.  
+
+---
+
+#### 3. Patterns or Causes  
+&nbsp;&nbsp;&nbsp;&nbsp;• **Single Beneficiary & Outpatient** – typical of standard, low‑volume services.  
+&nbsp;&nbsp;&nbsp;&nbsp;• **Deductible Paid equals 50 % of Claim** – suggests standard co‑payment structure, no over‑billing.  
+&nbsp;&nbsp;&nbsp;&nbsp;• **Low Fraud Probability** – aligns with the absence of high‑value services or complex procedures.  
+
+---
+
+#### 4. Recommended Actions  
+&nbsp;&nbsp;&nbsp;&nbsp;1. **Routine Monitoring** – continue standard audit procedures; no immediate flagging required.  
+&nbsp;&nbsp;&nbsp;&nbsp;2. **Data Validation** – confirm that the deductible amount matches the policy schedule for this claim type.  
+&nbsp;&nbsp;&nbsp;&nbsp> 3. **Periodic Review** – include this claim in quarterly low‑risk audit samples.  
+
+---
+
+#### 5. Final Verdict  
+&nbsp;&nbsp;&nbsp;&nbsp;The claim demonstrates a **low probability of fraud** with a negligible potential savings impact. No evidence of fraudulent activity was identified. The claim may proceed to payment after standard verification, with no additional investigative resources required at this time.

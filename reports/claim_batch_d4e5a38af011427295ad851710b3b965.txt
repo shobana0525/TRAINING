@@ -1,0 +1,72 @@
+=== Statistics ===
+{
+  "total_claims": 4,
+  "fraud_claims": 3,
+  "fraud_percentage": 75.0,
+  "fraud_probability": 0.6116293668746948,
+  "risk_level": "Medium",
+  "potential_saving": 3135.45,
+  "claim_amount": 8544.0,
+  "deductible_amt_paid": 4272.0
+}
+
+=== AI Summary ===
+```
+Fraud Investigation Report
+──────────────────────────
+Report Created: 2025‑10‑05
+
+───────────────────────────────────────────────────
+1. Overall Fraud Situation
+───────────────────────────────────────────────────
+    • Fraud Probability:          0.6116293668746948
+    • Risk Level:                  Medium
+    • Claim Amount:                $8,544.00
+    • Deductible Amount Paid:      $4,272.00
+    • Inpatient Status:            0  (Outpatient)
+    • Beneficiaries Count:         0
+
+    The model assigns a 61.2 % probability that this claim contains fraudulent activity, placing it in the medium‑risk category.  
+    With a deductible paid that equals 50 % of the total claim, the insurer potentially saves $3,135.45 if the claim is disallowed.
+
+───────────────────────────────────────────────────
+2. Likely Fraud Types
+───────────────────────────────────────────────────
+    • Billing for services not rendered (phantom services)  
+    • Duplicate or inflated charges for the same outpatient procedure  
+    • Up‑coding of outpatient services to higher‑reimbursed CPT codes  
+    • Misclassification of outpatient services as inpatient to exploit higher rates  
+    • Identity theft or beneficiary impersonation (beneficiaries count is zero)
+
+───────────────────────────────────────────────────
+3. Patterns or Causes
+───────────────────────────────────────────────────
+    • High deductible paid relative to total claim suggests a single, high‑cost outpatient event.  
+    • Zero beneficiaries count indicates a potential data entry error or attempt to conceal the true patient.  
+    • Inpatient status flagged as 0 but claim amount mirrors typical high‑tier outpatient procedures, raising cross‑check concerns.  
+    • The fraud probability exceeds 0.60, a threshold that typically triggers a detailed audit in most underwriting protocols.
+
+───────────────────────────────────────────────────
+4. Recommended Actions
+───────────────────────────────────────────────────
+    • Conduct a manual review of the claim’s service dates, CPT codes, and provider identifiers.  
+    • Cross‑reference EHR and hospital billing records for the patient to confirm the services rendered.  
+    • Verify the deductible calculation against plan specifications to ensure correct application.  
+    • Interview the provider’s billing department to confirm authenticity of the claim.  
+    • Flag the claim for a rapid fraud investigation workflow; assign a senior analyst for follow‑up.  
+    • If fraud is confirmed, proceed with claim denial, restitution processes, and potential provider sanctions.  
+    • Update internal fraud detection models with findings to improve future predictive accuracy.
+
+───────────────────────────────────────────────────
+5. Final Verdict
+───────────────────────────────────────────────────
+    After reviewing the statistical indicators and potential red flags, this claim is classified as **Medium‑Risk Fraud**.  
+    The evidence warrants a full investigative audit.  Pending investigation results, the insurer should **withhold payment** and pursue the estimated $3,135.45 in potential savings.  
+    The claim should be reported to the appropriate regulatory bodies if fraudulent intent is confirmed.
+
+───────────────────────────────────────────────────
+Prepared by:   __________________________    
+Position:      Senior Fraud Analyst  
+Signature:     __________________________    
+Date:          2025‑10‑05
+```

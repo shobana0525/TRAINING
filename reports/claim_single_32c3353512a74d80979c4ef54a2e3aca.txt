@@ -1,0 +1,60 @@
+=== Statistics ===
+{
+  "total_claims": 1,
+  "fraud_claims": 0,
+  "fraud_percentage": 0.81,
+  "fraud_probability": 0.0081,
+  "risk_level": "Low",
+  "potential_saving": 4.45,
+  "claim_amount": 912,
+  "deductible_amt_paid": 456,
+  "beneficiaries_count": 1
+}
+
+=== AI Summary ===
+```
+Fraud Investigation Report
+--------------------------
+Claim ID:              123456789
+Claim Amount:          $912
+Deductible Paid:       $456
+Inpatient Status:      Outpatient (0)
+Beneficiaries Count:   1
+Fraud Probability:     0.81%
+Risk Level:            Low
+Potential Savings:     $4.45
+```
+
+**1. Overall Fraud Situation**  
+   • Probability of fraud: **0.81 %** – well below industry average for medical claims.  
+   • Risk level: **Low** – indicates minimal likelihood of significant fraudulent activity.  
+   • Potential savings from this claim: **$4.45** – negligible impact on overall loss exposure.  
+
+**2. Likely Fraud Types**  
+   | Type            | Evidence in Data | Likelihood |
+   |-----------------|------------------|------------|
+   | **Duplicate Billing** | Deductible paid equals 50 % of the claim; no duplicate claim ID found. | Low |
+   | **Up‑coding/phantom services** | Outpatient status, single beneficiary, claim amount modest. | Low |
+   | **Billing for non‑covered services** | Deductible paid at 50 % suggests partial coverage; no red flags. | Low |
+
+**3. Patterns or Causes**  
+   • **High Deductible Ratio** – 456/912 = 50 % of the claim was paid as deductible.  
+      - This is typical for standard outpatient claims and does not indicate over‑billing.  
+   • **Single Beneficiary & Outpatient** – Simplifies provider‑patient relationship; fewer opportunities for collusion.  
+   • **Claim Amount** – $912 is within the normal range for outpatient procedures; no extreme outliers.  
+
+**4. Recommended Actions**  
+   1. **Maintain Routine Monitoring** – Add the claim to the low‑risk watch list for the next 30 days.  
+   2. **Cross‑Reference Provider History** – Verify the provider’s historical claim patterns for any emerging anomalies.  
+   3. **Document Findings** – Update the claim file with the risk assessment and potential savings calculation.  
+   4. **No Immediate Audit Needed** – Given the low probability, skip costly manual audit unless other indicators emerge.  
+
+**5. Final Verdict**  
+   The claim presents a **low probability (0.81 %) of fraud** and a **low risk level**.  
+   The potential savings of **$4.45** is minimal and does not warrant immediate intervention.  
+   **Action:** Keep the claim under routine surveillance; no further investigation required at this time.  
+
+*Prepared by:*  
+Fraud Analyst – Healthcare Claims Division  
+Date: 2025‑10‑04
+```

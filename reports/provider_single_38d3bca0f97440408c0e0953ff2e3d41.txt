@@ -1,0 +1,74 @@
+=== Statistics ===
+{
+  "total_claims": 1,
+  "fraud_claims": 0,
+  "fraud_percentage": 1.28,
+  "fraud_probability": 0.0128,
+  "risk_level": "Low",
+  "potential_saving": 0.02,
+  "claim_amount": 2,
+  "is_inpatient": 1,
+  "deductible_amt_paid": 2,
+  "beneficiaries_count": 22
+}
+
+=== AI Summary ===
+**Fraud Investigation Report – Provider‑Level Review**  
+*(Prepared by: Healthcare Fraud Analyst)*  
+
+```
+┌───────────────────────────────────────────────────────────────────────────────┐
+│ 1. Overall Fraud Situation                                                    │
+│    ├─ Fraud Probability: 0.0128 (1.28%)                                      │
+│    ├─ Risk Level: Low                                                         │
+│    ├─ Potential Financial Impact: $0.02 per claim                            │
+│    ├─ Claim Volume: 2 (total claim amount)                                   │
+│    ├─ Deductible Paid: $2                                                   │
+│    ├─ Inpatient Status: 1 (indicates inpatient service)                     │
+│    └─ Beneficiary Count: 22                                                 │
+└───────────────────────────────────────────────────────────────────────────────
+```
+
+```
+┌───────────────────────────────────────────────────────────────────────────────┐
+│ 2. Likely Fraud Types                                                        │
+│    ├─ Mild Billing Over‑adjudication (over‑billing of deductible)             │
+│    ├─ Duplicate Claim Submission (same inpatient service billed twice)       │
+│    └─ Up‑coding of service level (billing for higher‑cost inpatient level)  │
+└───────────────────────────────────────────────────────────────────────────────
+```
+
+```
+┌───────────────────────────────────────────────────────────────────────────────┐
+│ 3. Patterns or Causes                                                       │
+│    ├─ Single provider with 22 beneficiaries suggests high utilization.      │
+│    ├─ Claim and deductible amounts identical → potential billing confusion.  │
+│    ├─ Inpatient indicator with minimal claim amount raises question of      │
+│    │   appropriateness of service level.                                      │
+│    └─ Low probability but still present → requires targeted verification.    │
+└───────────────────────────────────────────────────────────────────────────────
+```
+
+```
+┌───────────────────────────────────────────────────────────────────────────────┐
+│ 4. Recommended Actions                                                      │
+│    ├─ Verify claim details against provider’s service logs and ICD codes.    │
+│    ├─ Cross‑check duplicate submissions using claim IDs and timestamps.     │
+│    ├─ Audit coding practices for inpatient services (CPT/ICD coding review).│
+│    ├─ Conduct random sampling of 10% of inpatient claims from this provider.│
+│    └─ Implement automated flagging for identical claim and deductible amounts │
+│       (threshold: 1:1 ratio).                                               │
+└───────────────────────────────────────────────────────────────────────────────
+```
+
+```
+┌───────────────────────────────────────────────────────────────────────────────┐
+│ 5. Final Verdict                                                             │
+│    ├─ Current evidence indicates low fraud probability (1.28%).               │
+│    ├─ However, specific red‑flags warrant a focused audit to confirm.        │
+│    ├─ Pending audit results, the provider remains at “Low” risk status.      │
+│    └─ Immediate actions: initiate verification steps; monitor for patterns. │
+└───────────────────────────────────────────────────────────────────────────────
+```
+
+*Prepared on: 2025‑10‑04*

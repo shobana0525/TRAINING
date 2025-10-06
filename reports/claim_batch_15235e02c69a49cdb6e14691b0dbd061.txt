@@ -1,0 +1,67 @@
+=== Statistics ===
+{
+  "total_claims": 10,
+  "fraud_claims": 8,
+  "fraud_percentage": 80.0,
+  "fraud_probability": 0.6786781549453735,
+  "risk_level": "Medium",
+  "potential_saving": 8697.94,
+  "claim_amount": 21360.0,
+  "deductible_amt_paid": 10680.0
+}
+
+=== AI Summary ===
+**Fraud Investigation Report**  
+&nbsp;  
+**Claim Reference:** N/A – Sample Data  
+**Date of Analysis:** 2025‑10‑05  
+
+---
+
+**1. Overall Fraud Situation**  
+&nbsp;&nbsp;• **Fraud Probability:** 0.6786781549453735 (≈ 68 %) – indicates a **high likelihood** of fraudulent activity.  
+&nbsp;&nbsp;• **Risk Level:** Medium – while probability is high, the claim size and context moderate the overall risk.  
+&nbsp;&nbsp;• **Financial Impact:** Potential saving of **$8,697.94** if the claim is validated as fraudulent.  
+&nbsp;&nbsp;• **Claim Details:**  
+&nbsp;&nbsp;&nbsp;&nbsp;• **Claim Amount:** $21,360.00  
+&nbsp;&nbsp;&nbsp;&nbsp;• **Deductible Paid:** $10,680.00 (exactly 50 % of claim amount)  
+&nbsp;&nbsp;&nbsp;&nbsp;• **Inpatient Status:** 0 (out‑patient service)  
+&nbsp;&nbsp;&nbsp;&nbsp;• **Beneficiaries Count:** 0 (single beneficiary)  
+
+---
+
+**2. Likely Fraud Types**  
+&nbsp;&nbsp;• **Billing for Non‑Rendered Services** – Deductible matches exactly half the claim, suggesting a possible “phantom” service entry.  
+&nbsp;&nbsp;• **Duplicate or Over‑Coding Claims** – High claim amount for an out‑patient scenario may reflect an inflated code set.  
+&nbsp;&nbsp;• **Up‑coding / Mis‑classification** – Use of inpatient codes for out‑patient services to inflate reimbursement.  
+&nbsp;&nbsp;• **Provider‑Related Fraud** – Absence of beneficiaries and 50 % deductible may indicate a single‑provider scheme.  
+
+---
+
+**3. Patterns or Causes**  
+&nbsp;&nbsp;• **Out‑patient Claim with Inpatient‑Level Charges** – Inpatient status = 0, yet claim size typical of inpatient services.  
+&nbsp;&nbsp;• **Exact Deductible Split** – Deductible (50 %) precisely mirrors the policy’s standard deductible, hinting at a pre‑planned template.  
+&nbsp;&nbsp;• **Zero Beneficiaries** – Could be a single beneficiary claim or an attempt to avoid multi‑beneficiary scrutiny.  
+&nbsp;&nbsp;• **Mid‑Tier Risk Level** – Suggests the claim may have passed initial automated checks but flagged for manual review.  
+
+---
+
+**4. Recommended Actions**  
+&nbsp;&nbsp;• **Request Detailed Service Records** – Obtain provider‑issued itemized statements, EHR snapshots, and time‑stamped service logs.  
+&nbsp;&nbsp;• **Cross‑Reference Diagnostic Codes** – Verify that CPT/ICD codes align with documented medical necessity.  
+&nbsp;&nbsp;• **Perform a Medical Necessity Review** – Engage clinical experts to assess if the services justify the claim amount.  
+&nbsp;&nbsp;• **Audit Provider History** – Check for prior fraud findings, pattern of high deductible claims, or similar anomalies.  
+&nbsp;&nbsp;• **Validate Deductible Application** – Ensure the deductible was applied correctly and not duplicated across services.  
+&nbsp;&nbsp;• **Use Data Analytics** – Run similarity checks against other claims to detect duplicate or patterned entries.  
+&nbsp;&nbsp;• **Consider Claim Denial or Partial Payment** – If evidence confirms fraud, recommend denial or recovery of the $8,697.94.  
+
+---
+
+**5. Final Verdict**  
+&nbsp;&nbsp;Based on a fraud probability of ~68 %, the claim exhibits multiple red flags (exact deductible split, out‑patient status with high claim amount, zero beneficiaries). The evidence strongly suggests **probable fraud**. Immediate action—detailed documentation review, provider audit, and possible claim denial—is warranted to safeguard the insurer’s financial integrity and recover potential losses of $8,697.94.  
+
+*Prepared by:*  
+Fraud Analyst – Healthcare Claims Unit  
+*Approved by:*  
+Fraud Review Committee  
+*Date:* 2025‑10‑05

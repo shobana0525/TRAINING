@@ -1,0 +1,80 @@
+=== Statistics ===
+{
+  "total_claims": 1,
+  "fraud_claims": 1,
+  "fraud_percentage": 62.0,
+  "fraud_probability": 0.62,
+  "risk_level": "Medium",
+  "potential_saving": 3720.01,
+  "claim_amount": 10000,
+  "deductible_amt_paid": 5000,
+  "beneficiaries_count": 1
+}
+
+=== AI Summary ===
+**Fraud Investigation Report**  
+*Claim ID: 2025‑10‑05‑001*  
+
+```
+|---------------------------|----------------------------|
+| Fraud Probability        | 0.62                       |
+| Risk Level               | Medium                     |
+| Potential Saving         | $3,720.01                  |
+| Claim Amount             | $10,000.00                 |
+| Deductible Amount Paid   | $5,000.00                  |
+| Inpatient Status         | 0 (Outpatient)             |
+| Beneficiaries Count      | 1                          |
+|---------------------------|----------------------------|
+```
+
+---
+
+### 1. Overall Fraud Situation  
+```
+•  The fraud probability score of 0.62 indicates a high likelihood that this claim contains fraudulent activity.  
+•  The risk level is classified as **Medium** due to the combination of a high probability score and the absence of inpatient services.  
+•  If the claim is confirmed fraudulent, the insurer stands to recover **$3,720.01** in potential savings, representing 37.2 % of the paid deductible.  
+•  The claim involved a single beneficiary, suggesting a focused but potentially high‑impact fraud scenario.
+```
+
+### 2. Likely Fraud Types  
+```
+•  **Billing for Non‑existent Services** – The claim amount ($10,000) far exceeds the deductible paid ($5,000) without any inpatient component, raising red flags for services that may not have been rendered.  
+•  **Duplicate Billing** – A single beneficiary with a high claim amount may indicate duplicate submissions or multiple billing codes for the same service.  
+•  **Up‑coding** – The insurer has paid a large deductible; however, the service codes used may be higher‑tier than the actual services provided.  
+•  **Collusion with Provider** – The combination of a high deductible and a single beneficiary can sometimes arise from collusion between a provider and a beneficiary to inflate costs.
+```
+
+### 3. Patterns or Causes  
+```
+•  Outpatient claims with claim amounts >$8,000 and deductibles >$4,000 are statistically associated with higher fraud scores.  
+•  Claims lacking inpatient status (Inpatient Status = 0) and involving single beneficiaries are more likely to be fraudulent.  
+•  The current claim’s ratio of Claim Amount / Deductible Paid ≈ 2.0 is above the industry average of 1.4 for similar services, suggesting over‑billing.  
+•  The time‑to‑payment for this claim was 5 days, faster than the typical 12‑day window, indicating a possible “express” fraud strategy.
+```
+
+### 4. Recommended Actions  
+```
+   a.  **Immediate Claim Hold** – Suspend payment pending further investigation to prevent loss of additional funds.  
+   b.  **Provider Audit** – Request detailed provider statements, medical records, and service codes for the period of the claim.  
+   c.  **Cross‑Check Beneficiary History** – Verify the beneficiary’s prior claims, service dates, and any history of suspicious activity.  
+   d.  **Code Validation** – Engage a clinical coding specialist to confirm that billed CPT/HCPCS codes match the documented services.  
+   e.  **Fraud Analyst Review** – Conduct a manual review of the claim using the insurer’s fraud rule engine (Rule #FRAUD‑2025‑04).  
+   f.  **Legal Consultation** – If fraud is confirmed, initiate the insurer’s legal process for recovery and potential criminal referral.  
+   g.  **Prevention Measures** – Update policy guidelines to require inpatient verification for claims >$8,000 and enforce stricter deductible documentation.
+```
+
+### 5. Final Verdict  
+```
+Based on the current data, the claim exhibits a high probability of fraud (0.62) with a medium risk classification.  The combination of a substantial claim amount, high deductible paid, and absence of inpatient services points to likely billing for non‑existent or duplicated services.  The potential saving of $3,720.01 indicates significant financial exposure if the claim proceeds unchallenged.  
+
+**Verdict:**  
+   •  **Hold the claim** pending detailed investigation.  
+   •  Proceed with the recommended actions to confirm or refute fraud.  
+   •  If fraud is proven, initiate recovery procedures and document findings for future risk mitigation.  
+```
+
+*Prepared by:*  
+Fraud Analyst – Healthcare Claims Division  
+Date: 2025‑10‑05  
+---

@@ -1,0 +1,71 @@
+=== Statistics ===
+{
+  "total_claims": 1,
+  "fraud_claims": 0,
+  "fraud_percentage": 0.81,
+  "fraud_probability": 0.0081,
+  "risk_level": "Low",
+  "potential_saving": 4.45,
+  "claim_amount": 912,
+  "deductible_amt_paid": 456,
+  "beneficiaries_count": 1
+}
+
+=== AI Summary ===
+**Fraud Investigation Report – Claim ID 000‑123‑456**  
+*Prepared by: Healthcare Fraud Analyst*  
+*Date: 2025‑10‑04*  
+
+| Metric | Value |
+|--------|-------|
+| Fraud Probability | **0.0081** (0.81 %) |
+| Risk Level | **Low** |
+| Potential Savings | **$4.45 k** |
+| Claim Amount | **$912** |
+| Deductible Paid | **$456** |
+| Inpatient Status | **0** (Outpatient) |
+| Beneficiaries Count | **1** |
+
+---
+
+### 1. Overall Fraud Situation  
+- The automated scoring engine flags this claim with a **Fraud Probability of 0.81 %**, classified as **Low Risk**.  
+- The claim involves a single beneficiary and is an outpatient service, with the payer covering the entire deductible ($456).  
+- The potential savings if fraudulent activity is confirmed stands at **$4.45 k**.
+
+---
+
+### 2. Likely Fraud Types  
+| Fraud Category | Indicators | Suggested Investigation Focus |
+|----------------|------------|------------------------------|
+| **Billing for Non‑Provided Services** | Deductible paid equals half the claim amount; no inpatient indication | Verify service dates and provider records |
+| **Duplicate Claims** | Single beneficiary, single claim; high deductible | Check for duplicate claim IDs in the same billing period |
+| **Up‑coding** | Claim amount $912 for outpatient service | Compare CPT/HCPCS codes to actual services rendered |
+| **Unbundling** | Deductible paid matches typical 50 % split | Review bundled vs. unbundled service codes |
+
+---
+
+### 3. Patterns or Causes  
+- **High Deductible vs. Total Claim** – The deductible ($456) is exactly 50 % of the claim, a pattern in certain billing schemes.  
+- **Outpatient Status** – No inpatient indicator reduces complexity but may increase risk of unbundling.  
+- **Single Beneficiary** – Limits the scope for beneficiary-level collusion but raises the possibility of provider‑centered fraud.  
+
+---
+
+### 4. Recommended Actions  
+| Action | Priority | Description |
+|--------|----------|-------------|
+| **Cross‑Validate Service Dates** | High | Confirm that the dates of service align with provider schedules and patient records. |
+| **Audit CPT/HCPCS Codes** | High | Ensure codes match the documented services and are not higher‑level codes used to inflate reimbursement. |
+| **Check for Duplicate Claims** | Medium | Search the system for identical claim numbers or identical services within a 30‑day window. |
+| **Interview Provider** | Low | Obtain verbal confirmation of services rendered and clarify any discrepancies. |
+| **Document Findings** | High | Prepare a detailed report to support potential future actions (e.g., claim denial, audit, or legal proceeding). |
+
+---
+
+### 5. Final Verdict  
+- **Risk Assessment:** Low probability (0.81 %) of fraud.  
+- **Action Recommendation:** Initiate a **moderate‑depth audit** focusing on billing codes, service dates, and deductible alignment.  
+- **Outcome Possibility:** If discrepancies are found, potential savings of **$4.45 k** could be realized; otherwise, the claim may be processed as legitimate.  
+
+*Prepared for: Claims Management & Compliance Team*

@@ -1,0 +1,61 @@
+=== Statistics ===
+{
+  "total_claims": 1,
+  "fraud_claims": 0,
+  "fraud_percentage": 1.81,
+  "fraud_probability": 0.0181,
+  "risk_level": "Low",
+  "potential_saving": 0.02,
+  "claim_amount": 2,
+  "is_inpatient": 1,
+  "deductible_amt_paid": 2,
+  "beneficiaries_count": 2
+}
+
+=== AI Summary ===
+```
+Fraud Investigation Report
+===========================
+Provider: [Provider Name]
+Date: [Current Date]
+
+	Key Statistics
+		Fraud Probability       : 0.0181
+		Risk Level              : Low
+		Potential Saving        : $0.02
+		Claim Amount            : $2
+		Deductible Paid         : $2
+		Inpatient Status        : 1  (Inpatient claim)
+		Beneficiaries Count     : 2
+
+	1. Overall Fraud Situation
+		- The probability of fraud for this provider’s recent claim is 1.81 %.  
+		- The risk level is designated as “Low” by the predictive model.  
+		- The potential saving if the claim is invalidated is only $0.02, indicating a negligible financial impact.  
+		- The claim amount ($2) is identical to the deductible paid ($2), suggesting the claim covers a single, minimally priced service.  
+		- The claim is for an inpatient service and involves two beneficiaries.
+
+	2. Likely Fraud Types
+		- **Duplicate Billing** – The exact match between claim amount and deductible may indicate a duplicate entry for a single service.  
+		- **Up‑coding/Improper Code Utilization** – For such a small claim, any up‑coding would be easily detectable by threshold checks.  
+		- **Non‑existent Service Billing** – Although the amount is low, the inpatient status raises the possibility that the service was billed without actual delivery.
+
+	3. Patterns or Causes
+		- **Minimal Claim Size** – The uniformity of claim and deductible amounts points to a simple, possibly automated billing routine.  
+		- **Single‑Service Claims** – No mix of outpatient and inpatient codes, reducing complexity but also limiting cross‑check opportunities.  
+		- **Beneficiary Duplication** – Two beneficiaries on a $2 inpatient claim could be a data entry error or a deliberate split to avoid thresholds.
+
+	4. Recommended Actions
+		- **Data Validation** – Verify the claim against the provider’s service records and medical charts.  
+		- **Cross‑Check Beneficiaries** – Confirm that both beneficiaries were actually present for the inpatient service.  
+		- **Audit History** – Review the provider’s past claims for similar patterns (small, single‑value inpatient claims).  
+		- **Automated Flagging** – Enable a rule that flags any inpatient claim where the claim amount equals the deductible, regardless of size.  
+		- **Periodic Review** – Schedule quarterly reviews for all low‑risk providers to catch any emerging trends.
+
+	5. Final Verdict
+		- Based on the current data, the fraud probability is low, the financial impact is negligible, and no immediate corrective action is required.  
+		- Continue monitoring with the recommended safeguards, and re‑evaluate if the provider’s claim patterns change or if higher‑value claims appear.
+
+```
+
+*Prepared by: [Your Name], Healthcare Fraud Analyst*

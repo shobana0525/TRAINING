@@ -1,0 +1,72 @@
+=== Statistics ===
+{
+  "total_claims": 1,
+  "fraud_claims": 0,
+  "fraud_percentage": 3.96,
+  "fraud_probability": 0.0396,
+  "risk_level": "Low",
+  "potential_saving": 129.93,
+  "claim_amount": 5464,
+  "is_inpatient": 12,
+  "deductible_amt_paid": 5647,
+  "beneficiaries_count": 23
+}
+
+=== AI Summary ===
+**Healthcare Fraud Investigation Report**  
+*Provider‑Level Analysis – Medical Insurance System*  
+
+| Metric | Value |
+|--------|-------|
+| Fraud Probability | **0.0396** |
+| Risk Level | **Low** |
+| Potential Savings | **$129.93** |
+| Claim Amount | **$5,464** |
+| Deductible Amount Paid | **$5,647** |
+| Inpatient Status | **12** |
+| Beneficiaries Count | **23** |
+
+---
+
+### 1. Overall Fraud Situation  
+- The calculated *Fraud Probability* of **3.96 %** places the provider in the **Low** risk category.  
+- The *Potential Savings* of **$129.93** indicates that, if fraudulent activity were confirmed, the insurer could recoup a modest amount relative to the claim size.  
+- The claim amount ($5,464) is slightly lower than the deductible paid ($5,647), suggesting that the provider may have billed for services that were not ultimately rendered or for which the patient’s deductible was exceeded.  
+
+### 2. Likely Fraud Types  
+| Type | Indicator | Notes |
+|------|-----------|-------|
+| **Billing for Non‑rendered Services** | Deductible > Claim | Provider may have billed for services that did not occur. |
+| **Up‑coding / Service Level Inflation** | High Claim vs. Low Claim | No direct evidence of up‑coding; however, the mismatch between claim and deductible suggests possible over‑billing. |
+| **Duplicate Claims** | Inpatient Status 12 | Multiple inpatient claims for the same episode could inflate spending. |
+| **Patient Misidentification** | Beneficiaries Count 23 | High beneficiary count relative to claim size may signal misuse of patient identifiers. |
+
+### 3. Patterns or Causes  
+- **Claim vs. Deductible Discrepancy** – The deductible paid exceeds the claim amount, which is atypical and warrants scrutiny.  
+- **Inpatient Volume** – Twelve inpatient claims within a single dataset point to a concentrated service type that could involve bundled services or repeated billing.  
+- **Beneficiary Distribution** – With 23 beneficiaries linked to one claim, there is a risk of beneficiary misassignment or data entry errors.  
+
+### 4. Recommended Actions  
+1. **Detailed Claim Review**  
+   - Verify the **service dates, CPT/HCPCS codes, and provider notes** to confirm that the billed services were rendered.  
+   - Cross‑check the **deductible calculation** against the patient’s plan to ensure accuracy.  
+
+2. **Data Validation**  
+   - Audit the **beneficiary identifiers** to confirm they match the patient’s records.  
+   - Confirm that the **inpatient status** aligns with the provider’s credentialing and service records.  
+
+3. **Audit Trail Examination**  
+   - Examine the provider’s **billing history** over the past 12 months for patterns of repeated or anomalous claims.  
+
+4. **Stakeholder Communication**  
+   - Notify the provider of the flagged claim and request a **clarification or supporting documentation**.  
+
+5. **Follow‑Up Investigation**  
+   - If discrepancies remain unresolved, proceed with a **formal fraud investigation** and consider involving legal counsel.  
+
+### 5. Final Verdict  
+Based on the current statistical snapshot, the provider presents a **Low‑risk** profile with a modest potential savings of **$129.93** if fraud is confirmed. However, the **claim–deductible mismatch** and the **high inpatient and beneficiary counts** raise red flags that merit a targeted audit. While the probability is low, the recommended actions will help ensure data integrity and protect against potential fraudulent activity.  
+
+**Prepared by:**  
+*Senior Healthcare Fraud Analyst*  
+*Date:* 2024‑06‑??

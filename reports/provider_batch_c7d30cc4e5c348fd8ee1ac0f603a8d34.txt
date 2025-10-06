@@ -1,0 +1,11 @@
+=== Statistics ===
+{
+  "total_claims": 4,
+  "fraud_claims": 0,
+  "fraud_percentage": 0.0,
+  "fraud_probability": 0.01949431002140045,
+  "risk_level": "Low",
+  "potential_saving": 0.0
+}
+
+=== AI Summary ===

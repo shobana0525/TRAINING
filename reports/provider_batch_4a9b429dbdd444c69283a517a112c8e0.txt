@@ -1,0 +1,58 @@
+=== Statistics ===
+{
+  "total_claims": 10,
+  "fraud_claims": 6,
+  "fraud_percentage": 60.0,
+  "fraud_probability": 0.60407954454422,
+  "risk_level": "High",
+  "potential_saving": 14654.52
+}
+
+=== AI Summary ===
+**Fraud Investigation Report – Provider‑Level Analysis**  
+*(Prepared by: Healthcare Fraud Analyst)*  
+
+---
+
+### 1. Overall Fraud Situation  
+```
+• Fraud Probability          : 0.6041  (60.4 %)  
+• Risk Level                 : High  
+• Potential Savings          : $14,654.52  
+• Claim Amount               : $0.00  
+• Deductible Paid            : $0.00  
+• Inpatient Status (Y/N)     : 0 (No inpatient claims)  
+• Beneficiaries Count        : 0
+```
+- The probability score **exceeds 0.6**, placing the provider firmly in the **High‑Risk** category.  
+- Despite the absence of any actual claims (`Claim Amount = 0`), the system flags a potential saving of **$14.7 k**, indicating that *billable services were expected but never recorded or were cancelled.*  
+- Key red flags: zero deductible and zero inpatient status coupled with zero beneficiaries suggest that the provider’s billing activity is either non‑existent or fabricated.  
+
+### 2. Likely Fraud Types  
+| # | Fraud Type | Supporting Evidence |
+|---|------------|---------------------|
+| 1 | **Phantom Provider / Non‑existent Claims** | No claim amounts, zero beneficiaries, yet a high probability and potential saving. |
+| 2 | **Duplicate / Shadow Billing** | The system predicts savings, implying that services might have been billed twice or under a different provider ID. |
+| 3 | **Identity Theft / Misattribution** | Zero inpatient status and deductible, but a high fraud probability could indicate that services were billed under this provider’s name but performed elsewhere. |
+| 4 | **Data Entry / System Error** | The stark mismatch between probability and claim data may stem from incorrect data ingestion or coding errors. |
+
+### 3. Patterns or Causes  
+- **Zero Activity Metrics** – All quantitative claim fields (`Claim Amount`, `Deductible`, `Inpatient Status`, `Beneficiaries`) are zero.  
+- **High Probability Without Evidence** – The fraud probability algorithm likely flagged the provider based on *historical trends* or *associated identifiers* rather than actual claim data.  
+- **Potential Systemic Issue** – If this provider is part of a larger network, similar zero‑activity patterns may exist elsewhere, hinting at a systematic data routing issue.  
+
+### 4. Recommended Actions  
+| Action | Owner | Deadline | Notes |
+|--------|-------|----------|-------|
+| **Validate Provider Identity** | Provider Relations | 5 business days | Confirm license, NPI, and active status. |
+| **Audit Claim Submission Logs** | Claims Processing | 7 business days | Look for phantom or duplicate entries linked to the provider ID. |
+| **Cross‑Reference External Databases** | Fraud Data Science | 10 business days | Compare with Medicare/Medicaid claims, state licensure boards. |
+| **Run a Data Integrity Check** | IT/Data Management | 3 business days | Ensure no corruption or mis‑routing of claim data. |
+| **Flag for Further Investigation** | Fraud Investigation Team | Immediate | Assign a case manager to oversee the follow‑up. |
+
+### 5. Final Verdict  
+Given the **high fraud probability (60.4 %)**, the **absence of actual claim activity**, and the **implied potential savings of $14.7 k**, the provider is **suspected of fraudulent activity**—most likely a phantom or duplicate provider scenario. Immediate investigative action is warranted to confirm the legitimacy of the provider’s records and to recover any mis‑billed funds.  
+
+*Prepared on:* 2024‑06‑12  
+*Analyst:* [Name], Healthcare Fraud Analyst  
+*Signature:* _____________________

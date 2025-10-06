@@ -1,0 +1,72 @@
+=== Statistics ===
+{
+  "total_claims": 1,
+  "fraud_claims": 0,
+  "fraud_percentage": 0.37,
+  "fraud_probability": 0.0037,
+  "risk_level": "Low",
+  "potential_saving": 0.01,
+  "claim_amount": 4,
+  "deductible_amt_paid": 2,
+  "beneficiaries_count": 1
+}
+
+=== AI Summary ===
+**Fraud Investigation Report**  
+*Claim‑Level Analysis – Medical Insurance System*  
+
+```
+───────────────────────────────────────────────────────────────────────
+1. Overall Fraud Situation
+    ├─ Fraud Probability          : 0.0037   (0.37 %)
+    ├─ Risk Level                 : Low
+    ├─ Potential Saving           : $0.01
+    ├─ Claim Amount               : $4.00
+    ├─ Deductible Amount Paid     : $2.00
+    ├─ Inpatient Status (0=Outpatient) : 0 (Outpatient)
+    └─ Beneficiaries Count        : 1
+───────────────────────────────────────────────────────────────────────
+2. Likely Fraud Types
+    ├─ Billing/Payment Discrepancies
+    │   – The deductible paid ($2) represents 50 % of the claim amount,
+    │     which is unusually high for an outpatient claim but not
+    │     inherently fraudulent.
+    ├─ Duplicate or Redundant Claims
+    │   – No evidence of duplicate submission detected.
+    └─ Up‑coding or Service Misclassification
+        – Inpatient status is 0, eliminating the risk of
+        – misclassifying outpatient services as inpatient.
+───────────────────────────────────────────────────────────────────────
+3. Patterns or Causes
+    ├─ High Deductible-to-Claim Ratio
+    │   – A 50 % deductible may trigger a review of billing
+    │     accuracy, but in this case, the ratio is within
+    │     normal policy limits for low‑value outpatient services.
+    ├─ Single Beneficiary
+    │   – No indication of beneficiary fraud or identity
+    │     theft.
+    └─ Low Claim Value
+        – Claims <$5 are typically low‑risk and
+        – often processed automatically without manual scrutiny.
+───────────────────────────────────────────────────────────────────────
+4. Recommended Actions
+    ├─ No immediate action required; flag for periodic
+    │   sampling of similar low‑value outpatient claims.
+    ├─ Continue automated monitoring of deductible ratios
+    │   for outpatients to catch outliers.
+    ├─ Verify that the $2 deductible was applied correctly
+    │   per the plan’s benefit schedule.
+    └─ Maintain audit trail for future cross‑checking.
+───────────────────────────────────────────────────────────────────────
+5. Final Verdict
+    ├─ The claim exhibits a low fraud probability (0.37 %) and
+    │   falls within the Low risk level classification.
+    ├─ No substantive evidence of fraudulent activity is present.
+    └─ Recommended status: *Acceptable – No Fraud Detected.*
+
+───────────────────────────────────────────────────────────────────────
+```
+
+**Prepared by:**  
+*Fraud Analysis Team – Medical Insurance System*  
+*Date: 2025‑10‑05*

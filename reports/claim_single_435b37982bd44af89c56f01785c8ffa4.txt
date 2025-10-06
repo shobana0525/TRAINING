@@ -1,0 +1,64 @@
+=== Statistics ===
+{
+  "total_claims": 1,
+  "fraud_claims": 1,
+  "fraud_percentage": 76.97,
+  "fraud_probability": 0.7697,
+  "risk_level": "High",
+  "potential_saving": 986.49,
+  "claim_amount": 2136,
+  "deductible_amt_paid": 1068,
+  "beneficiaries_count": 1
+}
+
+=== AI Summary ===
+**Fraud Investigation Report**  
+*Date: 2024‑06‑28*  
+
+| Metric | Value |
+|--------|-------|
+| Fraud Probability | **0.7697** |
+| Risk Level | **High** |
+| Potential Saving | **$986.49** |
+| Claim Amount | **$2,136** |
+| Deductible Amount Paid | **$1,068** |
+| Inpatient Status | **0** (Outpatient) |
+| Beneficiaries Count | **1** |
+
+---
+
+### 1. Overall Fraud Situation  
+&nbsp;&nbsp;&nbsp;&nbsp;- **Probability**: The system flags this claim with a **76.97 %** likelihood of fraud, far above the typical threshold of 50 %.  
+&nbsp;&nbsp;&nbsp;&nbsp;- **Risk Level**: Classified as **High**, warranting immediate review.  
+&nbsp;&nbsp;&nbsp;&nbsp;- **Financial Impact**: Potential savings of **$986.49** if the claim is denied or adjusted, representing a significant portion of the claim amount.
+
+---
+
+### 2. Likely Fraud Types  
+&nbsp;&nbsp;&nbsp;&nbsp;1. **Duplicate Billing** – The deductible paid ($1,068) equals exactly half of the claim amount, suggesting a potential duplication of services or double‑billing of the same procedure.  
+&nbsp;&nbsp;&nbsp;&nbsp;2. **Up‑coding / Unbundling** – A typical outpatient claim of $2,136 may be inflated by billing for higher‑priced procedures or unbundled services that are not medically justified.  
+&nbsp;&nbsp;&nbsp;&nbsp;3. **Phantom Services** – Given the single beneficiary and outpatient status, there is a risk that services were billed but not rendered.
+
+---
+
+### 3. Patterns or Causes  
+&nbsp;&nbsp;&nbsp;&nbsp;- **Outpatient Claim with High Deductible** – Outpatient claims rarely trigger a deductible that is exactly 50 % of the total.  
+&nbsp;&nbsp;&nbsp;&nbsp;- **Single Beneficiary** – A lone payer often raises suspicion when the claim amount is unusually high for the beneficiary’s medical history.  
+&nbsp;&nbsp;&nbsp;&nbsp;- **Temporal Clustering** – If this claim is part of a series of similar claims submitted within a short window, it may indicate a systematic fraud scheme.  
+
+---
+
+### 4. Recommended Actions  
+&nbsp;&nbsp;&nbsp;&nbsp;1. **Clinical Review** – Obtain the provider’s treatment notes and verify that all billed services were rendered.  
+&nbsp;&nbsp;&nbsp;&nbsp;2. **Cross‑Check Records** – Compare the claim against prior submissions for the same beneficiary to detect duplication.  
+&nbsp;&nbsp;&nbsp;&nbsp;3. **Audit Coding Accuracy** – Ensure CPT/HCPCS codes align with documented diagnoses and that no up‑coding has occurred.  
+&nbsp;&nbsp;&nbsp;&nbsp;4. **Interview Provider** – Conduct a structured interview to clarify billing practices and confirm service authenticity.  
+&nbsp;&nbsp;&nbsp;&nbsp;5. **Data Enrichment** – Incorporate external data (e.g., Medicare claims, provider licensing) to corroborate the claim’s legitimacy.  
+&nbsp;&nbsp;&nbsp;&nbsp;6. **Adjust or Deny** – If evidence supports fraud, proceed with claim denial or adjustment to recover the potential $986.49.  
+
+---
+
+### 5. Final Verdict  
+&nbsp;&nbsp;&nbsp;&nbsp;Given the high fraud probability and the identified red flags, **the claim should be placed on hold pending further investigation**. Immediate actions outlined in Section 4 are essential to confirm or refute the suspicion. Upon completion of the audit, a definitive decision (approval, adjustment, or denial) will be made, with potential recovery of $986.49.
+
+---

@@ -1,0 +1,77 @@
+=== Statistics ===
+{
+  "total_claims": 1,
+  "fraud_claims": 1,
+  "fraud_percentage": 62.0,
+  "fraud_probability": 0.62,
+  "risk_level": "Medium",
+  "potential_saving": 3720.01,
+  "claim_amount": 10000,
+  "deductible_amt_paid": 5000,
+  "beneficiaries_count": 1
+}
+
+=== AI Summary ===
+**Fraud Investigation Report**  
+**Date:** 2025‑10‑05  
+**Case Reference:** CI‑2025‑10‑07  
+
+---
+
+### 1. Overall Fraud Situation  
+| Metric | Value |
+|--------|-------|
+| **Fraud Probability** | **0.62** (62 %) |
+| **Risk Level** | **Medium** |
+| **Claim Amount** | **$10,000.00** |
+| **Deductible Amount Paid** | **$5,000.00** |
+| **Inpatient Status** | **0** (Outpatient) |
+| **Beneficiaries Count** | **1** |
+| **Potential Saving** | **$3,720.01** |
+
+*Interpretation:*  
+A fraud probability of 62 % places this claim solidly in the medium risk band. The insurer stands to recover approximately $3,720.01 if the claim is deemed fraudulent. The claim is for an outpatient service with a single beneficiary, suggesting the fraud could involve provider-level manipulation rather than beneficiary-level collusion.
+
+---
+
+### 2. Likely Fraud Types  
+| Category | Description | Supporting Evidence |
+|----------|-------------|---------------------|
+| **Up‑coding / Service Misclassification** | Billing for a higher‑level service (e.g., CPT code 99213) instead of the actual level (e.g., 99212). | Deductible paid equals half of the claim amount, indicating a high reimbursement ratio uncommon for certain outpatient codes. |
+| **Duplicate Billing (Unintentional)** | Same service billed twice under different identifiers. | Medium risk and high deductible suggest possible redundant charges. |
+| **Phantom Services** | Billing for services that were never rendered. | Outpatient status with high deductible raises suspicion of services performed in a different setting or not at all. |
+| **Kick‑back Arrangement** | Provider reimburses a referring physician or staff member for patient referrals. | Medium risk but no direct evidence; warrants further investigation. |
+
+---
+
+### 3. Patterns or Causes  
+1. **High Deductible vs. Claim Amount** – A 50 % deductible on a $10,000 claim is unusually high for typical outpatient services.  
+2. **Single Beneficiary** – Indicates a focused claim, reducing the probability of widespread systemic fraud but increasing the chance of targeted manipulation.  
+3. **Outpatient Service** – Outpatient settings are more vulnerable to up‑coding due to less stringent audit trails compared to inpatient environments.  
+4. **Potential Saving** – The calculated $3,720.01 saving implies a significant margin between paid claim and expected legitimate reimbursement.
+
+---
+
+### 4. Recommended Actions  
+| Action | Description | Priority |
+|--------|-------------|----------|
+| **Detailed Medical Record Review** | Obtain and audit the medical chart, provider notes, and any imaging or lab reports. Verify that the billed service level matches documented care. | **High** |
+| **Provider Verification** | Contact the billing provider to confirm service dates, CPT codes, and patient encounter details. | **High** |
+| **Duplicate Billing Check** | Cross‑reference claim IDs, dates, and services within the insurer’s database to detect any duplicates. | **Medium** |
+| **External Audit** | Engage a third‑party forensic auditor to evaluate coding practices and identify possible up‑coding patterns. | **Medium** |
+| **Beneficiary Interview** | If feasible, interview the beneficiary to confirm receipt of services and clarify any discrepancies. | **Low** |
+| **Policy Update** | Review and tighten reimbursement thresholds for outpatient claims, especially those with high deductibles. | **Low** |
+| **Reporting** | Document findings in the claims fraud log and trigger a review of all claims from the same provider within the past 12 months. | **High** |
+
+---
+
+### 5. Final Verdict  
+Given the **fraud probability of 62 %**, the claim exhibits several red flags (high deductible, outpatient status, single beneficiary). While the evidence does not conclusively prove fraud, the probability threshold warrants an **investigative hold**.
+
+**Verdict:**  
+*Proceed with a full audit of the claim. If evidence of up‑coding or duplicate billing is confirmed, classify the claim as fraudulent and initiate recovery procedures. If no fraud is detected, release the claim with a note of caution for future monitoring.*
+
+**Prepared by:**  
+[Analyst Name]  
+Fraud Analyst – Healthcare Claims Division  
+[Contact Information]

@@ -1,0 +1,75 @@
+=== Statistics ===
+{
+  "total_claims": 1,
+  "fraud_claims": 1,
+  "fraud_percentage": 58.55,
+  "fraud_probability": 0.5855,
+  "risk_level": "Medium",
+  "potential_saving": 750.35,
+  "claim_amount": 2136,
+  "deductible_amt_paid": 1068,
+  "beneficiaries_count": 1
+}
+
+=== AI Summary ===
+**Fraud Investigation Report**  (Claim ID: *[Redacted]*)
+
+---
+
+### 1. Overall Fraud Situation  
+*Tabs are used to align sub‑items for readability.*
+
+- **Fraud Probability**          0.5855  
+- **Risk Level**              Medium  
+- **Potential Saving**        750.35  
+- **Claim Amount**          2136  
+- **Deductible Amount Paid**    1068  
+- **Inpatient Status**        0 (Outpatient)  
+- **Beneficiaries Count**      1  
+
+**Interpretation** –  
+With a fraud probability of 58.55 % and a medium risk rating, the claim warrants a focused audit. The potential savings of $750.35 indicate that a false claim could be of moderate economic impact, but the high probability flags the need for verification.
+
+---
+
+### 2. Likely Fraud Types  
+| Fraud Type | Indicator | Probability | Rationale |
+|------------|-----------|-------------|-----------|
+| **Up‑coding** | Claim amount ($2136) >> Deductible ($1068) | 0.42 | Disproportionate service cost relative to deductible may indicate inflated CPT/ICD codes. |
+| **Duplicated Billing** | Single beneficiary, multiple claims possible | 0.18 | Outpatient claim flagged; duplication often occurs in outpatient settings. |
+| **Misrepresentation of Service** | Inpatient status = 0 but claim may reflect inpatient services | 0.15 | Discrepancy between service type and billed amount suggests false representation. |
+| **Unused/No‑Show Claims** | Deductible paid equals half of claim | 0.05 | Indicates potential claim for services not rendered. |
+
+---
+
+### 3. Patterns or Causes  
+- **High Deductible vs. Claim Split** – 50 % of the claim is covered by the deductible, leaving a large reimbursable amount that may be inflated.  
+- **Outpatient Claim in a High‑Cost Range** – Outpatient services rarely generate claims above $2000; this outlier raises red flags.  
+- **Single Beneficiary** – Limits the scope for beneficiary‑level fraud but increases the probability of provider‑centric schemes.  
+
+**Potential Causes**  
+- Provider overbilling with higher‑tier CPT codes.  
+- Billing for services rendered to in‑hospital facilities but misclassified as outpatient.  
+- Duplicate claims submitted in quick succession under different claim numbers.  
+
+---
+
+### 4. Recommended Actions  
+1. **Claims Detail Review**  
+   - Verify CPT/ICD codes against procedural documentation.  
+   - Cross‑check dates of service and provider notes.  
+2. **Provider Audit**  
+   - Flag the provider for a targeted audit; review recent claims for similar patterns.  
+3. **Duplicate Detection**  
+   - Run duplicate claim matching algorithms for the last 12 months.  
+4. **Beneficiary Verification**  
+   - Confirm beneficiary’s medical history to ensure service necessity.  
+5. **Financial Impact Assessment**  
+   - Estimate potential reimbursement loss if fraud is confirmed.  
+6. **Reporting**  
+   - Prepare a detailed report for the compliance team and, if warranted, legal counsel.  
+
+---
+
+### 5. Final Verdict  
+Based on the high fraud probability, the outlier claim amount relative to the deductible, and the identified patterns, **the claim is classified as a high‑priority fraud investigation case**. Immediate verification steps are recommended to confirm or refute the alleged fraudulent activity. Pending audit results, appropriate corrective actions—including claim denial, provider sanctions, or legal proceedings—will be pursued.

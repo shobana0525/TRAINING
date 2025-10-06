@@ -1,0 +1,66 @@
+=== Statistics ===
+{
+  "total_claims": 1,
+  "fraud_claims": 0,
+  "fraud_percentage": 0.37,
+  "fraud_probability": 0.0037,
+  "risk_level": "Low",
+  "potential_saving": 0.01,
+  "claim_amount": 4,
+  "deductible_amt_paid": 2,
+  "beneficiaries_count": 1
+}
+
+=== AI Summary ===
+**Fraud Investigation Report**  
+*Claim Analysis – Medical Insurance System*  
+
+| **Metric**                | **Value** |
+|---------------------------|-----------|
+| Fraud Probability         | **0.0037** |
+| Risk Level                | **Low** |
+| Potential Savings         | **$0.01** |
+| Claim Amount              | **$4** |
+| Deductible Paid           | **$2** |
+| Inpatient Status          | **0** (Out‑patient) |
+| Beneficiaries Count       | **1** |
+
+---
+
+### 1. Overall Fraud Situation  
+- The algorithm‑derived fraud probability for this claim is **0.0037** (0.37 %), placing it firmly in the **Low** risk bracket.  
+- The projected financial impact of any potential fraud is negligible – the system estimates a **$0.01** saving if the claim is flagged as fraudulent.  
+- Given the low risk and minimal savings, the claim is **not a priority** for extensive investigation at this time.
+
+### 2. Likely Fraud Types  
+| **Type**            | **Probability** | **Relevance** |
+|---------------------|-----------------|---------------|
+| **Provider Over‑billing** | Low | The claim amount ($4) is modest; over‑billing at this scale is unlikely. |
+| **Duplicate Claim** | Very Low | No evidence of duplicate identifiers; beneficiary count is singular. |
+| **Misclassification** | Low | Inpatient status is 0 (out‑patient); mis‑coding would need to involve an inpatient code. |
+
+### 3. Patterns or Causes  
+- **Claim Size**: At only $4, the claim is one of the smallest in the dataset, reducing the incentive for fraud.  
+- **Deductible Paid**: The deductible amount ($2) equals exactly half the claim. This proportion is typical for low‑value claims and does not signal anomalous behavior.  
+- **Beneficiary Count**: With a single beneficiary, there is no opportunity for a multi‑beneficiary fraud scheme.  
+- **Inpatient Status**: The claim is flagged as out‑patient, aligning with the low claim amount and typical coding patterns.
+
+### 4. Recommended Actions  
+| **Action**                               | **Priority** | **Rationale** |
+|-----------------------------------------|--------------|---------------|
+| **Routine Audit**                       | Low          | Maintain audit trail; confirm coding accuracy. |
+| **Data Quality Check**                  | Low          | Validate that claim identifiers and beneficiary data are entered correctly. |
+| **Monthly Trend Review**                | Medium       | Monitor for any sudden increases in similar low‑value claims. |
+| **Stakeholder Notification** (if any anomaly arises) | Low | Keep provider and claimant informed of audit outcomes. |
+
+### 5. Final Verdict  
+- **Verdict**: *No fraud detected.*  
+- **Justification**: The combination of a very low fraud probability, minimal financial impact, and alignment with standard claim patterns indicates that the claim is legitimate.  
+- **Next Steps**: No immediate action required beyond routine monitoring. Periodic re‑evaluation is advised to ensure continued consistency with low‑risk patterns.
+
+---  
+
+*Prepared by:*  
+**[Fraud Analyst Name]**  
+**Healthcare Fraud Analysis Unit**  
+**Date:** 05 Oct 2025

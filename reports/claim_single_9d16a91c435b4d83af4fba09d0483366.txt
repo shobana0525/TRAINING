@@ -1,0 +1,71 @@
+=== Statistics ===
+{
+  "total_claims": 1,
+  "fraud_claims": 0,
+  "fraud_percentage": 0.37,
+  "fraud_probability": 0.0037,
+  "risk_level": "Low",
+  "potential_saving": 0.01,
+  "claim_amount": 4,
+  "deductible_amt_paid": 2,
+  "beneficiaries_count": 1
+}
+
+=== AI Summary ===
+**Fraud Investigation Report**  
+*Claim ID:*  *[Redacted]*  
+*Date of Review:* 2025‑10‑05  
+
+| Metric                     | Value |
+|----------------------------|-------|
+| Fraud Probability          | 0.0037 |
+| Risk Level                 | Low |
+| Potential Saving           | 0.01 |
+| Claim Amount (USD)         | 4 |
+| Deductible Paid (USD)      | 2 |
+| Inpatient Status (0=No)    | 0 |
+| Beneficiaries Count        | 1 |
+
+---
+
+### 1. Overall Fraud Situation  
+```
+   • The claim presents a **very low fraud probability (0.0037)**, placing it in the *Low* risk category.  
+   • Financial impact is negligible: a potential saving of only **$0.01** against a $4 claim.  
+   • The claim was **outpatient** (Inpatient Status = 0) and involved a single beneficiary.  
+   • The deductible paid ($2) accounts for 50 % of the total claim amount, which is typical for this service line.  
+```
+
+### 2. Likely Fraud Types  
+```
+   • **Upcoding / Downcoding** – Minimal risk due to low claim amount and outpatient setting.  
+   • **Duplicate Billing** – Unlikely with a single beneficiary and no inpatient component.  
+   • **Misrepresentation of Services** – Low probability; claim details align with standard codes.  
+```
+
+### 3. Patterns or Causes  
+```
+   • The claim’s structure (outpatient, single beneficiary, modest deductible) matches the insurer’s baseline 
+     frequency distribution for this service category.  
+   • No anomalous billing patterns (e.g., unusually high frequency, extreme cost deviation) were observed.  
+   • The low fraud probability is consistent with the insurer’s historical fraud index for similar claims.  
+```
+
+### 4. Recommended Actions  
+```
+   • **Accept** the claim as legitimate; no audit or additional documentation required.  
+   • Continue to monitor the provider’s claim history for any emerging patterns; flag only if future claims deviate from baseline.  
+   • Update the fraud probability model with this case to refine future risk scoring.  
+```
+
+### 5. Final Verdict  
+```
+   • **Verdict:** No fraud detected.  
+   • **Action:** Claim proceeds to payment.  
+   • **Risk Level:** Low – no additional controls needed.  
+```
+
+*Prepared by:*  
+[Fraud Analyst Name]  
+Healthcare Fraud Analysis Team  
+*Signature:* _____________________   *Date:* 2025‑10‑05

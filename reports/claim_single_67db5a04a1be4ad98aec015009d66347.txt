@@ -1,0 +1,71 @@
+=== Statistics ===
+{
+  "total_claims": 1,
+  "fraud_claims": 0,
+  "fraud_percentage": 0.81,
+  "fraud_probability": 0.0081,
+  "risk_level": "Low",
+  "potential_saving": 4.45,
+  "claim_amount": 912,
+  "deductible_amt_paid": 456,
+  "beneficiaries_count": 1
+}
+
+=== AI Summary ===
+**Fraud Investigation Report – Claim‑Level Analysis**  
+*(Prepared by: Healthcare Fraud Analyst – 2025‑10‑04)*  
+
+| Metric | Value |
+|--------|-------|
+| Fraud Probability | **0.0081** |
+| Risk Level | **Low** |
+| Potential Saving | **$4.45** |
+| Claim Amount | **$912** |
+| Deductible Paid | **$456** |
+| Inpatient Status | **0** (Outpatient) |
+| Beneficiaries Count | **1** |
+
+---
+
+### 1. Overall Fraud Situation  
+- **Fraud Probability** of **0.81 %** places this claim in the *Low* risk category.  
+- The **Potential Saving** estimate of **$4.45** is modest relative to the claim amount, suggesting minimal financial impact if fraudulent activity were confirmed.  
+- The single beneficiary and outpatient status reduce the likelihood of complex fraud schemes (e.g., double‑billing or up‑coding across multiple providers).
+
+### 2. Likely Fraud Types  
+| Type | Rationale |
+|------|-----------|
+| **Billing for services not rendered** | Low probability but still possible given the deductible was fully paid. |
+| **Duplicate claim submission** | Unlikely; no duplicate identifiers or overlapping dates noted. |
+| **Up‑coding or inappropriate CPT codes** | Not apparent from data; claim amount aligns with typical outpatient services. |
+| **Identity theft** | Minimal due to single beneficiary and no red flags in demographic data. |
+
+### 3. Patterns or Causes  
+- **High Deductible Paid (50 % of claim)** – Suggests a routine patient cost‑sharing arrangement rather than fraud.  
+- **No inpatient indicator** – Outpatient claims generally have lower fraud rates.  
+- **Single beneficiary** – Limits opportunities for collusion or multiple claims fraud.  
+- **Claim amount ($912)** – Within the average range for outpatient procedures, no outlier indicators.
+
+### 4. Recommended Actions  
+| Action | Description | Priority |
+|--------|-------------|----------|
+| **Verification of service dates** | Confirm that the service date aligns with the deductible payment date. | Low |
+| **Cross‑check CPT codes** | Ensure codes match the billed services and are not higher‑level alternatives. | Low |
+| **Audit the provider’s claim history** | Review past claims from the same provider for any patterns of over‑billing. | Medium |
+| **Document findings** | Record all checks and conclusions in the claims audit log. | High |
+| **No immediate escalation** | Given low risk, no further action is warranted unless new evidence emerges. | High |
+
+### 5. Final Verdict  
+- **Risk Assessment:** *Low*  
+- **Fraud Likelihood:** Very low, with probability below 1 %.  
+- **Financial Impact:** Negligible potential savings ($4.45) relative to claim size.  
+- **Recommendation:** *Close claim with routine documentation.*  
+- **Future Monitoring:** Maintain periodic review of provider performance; no targeted investigations required at this time.
+
+---  
+
+*Prepared by:*  
+Healthcare Fraud Analyst – *Signature*  
+
+*Approved by:*  
+Senior Fraud Investigator – *Signature*

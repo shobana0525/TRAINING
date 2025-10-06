@@ -1,0 +1,66 @@
+=== Statistics ===
+{
+  "total_claims": 1,
+  "fraud_claims": 1,
+  "fraud_percentage": 58.55,
+  "fraud_probability": 0.5855,
+  "risk_level": "Medium",
+  "potential_saving": 750.35,
+  "claim_amount": 2136,
+  "deductible_amt_paid": 1068,
+  "beneficiaries_count": 1
+}
+
+=== AI Summary ===
+**Fraud Investigation Report**  
+*(Prepared for: Medical Insurance Claims Review Team)*  
+
+| **Key Metric** | **Value** |
+|-----------------|-----------|
+| Fraud Probability | **0.5855** |
+| Risk Level | **Medium** |
+| Potential Saving | **$750.35** |
+| Claim Amount | **$2,136** |
+| Deductible Paid | **$1,068** |
+| Inpatient Status | **0 (Outpatient)** |
+| Beneficiaries Count | **1** |
+
+---
+
+### 1. Overall Fraud Situation  
+- **Probability** of fraudulent activity stands at **58.55 %**, indicating a **moderate** to **high** suspicion level.  
+- The claim’s **potential saving** of **$750.35** suggests that if fraud were confirmed, the insurer would recover a significant amount relative to the claim size.  
+- The claim is **outpatient** (inpatient status = 0) and involves a **single beneficiary**.
+
+### 2. Likely Fraud Types  
+Based on the available indicators, the following fraud typologies are most plausible:  
+| **Fraud Type** | **Rationale** |
+|----------------|---------------|
+| **Upcoding / Procedure Inflation** | Outpatient claim with $2,136 total; deductible paid $1,068 suggests high utilization of major procedures. |
+| **Duplicate Billing** | Single beneficiary but high claim amount; potential for multiple invoices for the same service. |
+| **Billing for Unnecessary Services** | Moderate risk level; insurer may flag services that exceed standard outpatient thresholds. |
+
+### 3. Patterns or Causes  
+- **High Deductible Paid**: The deductible (50 % of claim) aligns with a **major outpatient procedure**.  
+- **Beneficiary Count**: Only one beneficiary reduces the likelihood of beneficiary fraud but increases the chance of provider-directed fraud.  
+- **Risk Level Medium**: Suggests that while some red flags exist, they are not extreme.  
+- **Potential Saving**: Indicates that the claim cost is substantial enough to merit a detailed audit.
+
+### 4. Recommended Actions  
+| **Action** | **Target** | **Priority** | **Comments** |
+|------------|------------|--------------|--------------|
+| **Detailed Provider Audit** | Provider(s) listed on claim | High | Verify CPT codes, dates of service, and provider credentials. |
+| **Cross‑Reference Claims** | Same beneficiary & provider | Medium | Check for duplicate or overlapping claims. |
+| **Verify Medical Necessity** | Services billed | High | Obtain physician notes, lab results, and treatment plans. |
+| **Interview Beneficiary** | Beneficiary (if feasible) | Low | Confirm receipt of services and any discrepancies. |
+| **Update Internal Rules** | Fraud detection engine | Medium | Adjust thresholds for outpatient claims >$2,000 with >50 % deductible. |
+
+### 5. Final Verdict  
+- **Verdict**: *Suspicious – Further Investigation Required*  
+- The claim exhibits **moderate to high fraud probability** and aligns with common outpatient fraud patterns.  
+- While the evidence is not conclusive, the **potential saving** and **deductible structure** warrant a **full audit** before payment is finalized.  
+
+**Prepared By:**  
+[Fraud Analyst Name]  
+[Title]  
+[Date]

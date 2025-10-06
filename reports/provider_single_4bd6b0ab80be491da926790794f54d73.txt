@@ -1,0 +1,45 @@
+=== Statistics ===
+{
+  "total_claims": 1,
+  "fraud_claims": 0,
+  "fraud_percentage": 1.22,
+  "fraud_probability": 0.0122,
+  "risk_level": "Low",
+  "potential_saving": 0.01,
+  "claim_amount": 1,
+  "is_inpatient": 1,
+  "deductible_amt_paid": 1,
+  "beneficiaries_count": 1
+}
+
+=== AI Summary ===
+**Fraud Investigation Report**  
+================================
+
+\t1. **Overall Fraud Situation**  
+\t\t• Fraud Probability: 0.0122 (1.22 %)  
+\t\t• Risk Level: Low  
+\t\t• Potential Savings: $0.01 per claim  
+\t\t• Claim Amount: $1  
+\t\t• Deductible Amount Paid: $1  
+\t\t• Inpatient Status: 1 (Yes)  
+\t\t• Beneficiaries Count: 1  
+
+\t2. **Likely Fraud Types**  
+\t\t• Upcoding of inpatient services  
+\t\t• Duplicate claim submissions  
+\t\t• Phantom beneficiary billing  
+
+\t3. **Patterns or Causes**  
+\t\t• Single beneficiary with an inpatient claim  
+\t\t• Claim amount equals deductible, suggesting potential cost‑shifting  
+\t\t• Low claim value but full deductible paid indicates possible billing manipulation  
+
+\t4. **Recommended Actions**  
+\t\t• Conduct a targeted audit of all inpatient claims for this provider.  
+\t\t• Verify beneficiary identity and service necessity.  
+\t\t• Implement automated flagging for claims where claim amount equals deductible.  
+\t\t• Cross‑check claims against external data sources to detect duplicates.  
+
+\t5. **Final Verdict**  
+\t\tThe fraud probability and risk level are low. No immediate punitive action is warranted, but the above monitoring and audit steps should be executed to mitigate any future risk.

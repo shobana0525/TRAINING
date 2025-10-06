@@ -1,0 +1,68 @@
+=== Statistics ===
+{
+  "total_claims": 1,
+  "fraud_claims": 0,
+  "fraud_percentage": 1.28,
+  "fraud_probability": 0.0128,
+  "risk_level": "Low",
+  "potential_saving": 0.02,
+  "claim_amount": 2,
+  "is_inpatient": 1,
+  "deductible_amt_paid": 2,
+  "beneficiaries_count": 22
+}
+
+=== AI Summary ===
+**Fraud Investigation Report – Provider‑Level Analysis**  
+*(Tab‑separated layout for clarity)*  
+
+| Item | Value | Interpretation |
+|------|-------|----------------|
+| Fraud Probability | 0.0128 | 1.28 % likelihood of fraud |
+| Risk Level | Low | Minimal overall risk |
+| Potential Saving | 0.02 | $20 / $2,000? (approx. 2 % of claimed amount) |
+| Claim Amount | 2 | $200 / $2,000? (unitless in data) |
+| Deductible Paid | 2 | Same as claim amount |
+| Inpatient Status | 1 | Inpatient claim (yes) |
+| Beneficiaries | 22 | Group plan with 22 members |
+
+---
+
+### 1. Overall Fraud Situation  
+- **Probability**: 1.28 % indicates a **low** chance of fraudulent activity.  
+- **Risk Level**: The system classifies this provider as **Low** risk, corroborated by the modest potential saving.  
+- **Claim Snapshot**: The claim amount and deductible paid are identical, suggesting a standard inpatient reimbursement with no excess payment.
+
+### 2. Likely Fraud Types  
+| Fraud Type | Rationale |
+|------------|-----------|
+| **Up‑coding** | Inpatient status but low claim amount may mask attempts to code for higher reimbursement. |
+| **Duplicate Billing** | The claim and deductible match exactly; if multiple claims exist, duplication could be hidden. |
+| **Unnecessary Procedures** | Inpatient claims with minimal payment might indicate services billed that were not performed. |
+
+### 3. Patterns or Causes  
+- **Small Claim with Full Deductible Paid**: Suggests a possibly **under‑reported** service or a **billing error**.  
+- **Single Inpatient Claim**: With 22 beneficiaries, the provider might be targeting a specific subgroup.  
+- **Low Probability but Consistent Pattern**: Even with a low probability, the consistency across multiple claims could signal a subtle fraud strategy.
+
+### 4. Recommended Actions  
+1. **Audit Inpatient Claims**  
+   - Verify CPT/HCPCS codes against actual procedures.  
+   - Confirm patient charts for each of the 22 beneficiaries.  
+2. **Cross‑Check Duplicate Entries**  
+   - Use claim IDs to identify any repeated submissions.  
+3. **Validate Deductible Calculations**  
+   - Ensure the deductible paid aligns with policy terms and service dates.  
+4. **Implement Monitoring Rules**  
+   - Flag any future claims where the claim amount equals the deductible paid at an inpatient level.  
+5. **Engage Provider**  
+   - Conduct a brief interview regarding billing practices to clarify any systemic issues.
+
+### 5. Final Verdict  
+- **Overall Assessment**: The provider exhibits a **low fraud risk** with a 1.28 % probability.  
+- **Actionable Insight**: While no immediate punitive action is warranted, targeted audits and monitoring will safeguard against potential under‑reporting or duplicate claims.  
+- **Recommendation**: Maintain current surveillance with periodic checks; no escalation required at this time.  
+
+*Prepared by:*  
+Fraud Analyst – Healthcare Insurance System  
+*Date:* 2025‑10‑04

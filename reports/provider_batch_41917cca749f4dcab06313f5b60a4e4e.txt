@@ -1,0 +1,39 @@
+=== Statistics ===
+{
+  "total_claims": 4,
+  "fraud_claims": 0,
+  "fraud_percentage": 0.0,
+  "fraud_probability": 0.01949431002140045,
+  "risk_level": "Low",
+  "potential_saving": 0.0
+}
+
+=== AI Summary ===
+**Fraud Investigation Report**  
+================================
+
+**Overall Fraud Situation**  
+\tFraud Probability: 0.01949  (≈ 1.95 %)  
+\tRisk Level: Low  
+\tPotential Saving: $0.00  
+\tClaim Amount: $0  
+\tDeductible Amount Paid: $0  
+\tInpatient Status: 0 (no inpatient claims)  
+\tBeneficiaries Count: 0  
+
+**Likely Fraud Types**  
+\tNone identified – the probability is very low and the provider has no current claim activity.  
+
+**Patterns or Causes**  
+\t• Zero claim activity in the data set.  
+\t• No inpatient status and no beneficiaries, indicating no service utilization.  
+\t• The low fraud probability is consistent with a lack of observable irregularities.  
+
+**Recommended Actions**  
+\t• Continue routine compliance monitoring to ensure ongoing vigilance.  
+\t• Maintain current data collection and reporting protocols.  
+\t• No immediate investigation or remediation required.  
+\t• Perform periodic reviews to detect any future claim activity or changes in provider behavior.  
+
+**Final Verdict**  
+\tThe provider demonstrates a low fraud probability with no evidence of fraudulent activity. Current risk is negligible; ongoing monitoring is sufficient.

@@ -1,0 +1,81 @@
+=== Statistics ===
+{
+  "total_claims": 4,
+  "fraud_claims": 0,
+  "fraud_percentage": 0.0,
+  "fraud_probability": 0.01949431002140045,
+  "risk_level": "Low",
+  "potential_saving": 0.0
+}
+
+=== AI Summary ===
+**Fraud Investigation Report – Provider‑Level Analysis**  
+*Prepared for: Medical Insurance System – Fraud Analysis Team*  
+*Date: 2024‑06‑20*
+
+---
+
+### 1. Overall Fraud Situation  
+
+| Parameter                     | Value                     |
+|-------------------------------|---------------------------|
+| **Fraud Probability**         | 0.0195  (≈ 1.95 %)         |
+| **Risk Level**                | Low                       |
+| **Potential Savings**         | $0.00                     |
+| **Claim Amount**              | $0.00                     |
+| **Deductible Amount Paid**    | $0.00                     |
+| **Inpatient Status**          | 0 (None)                  |
+| **Beneficiaries Count**       | 0                         |
+
+**Interpretation:**  
+The provider shows a very low probability of fraudulent activity (≈ 2 %) and is currently classified as “Low” risk. No claims, deductible payments, inpatient services or beneficiaries have been recorded in the current dataset, resulting in zero potential savings from fraudulent activity.  
+
+---
+
+### 2. Likely Fraud Types  
+
+| Fraud Type                      | Evidence / Notes |
+|---------------------------------|-------------------|
+| **Billing/Claim Submissions**   | No claims filed → no evidence. |
+| **Up‑coding / Improper Coding** | Inpatient status = 0 → not applicable. |
+| **Duplicate Payments**          | No payments recorded → impossible. |
+| **Phantom Provider Activity**   | Beneficiaries count = 0 → no phantom activity detected. |
+
+**Conclusion:** No specific fraud type is observable based on the supplied metrics.
+
+---
+
+### 3. Patterns or Causes  
+
+- **Zero Activity:** The provider has not submitted any claims or paid any deductibles during the period examined.  
+- **Low Engagement:** Absence of beneficiaries and inpatient services suggests minimal or no operational activity.  
+- **Risk Profile Consistency:** The low fraud probability aligns with the lack of transactional data.  
+
+**Potential Causes for Low Activity:**  
+- Newly established provider with pending onboarding.  
+- Provider might have been temporarily suspended or inactive.  
+- Data capture lag or integration issue.  
+
+---
+
+### 4. Recommended Actions  
+
+| Action Item                      | Priority | Rationale |
+|----------------------------------|----------|-----------|
+| **Verify Data Completeness**     | Medium   | Ensure that no claims are missing due to system integration errors. |
+| **Monitor Future Claim Activity**| Medium   | Track any new submissions to confirm consistent low risk. |
+| **Cross‑Reference Provider Status** | Low   | Confirm that the provider is still actively licensed and authorized. |
+| **Update Risk Model**            | Low     | Incorporate the absence of activity into predictive scoring for more accurate future assessments. |
+| **Periodic Review**              | Low     | Schedule quarterly reviews to detect any change in activity patterns. |
+
+---
+
+### 5. Final Verdict  
+
+Based on the current dataset, the provider exhibits **no actionable fraud indicators**. The low fraud probability, absence of claims, and zero potential savings collectively confirm a **Low‑Risk** status. No immediate investigation or remediation is required; however, ongoing monitoring and data validation are advised to maintain the integrity of the fraud detection system.
+
+*Prepared by:*  
+Fraud Analysis Unit  
+Medical Insurance System  
+
+---

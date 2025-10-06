@@ -1,0 +1,64 @@
+=== Statistics ===
+{
+  "total_claims": 1,
+  "fraud_claims": 0,
+  "fraud_percentage": 0.81,
+  "fraud_probability": 0.0081,
+  "risk_level": "Low",
+  "potential_saving": 4.45,
+  "claim_amount": 912,
+  "deductible_amt_paid": 456,
+  "beneficiaries_count": 1
+}
+
+=== AI Summary ===
+**Fraud Investigation Report – Claim‑Level Analysis**  
+*Prepared by: Healthcare Fraud Analyst*  
+*Date: 2025‑10‑04*  
+
+| Statistic                | Value |
+|--------------------------|-------|
+| Fraud Probability        | 0.0081 |
+| Risk Level               | Low |
+| Potential Saving         | $4.45 |
+| Claim Amount             | $912 |
+| Deductible Amount Paid   | $456 |
+| Inpatient Status         | 0 (Outpatient) |
+| Beneficiaries Count      | 1 |
+
+---
+
+**1. Overall Fraud Situation**  
+  The claim exhibits a *Fraud Probability* of **0.0081** (0.81 %), placing it in the **Low** risk tier.  
+  Given the modest *Potential Saving* of **$4.45**, the financial impact of any fraudulent activity on this single claim is minimal.  
+  However, even low‑probability claims warrant review when combined with systemic patterns.
+
+**2. Likely Fraud Types**  
+  | Potential Fraud Type | Rationale |
+|-----------------------|-----------|
+| **Duplicate Claim**  | Deductible paid equals half the claim amount, a common indicator of double billing. |
+| **Up‑coding / Billing for Unperformed Services** | Outpatient status with a high deductible suggests possible billing for services that exceed the policy’s covered scope. |
+| **Vendor or Provider Misrepresentation** | Single beneficiary and no inpatient services reduce complexity; fraud may stem from the provider’s billing practices. |
+
+**3. Patterns or Causes**  
+  - **Deductible/Claim Ratio**: The deductible paid ($456) is exactly 50 % of the total claim ($912).  
+  - **Outpatient Claim**: Inpatient status is 0, limiting the scope to outpatient services where coding errors or up‑coding are more prevalent.  
+  - **Single Beneficiary**: Simplifies the claim structure; fraud is likely concentrated at the provider level rather than beneficiary collusion.  
+  - **Low Claim Amount**: Small monetary value reduces the perceived risk for fraudsters, yet the probability remains non‑zero.
+
+**4. Recommended Actions**  
+  1. **Verify Service Dates & Codes** – Cross‑check billed CPT/HCPCS codes against the actual services rendered and dates.  
+  2. **Confirm Deductible Calculation** – Ensure the deductible amount aligns with the policy’s deductible schedule and that no duplication occurred.  
+  3. **Audit Provider History** – Review the provider’s historical claims for similar patterns (e.g., 50 % deductible paid).  
+  4. **Engage Beneficiary** – If feasible, obtain confirmation from the beneficiary regarding the services claimed.  
+  5. **Document Findings** – Record all audit steps and outcomes for potential future reference or escalation.
+
+**5. Final Verdict**  
+  The claim falls within the **Low** risk category with a **Fraud Probability** of 0.81 %.  
+  While the immediate financial exposure is minimal, the identified patterns—particularly the exact 50 % deductible/claim ratio—justify a targeted audit to rule out duplication or up‑coding.  
+  Proceed with the recommended actions; if findings confirm legitimate billing, close the case with a note of “No Fraud Detected.”  
+  If discrepancies are uncovered, initiate the appropriate remediation or penalty workflow per the organization’s fraud policy.  
+
+*Prepared by:*  
+[Name] – Healthcare Fraud Analyst  
+[Signature]

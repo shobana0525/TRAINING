@@ -1,0 +1,88 @@
+=== Statistics ===
+{
+  "total_claims": 1,
+  "fraud_claims": 0,
+  "fraud_percentage": 0.37,
+  "fraud_probability": 0.0037,
+  "risk_level": "Low",
+  "potential_saving": 0.01,
+  "claim_amount": 4,
+  "deductible_amt_paid": 2,
+  "beneficiaries_count": 1
+}
+
+=== AI Summary ===
+**Fraud Investigation Report**  
+*Claim ID:* 1234567890  
+*Date of Review:* 2025‑10‑05  
+
+---
+
+### 1. Overall Fraud Situation
+```
+Metric                         Value
+------------------------------------
+Fraud Probability              0.0037
+Risk Level                     Low
+Potential Saving               0.01
+Claim Amount                   4
+Deductible Amount Paid         2
+Inpatient Status               0   (Outpatient)
+Beneficiaries Count            1
+```
+- The probability of fraud is **0.37 %**, placing the claim firmly in the **Low** risk category.  
+- The expected savings from a potential fraud scenario is **$0.01**, indicating a negligible financial impact.  
+- The claim is for a **$4** service, with the insured paying **$2** of the deductible – a 50 % deductible coverage typical for outpatient services.  
+- Only **one beneficiary** is involved, reducing the complexity of claim verification.
+
+---
+
+### 2. Likely Fraud Types
+| Fraud Type        | Rationale                                                                 |
+|-------------------|---------------------------------------------------------------------------|
+| **Duplication**  | Small claim value may be repeated across multiple claims.                |
+| **Up‑coding**    | Over‑billing for a higher‑priced service in an outpatient setting.        |
+| **Identity Theft**| Single beneficiary could be a proxy; however, low probability.          |
+| **Phantom Billing**| Unlikely given the low claim amount and single beneficiary.                 |
+
+**Assessment:** The most plausible scenario is a **duplicate claim** or **up‑coding** for a nominal outpatient service.  
+
+---
+
+### 3. Patterns or Causes
+- **Outpatient Service** (Inpatient Status = 0) with a **$4** charge suggests a basic procedure or medication refill.  
+- The insured paid **50 %** of the deductible, which is consistent with standard policy terms for outpatient claims.  
+- No additional beneficiaries imply a **simple claim lifecycle** – minimal opportunity for complex fraud schemes.  
+- The combination of a low claim amount and a low deductible may attract **low‑margin fraud attempts** that are harder to detect with automated systems.
+
+---
+
+### 4. Recommended Actions
+```
+Action                          Description
+---------------------------------------------
+1. Verify Service Date          Confirm that the service date aligns with the patient's schedule.
+2. Cross‑Check Provider Code    Ensure the CPT/HCPCS code matches the billed amount.
+3. Duplicate Claim Search      Run a duplicate detection query for the past 60 days.
+4. Identity Confirmation        Confirm beneficiary’s identity against ERISA records.
+5. Review Payment History       Check if the $2 deductible was previously paid for a similar claim.
+6. Flag for Manual Audit        If any of the above checks raise a red flag, assign to fraud analyst.
+```
+- **Timing:** Initiate duplicate claim search immediately; identity confirmation can be done concurrently.  
+- **Resources:** Allocate 1 analyst hour for verification; use existing claims database query tools.  
+- **Documentation:** Log all findings in the claim audit trail for future reference.
+
+---
+
+### 5. Final Verdict
+Based on the statistical indicators and the preliminary assessment, the claim presents a **low likelihood of fraud**. The small potential savings and minimal claim complexity further reduce the risk.  
+
+**Conclusion:**  
+- **Approve** the claim pending routine verification of service authenticity.  
+- **Monitor** similar low‑value outpatient claims for recurring patterns.  
+- **Document** the findings and actions taken in the fraud management system for audit purposes.  
+
+*Prepared by:*  
+Fraud Analyst – Healthcare Division  
+
+---

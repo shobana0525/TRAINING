@@ -1,5 +1,4 @@
-
-
+#ap.py
 import os
 import uuid
 import json
@@ -288,6 +287,79 @@ def upload_provider_batch():
         })
     except Exception as e:
         return jsonify({"error":str(e)}),500
+    
+@app.route('/upload_claim_batch', methods=['POST'])
+def upload_claim_batch():
+    try:
+        file = request.files.get('file')
+        if file is None or file.filename=='':
+            return jsonify({"error":"No file uploaded"}),400
+        if not allowed_file(file.filename):
+            return jsonify({"error":"File type not allowed."}),400
+        
+        filename = f"{uuid.uuid4().hex}_{file.filename}"
+        filepath = os.path.join(UPLOAD_FOLDER, filename)
+        file.save(filepath)
+        
+        df = pd.read_csv(filepath) if filename.lower().endswith('.csv') else pd.read_json(filepath)
+        
+        # Ensure all required CLAIM_FEATURES are present, fill with 0.0 if not
+        for f in CLAIM_FEATURES:
+            if f not in df.columns: df[f]=0.0
+            
+        df_input = df[CLAIM_FEATURES]
+        preds, probs = model_predict_df(df_input, claim_model) # Use claim_model
+        
+        df['prediction'] = ['Fraud' if p==1 else 'No Fraud' for p in preds]
+        df['fraud_probability'] = probs
+        df['risk_level'] = df['fraud_probability'].apply(risk_level_from_prob)
+        df['flag_suspicious'] = df['fraud_probability'] >= 0.65
+        
+        # Calculate potential saving using logic consistent with claim_single:
+        # potential_saving_calc(prob, data.get('DeductibleAmtPaid',0)*2)
+        df['potential_saving'] = df.apply(
+            lambda r: potential_saving_calc(r['fraud_probability'], r.get('DeductibleAmtPaid',0)*2), 
+            axis=1
+        )
+
+        fraud_claims = int(df['prediction'].value_counts().get('Fraud',0))
+        total_claims = len(df)
+        fraud_percentage = round((fraud_claims/total_claims)*100,2) if total_claims>0 else 0
+        
+        # Prepare stats for the AI summary
+        stats = {
+            "total_claims": total_claims,
+            "fraud_claims": fraud_claims,
+            "fraud_percentage": fraud_percentage,
+            "fraud_probability": float(df['fraud_probability'].mean()),
+            "risk_level": df['risk_level'].mode()[0] if not df.empty else 'Low',
+            "potential_saving": df['potential_saving'].sum(),
+            # Include some original columns for AI summary context (if they exist)
+            "claim_amount": float(df['DeductibleAmtPaid'].sum() * 2),
+            "deductible_amt_paid": float(df['DeductibleAmtPaid'].sum())
+        }
+
+        ai_summary = generate_ai_summary(stats,"Claim") # Set analysis type to "Claim"
+
+        report_file = f"claim_batch_{uuid.uuid4().hex}.txt"
+        report_path = os.path.join(REPORT_FOLDER, report_file)
+        with open(report_path,'w',encoding='utf-8') as f:
+            f.write("=== Statistics ===\n"+json.dumps(stats,indent=2)+"\n\n")
+            f.write("=== AI Summary ===\n"+ai_summary)
+
+        return jsonify({
+            "message":"Batch Analysis Completed",
+            # df.head(50) is used in provider batch, replicating for consistency
+            "summary_preview": df.head(50).to_dict(orient='records'), 
+            "total_records":len(df),
+            "ai_summary": ai_summary,
+            "report_path": f"/reports/{report_file}"
+        })
+    except Exception as e:
+        # Clean up file if it was saved but analysis failed
+        if 'filepath' in locals() and os.path.exists(filepath):
+            os.remove(filepath) 
+        return jsonify({"error":str(e)}),500    
 
 @app.route('/reports/<path:filename>')
 def download_report(filename):

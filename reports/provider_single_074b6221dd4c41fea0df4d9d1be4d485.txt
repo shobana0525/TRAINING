@@ -1,0 +1,16 @@
+=== Statistics ===
+{
+  "total_claims": 1,
+  "fraud_claims": 0,
+  "fraud_percentage": 1.22,
+  "fraud_probability": 0.0122,
+  "risk_level": "Low",
+  "potential_saving": 0.01,
+  "claim_amount": 2,
+  "is_inpatient": 1,
+  "deductible_amt_paid": 22,
+  "beneficiaries_count": 2
+}
+
+=== AI Summary ===
+(AI Summary Error: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response')))

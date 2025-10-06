@@ -1,0 +1,16 @@
+=== Statistics ===
+{
+  "total_claims": 1,
+  "fraud_claims": 1,
+  "fraud_percentage": 74.06,
+  "fraud_probability": 0.7406,
+  "risk_level": "High",
+  "potential_saving": 2486.31,
+  "claim_amount": 5595,
+  "is_inpatient": 9,
+  "deductible_amt_paid": 540,
+  "beneficiaries_count": 18
+}
+
+=== AI Summary ===
+(AI Summary Error: Response ended prematurely)

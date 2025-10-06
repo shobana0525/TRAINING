@@ -1,0 +1,57 @@
+=== Statistics ===
+{
+  "total_claims": 1,
+  "fraud_claims": 0,
+  "fraud_percentage": 0.81,
+  "fraud_probability": 0.0081,
+  "risk_level": "Low",
+  "potential_saving": 4.45,
+  "claim_amount": 912,
+  "deductible_amt_paid": 456,
+  "beneficiaries_count": 1
+}
+
+=== AI Summary ===
+**Fraud Investigation Report**  
+*(Generated on 2025‑10‑04)*  
+
+```
+Overall Fraud Situation
+    • Fraud Probability:                       0.0081 (0.81 %)
+    • Risk Level:                                Low
+    • Potential Saving:                          $4.45
+    • Claim Amount:                             $912
+    • Deductible Amount Paid:                   $456
+    • Inpatient Status:                         0  (Outpatient)
+    • Beneficiaries Count:                      1
+
+Likely Fraud Types
+    • No strong indicators of common fraud schemes (e.g., up‑coding,
+      duplicate billing, or unnecessary service provision) are present.
+    • The single beneficiary and outpatient status reduce the likelihood
+      of complex fraudulent arrangements.
+
+Patterns or Causes
+    • High deductible payment (50 % of claim amount) suggests the patient
+      met deductible requirements, not an attempt to inflate costs.
+    • Single claim with no prior high‑risk flags in the member’s history.
+    • No recent spikes in claim volume or unusual provider activity.
+
+Recommended Actions
+    • Maintain routine monitoring of this member’s claims; no immediate
+      investigative action required.
+    • Verify that the deductible payment aligns with the member’s
+      policy terms (automatic confirmation via the insurer’s system).
+    • Flag the claim in the audit trail for a quick review if future
+      claims from this provider or beneficiary exhibit abnormal patterns.
+
+Final Verdict
+    • The evidence supports a **Low‑Risk** classification with a negligible
+      probability of fraud (0.81 %).  
+    • No additional investigative or corrective actions are warranted at
+      this time.  Continue standard oversight and record the finding in
+      the fraud management system for future reference.
+```
+
+*Prepared by: [Fraud Analyst Name]*  
+*Case ID: FA‑2025‑0104*

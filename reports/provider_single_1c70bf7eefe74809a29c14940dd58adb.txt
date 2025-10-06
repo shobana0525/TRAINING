@@ -1,0 +1,69 @@
+=== Statistics ===
+{
+  "total_claims": 1,
+  "fraud_claims": 0,
+  "fraud_percentage": 1.28,
+  "fraud_probability": 0.0128,
+  "risk_level": "Low",
+  "potential_saving": 0.02,
+  "claim_amount": 2,
+  "is_inpatient": 1,
+  "deductible_amt_paid": 2,
+  "beneficiaries_count": 22
+}
+
+=== AI Summary ===
+**Fraud Investigation Report**  
+================================
+
+| **Metric**                 | **Value** | **Comment**                                  |
+|----------------------------|-----------|----------------------------------------------|
+| Fraud Probability          | 0.0128    | 1.28 % chance of fraudulent activity         |
+| Risk Level                 | Low       | Determined by the probability score          |
+| Potential Saving           | $0.02     | Minimal financial benefit if fraud corrected |
+| Claim Amount               | $2        | Total billed to plan                         |
+| Deductible Amount Paid     | $2        | Amount paid by beneficiary                   |
+| Inpatient Status           | 1 (Yes)   | Claim was for inpatient services             |
+| Beneficiaries Count        | 22        | Number of individuals covered by the claim   |
+
+---
+
+### 1. Overall Fraud Situation  
+- **Assessment:** The provider shows a **low fraud probability** (1.28 %) and is classified as **Low risk**.  
+- **Financial Impact:** With a **claim amount of $2** and **deductible paid $2**, the **potential savings** from detecting fraud is only **$0.02**, indicating a negligible monetary incentive.  
+- **Context:** The inpatient status and the small claim size suggest routine billing for a single inpatient service rather than a high‑volume, high‑value scenario.
+
+### 2. Likely Fraud Types  
+| **Type**            | **Relevance** | **Why It Applies Here** |
+|---------------------|---------------|-------------------------|
+| **Up‑coding**       | Low           | Possible if services are coded at a higher level than those actually rendered, but the tiny claim amount makes this unlikely. |
+| **Duplicate Billing** | Low       | Unlikely given the single claim and low volume of beneficiaries. |
+| **Billing for Unrendered Services** | Low | The claim is for a single inpatient service; no evidence of additional services billed. |
+| **Phantom Services** | Very Low | No indications of services billed without any clinical documentation. |
+
+### 3. Patterns or Causes  
+- **Single Inpatient Claim:** The claim corresponds to one inpatient episode, reflected by the `Inpatient Status = 1`.  
+- **Beneficiary Concentration:** 22 beneficiaries are covered in the claim, but the claim amount is not split among them—suggesting a single service billed to all.  
+- **Deductible Paid Equals Claim Amount:** Indicates that the beneficiary paid the full deductible, leaving no residual payment for the insurer, which is consistent with a standard inpatient billing cycle.  
+- **No High‑Volume Indicators:** Lack of large claim numbers, high service counts, or unusually complex coding patterns reduces suspicion.
+
+### 4. Recommended Actions  
+| **Action**                                 | **Priority** | **Rationale**                                       |
+|--------------------------------------------|--------------|-----------------------------------------------------|
+| **Targeted Review of the Inpatient Episode** | Medium       | Verify that the billed service matches clinical records. |
+| **Cross‑Check Billing Codes**              | Low          | Ensure codes are appropriate for the documented procedure. |
+| **Confirm Beneficiary Coverage**           | Low          | Validate that all 22 beneficiaries were indeed eligible for the claim. |
+| **Audit Deductible Payment Process**       | Low          | Ensure the deductible was correctly applied and recorded. |
+| **Document Findings**                      | High         | Create a clear audit trail for future reference. |
+
+### 5. Final Verdict  
+- **Risk Assessment:** The provider’s fraud probability is **1.28 %** and classified as **Low risk**.  
+- **Financial Impact:** The potential savings from correcting any fraudulent activity would be **$0.02**, which is negligible compared to the total claim amount.  
+- **Conclusion:** No substantive evidence of fraud exists at this time. The claim appears to be a routine inpatient billing with standard deductible application.  
+- **Recommendation:** Perform a minimal, targeted review as outlined above to confirm compliance, but no extensive audit or punitive action is warranted.
+
+--- 
+
+*Prepared by:*  
+[Name], Healthcare Fraud Analyst  
+[Date]

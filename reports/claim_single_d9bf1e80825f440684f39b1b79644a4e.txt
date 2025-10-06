@@ -1,0 +1,97 @@
+=== Statistics ===
+{
+  "total_claims": 1,
+  "fraud_claims": 1,
+  "fraud_percentage": 61.58,
+  "fraud_probability": 0.6158,
+  "risk_level": "Medium",
+  "potential_saving": 789.21,
+  "claim_amount": 2136,
+  "deductible_amt_paid": 1068,
+  "beneficiaries_count": 1
+}
+
+=== AI Summary ===
+**Fraud Investigation Report**  
+*Prepared by: Experienced Healthcare Fraud Analyst*  
+*Date: 2025‑10‑05*  
+
+| Metric | Value |
+|--------|-------|
+| **Fraud Probability** | **0.6158** |
+| **Risk Level** | **Medium** |
+| **Potential Saving** | **$789.21** |
+| **Claim Amount** | **$2,136** |
+| **Deductible Paid** | **$1,068** |
+| **Inpatient Status** | **0 (Outpatient)** |
+| **Beneficiaries Count** | **1** |
+
+---
+
+### 1. Overall Fraud Situation  
+```
+   • The fraud probability score of 0.6158 places this claim well above the
+     average threshold, indicating a significant likelihood of improper
+     billing or over‑reporting.  
+   • Risk level is classified as Medium; the claim does not trigger the
+     highest risk category but warrants immediate attention.  
+   • Potential savings of $789.21 suggest that, if fraudulent, the insurer
+     could recover a substantial portion of the paid amount.  
+```
+
+### 2. Likely Fraud Types  
+```
+   • **Up‑coding / Procedure Misclassification** – The outpatient claim
+     for $2,136 is double the deductible ($1,068). The high ratio of paid
+     amount to deductible may signal that a lower‑level CPT code was
+     incorrectly billed as a higher‑level code.  
+   • **Duplicate Billing** – With only one beneficiary, a duplicated
+     claim could inflate the paid amount without adding a second patient.  
+   • **False Service Claim** – The claim could be for services that were
+     not actually rendered (e.g., phantom procedures or visits).  
+```
+
+### 3. Patterns or Causes  
+```
+   • Outpatient services with a 1:1 beneficiary count and a 2:1 paid
+     to deductible ratio are flagged by our predictive model as
+     high‑risk.  
+   • The absence of inpatient status eliminates inpatient‑specific
+     abuse (e.g., unnecessary admissions), pointing instead to
+     outpatient billing issues.  
+   • The claim’s single beneficiary and single claim amount create a
+     “one‑off” scenario that is often associated with “phantom” or
+     “up‑coded” claims.  
+```
+
+### 4. Recommended Actions  
+```
+   • Perform a detailed chart review of the claim to verify the
+     procedures billed and compare them against the documented
+     clinical note.  
+   • Cross‑check the claim against the payer’s CPT code database
+     to confirm correct coding.  
+   • Request a copy of the provider’s billing statements and
+     verify that the services were delivered within the policy
+     period.  
+   • If the claim is confirmed as fraudulent, initiate a
+     claim denial and pursue recovery of the $789.21 potential
+     savings.  
+   • Flag the provider for enhanced monitoring and consider
+     placing the account on a “high‑risk” watchlist.  
+```
+
+### 5. Final Verdict  
+```
+   The evidence indicates a medium‑risk claim with a high probability
+   of fraudulent activity, most likely involving up‑coding or false
+   service billing. Immediate investigation is required to confirm
+   the nature of the fraud and to determine the appropriate recovery
+   action.  
+```
+
+---  
+*Prepared by:*  
+**[Your Name]** – Healthcare Fraud Analyst  
+**[Your Organization]**  
+**Signature:** _____________________   **Date:** 2025‑10‑05

@@ -2,112 +2,95 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Healthcare Fraud Detection</title>
+  <title>Fraud Dashboard</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   <style>
     body { font-family: Arial, sans-serif; background: #f5f5f7; margin:0; padding:0; }
     header { background:#4a90e2; color:white; padding:20px; text-align:center; }
-    h1 { margin:0; font-size:28px; }
-    .subtitle { font-size:14px; margin-top:5px; }
-    main { padding:20px; max-width:1000px; margin:auto; }
-    .selectors { display:flex; gap:15px; justify-content:center; margin-bottom:20px; }
-    .big { padding:10px 20px; font-size:16px; cursor:pointer; border:none; border-radius:5px; background:#4a90e2; color:white; transition:0.3s; }
-    .big:hover { background:#357ab7; }
-    .panel { background:white; padding:20px; border-radius:10px; box-shadow:0 4px 10px rgba(0,0,0,0.1); margin-bottom:30px; }
-    .hidden { display:none; }
-    .mode-buttons { display:flex; gap:10px; margin-bottom:15px; }
-    .mode { flex:1; padding:8px; cursor:pointer; border-radius:5px; border:1px solid #4a90e2; background:white; color:#4a90e2; font-weight:bold; }
-    .mode.active { background:#4a90e2; color:white; }
-    .form-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(150px,1fr)); gap:10px; }
-    .form-grid input, .form-grid button { padding:8px; font-size:14px; border-radius:5px; border:1px solid #ccc; }
-    .form-grid button { background:#4a90e2; color:white; border:none; cursor:pointer; transition:0.3s; }
-    .form-grid button:hover { background:#357ab7; }
-    .result { margin-top:15px; padding:10px; background:#f0f8ff; border-radius:5px; max-height:400px; overflow:auto; white-space:pre-wrap; font-family:monospace; }
+    main { padding:20px; max-width:1200px; margin:auto; display:grid; gap:40px; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); }
+    .chart-container { background:white; padding:20px; border-radius:10px; box-shadow:0 4px 10px rgba(0,0,0,0.1); text-align:center; }
+    h2 { margin-bottom:20px; }
   </style>
 </head>
 <body>
-  <header>
-    <h1>Healthcare Claims — Fraud Detection</h1>
-    <p class="subtitle">Upload batch files or run single-record analysis for provider or claim level fraud detection.</p>
-  </header>
+<header>
+  <h1>Healthcare Fraud Dashboard</h1>
+</header>
 
-  <main>
-    <div class="selectors">
-      <button class="big" id="btn_provider">Provider Level</button>
-      <button class="big" id="btn_claim">Claim Level</button>
-    </div>
+<main>
+  <div class="chart-container">
+    <h2>Fraud vs No Fraud (Pie Chart)</h2>
+    <canvas id="fraudPieChart"></canvas>
+  </div>
 
-    <!-- Provider Panel -->
-    <section id="provider_section" class="panel hidden">
-      <h2>Provider Fraud Analysis</h2>
-      <div class="mode-buttons">
-        <button class="mode" data-mode="batch" data-type="provider">Batch Mode</button>
-        <button class="mode" data-mode="single" data-type="provider">Single Mode</button>
-      </div>
+  <div class="chart-container">
+    <h2>Fraud Probability by Record (Bar Chart)</h2>
+    <canvas id="fraudBarChart"></canvas>
+  </div>
 
-      <!-- Batch -->
-      <div class="batch-panel hidden" data-type="provider">
-        <p>Upload CSV/JSON. Required fields: <strong>is_inpatient, is_groupcode, ChronicCond_rheumatoidarthritis, Beneficiaries_Count, DeductibleAmtPaid, InscClaimAmtReimbursed, ChronicCond_Alzheimer, ChronicCond_IschemicHeart, Days_Admitted, ChronicCond_stroke</strong></p>
-        <input type="file" id="provider_batch_file">
-        <button id="provider_batch_analyze">Analyse</button>
-        <div id="provider_batch_result" class="result"></div>
-      </div>
+  <div class="chart-container">
+    <h2>Fraud Distribution (Doughnut Chart)</h2>
+    <canvas id="fraudDoughnutChart"></canvas>
+  </div>
+</main>
 
-      <!-- Single -->
-      <div class="single-panel hidden" data-type="provider">
-        <form id="provider_single_form" class="form-grid">
-          <input type="number" name="is_inpatient" placeholder="Inpatient 0/1" required>
-          <input type="number" name="is_groupcode" placeholder="Group code 0/1" required>
-          <input type="number" name="ChronicCond_rheumatoidarthritis" placeholder="Rheumatoid Arthritis 0/1" required>
-          <input type="number" name="Beneficiaries_Count" placeholder="Beneficiaries Count" required>
-          <input type="number" name="DeductibleAmtPaid" placeholder="Deductible Paid" required>
-          <input type="number" name="InscClaimAmtReimbursed" placeholder="Reimbursed Amount" required>
-          <input type="number" name="ChronicCond_Alzheimer" placeholder="Alzheimer 0/1" required>
-          <input type="number" name="ChronicCond_IschemicHeart" placeholder="Ischemic Heart 0/1" required>
-          <input type="number" name="Days_Admitted" placeholder="Days Admitted" required>
-          <input type="number" name="ChronicCond_stroke" placeholder="Stroke 0/1" required>
-          <button type="submit">Analyse</button>
-        </form>
-        <div id="provider_single_result" class="result"></div>
-      </div>
-    </section>
+<script>
+async function fetchDashboardData() {
+  try {
+    const res = await fetch('/dashboard_data');
+    const data = await res.json();
+    return data;
+  } catch(e) {
+    console.error("Error fetching dashboard data:", e);
+    return null;
+  }
+}
 
-    <!-- Claim Panel -->
-    <section id="claim_section" class="panel hidden">
-      <h2>Claim Fraud Analysis</h2>
-      <div class="mode-buttons">
-        <button class="mode" data-mode="batch" data-type="claim">Batch Mode</button>
-        <button class="mode" data-mode="single" data-type="claim">Single Mode</button>
-      </div>
+function renderCharts(data){
+  if(!data) return;
 
-      <!-- Batch -->
-      <div class="batch-panel hidden" data-type="claim">
-        <p>Upload CSV/JSON. Required fields: <strong>Total_Claims_Per_Bene, TimeInHptal, Provider_Claim_Frequency, ChronicCond_stroke_Yes, DeductibleAmtPaid, OPD_Flag_Yes, Diagnosis_Count, ChronicDisease_Count, Age</strong></p>
-        <input type="file" id="claim_batch_file">
-        <button id="claim_batch_analyze">Analyse</button>
-        <div id="claim_batch_result" class="result"></div>
-      </div>
+  // 1️⃣ Pie Chart: Fraud vs No Fraud
+  const ctxPie = document.getElementById('fraudPieChart').getContext('2d');
+  new Chart(ctxPie, {
+    type: 'pie',
+    data: {
+      labels:['Fraud','No Fraud'],
+      datasets:[{ data:[data.fraud_count,data.no_fraud_count], backgroundColor:['#e74c3c','#2ecc71'] }]
+    },
+    options:{ responsive:true }
+  });
 
-      <!-- Single -->
-      <div class="single-panel hidden" data-type="claim">
-        <form id="claim_single_form" class="form-grid">
-          <input type="number" name="Total_Claims_Per_Bene" placeholder="Total Claims Per Bene" required>
-          <input type="number" name="TimeInHptal" placeholder="Time in Hospital" required>
-          <input type="number" name="Provider_Claim_Frequency" placeholder="Claim Frequency" required>
-          <input type="number" name="ChronicCond_stroke_Yes" placeholder="Stroke 0/1" required>
-          <input type="number" name="DeductibleAmtPaid" placeholder="Deductible Paid" required>
-          <input type="number" name="OPD_Flag_Yes" placeholder="OPD 0/1" required>
-          <input type="number" name="Diagnosis_Count" placeholder="Diagnosis Count" required>
-          <input type="number" name="ChronicDisease_Count" placeholder="Chronic Disease Count" required>
-          <input type="number" name="Age" placeholder="Age" required>
-          <button type="submit">Analyse</button>
-        </form>
-        <div id="claim_single_result" class="result"></div>
-      </div>
-    </section>
-  </main>
+  // 2️⃣ Bar Chart: Fraud Probability per record
+  const ctxBar = document.getElementById('fraudBarChart').getContext('2d');
+  new Chart(ctxBar, {
+    type: 'bar',
+    data: {
+      labels:data.records.map(r=>r.id),
+      datasets:[{
+        label:'Fraud Probability',
+        data:data.records.map(r=>r.fraud_probability),
+        backgroundColor:'#f39c12'
+      }]
+    },
+    options:{ responsive:true, scales:{ y:{ beginAtZero:true, max:1 } } }
+  });
 
-  <script src="{{ url_for('static', filename='app.js') }}"></script>
+  // 3️⃣ Doughnut Chart: Fraud vs No Fraud
+  const ctxDough = document.getElementById('fraudDoughnutChart').getContext('2d');
+  new Chart(ctxDough, {
+    type: 'doughnut',
+    data: {
+      labels:['Fraud','No Fraud'],
+      datasets:[{ data:[data.fraud_count,data.no_fraud_count], backgroundColor:['#e74c3c','#2ecc71'] }]
+    },
+    options:{ responsive:true }
+  });
+}
+
+// Fetch and render charts
+fetchDashboardData().then(renderCharts);
+</script>
 </body>
 </html>

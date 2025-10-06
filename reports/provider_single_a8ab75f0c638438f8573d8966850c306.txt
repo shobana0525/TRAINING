@@ -1,0 +1,67 @@
+=== Statistics ===
+{
+  "total_claims": 1,
+  "fraud_claims": 0,
+  "fraud_percentage": 4.93,
+  "fraud_probability": 0.0493,
+  "risk_level": "Low",
+  "potential_saving": 0.09,
+  "claim_amount": 3,
+  "is_inpatient": 6,
+  "deductible_amt_paid": 3,
+  "beneficiaries_count": 5
+}
+
+=== AI Summary ===
+**Fraud Investigation Report**  
+*Provider‑Level Analysis – Medical Insurance System*  
+
+```
+Fraud Probability:          0.0493
+Risk Level:                 Low
+Potential Saving:           0.09
+Claim Amount:               3
+Deductible Paid:            3
+Inpatient Status:           6
+Beneficiaries Count:        5
+```
+
+---
+
+### 1. Overall Fraud Situation  
+- **Probability**: The calculated fraud probability of **4.93 %** indicates a *low* likelihood of fraudulent activity within the provider’s claim set.  
+- **Risk Assessment**: The risk level is officially classified as **Low**; however, the presence of inpatient claims (6) and a deductible paid equal to the claim amount (3) warrants continued monitoring.  
+- **Financial Impact**: Potential savings are modest (**0.09**), suggesting that any fraud detected would have a limited cost‑benefit for the insurer but must still be prevented to maintain compliance and payer integrity.
+
+### 2. Likely Fraud Types  
+| Category | Evidence / Rationale |
+|----------|----------------------|
+| **Up‑coding** | Inpatient status count (6) with claim amount (3) suggests possible coding of higher‑severity services than actually rendered. |
+| **Duplicate Claims** | Deductible paid equals claim amount, raising the possibility of repeated submissions for the same service. |
+| **Phantom Billing** | Beneficiaries count (5) with a high inpatient load could indicate services billed for non‑existent patients. |
+
+### 3. Patterns or Causes  
+- **High Inpatient Density**: 6 inpatient claims in a small provider cohort (5 beneficiaries) is atypical; this may signal systematic over‑billing or misclassification.  
+- **Deductible Alignment**: The deductible paid matching the claim amount implies a potential pattern of billing the full amount without appropriate cost‑sharing, which is uncommon in standard practice.  
+- **Benefit Utilization**: Limited number of beneficiaries relative to inpatient claims suggests that the provider may be leveraging a small patient pool for multiple high‑cost services.
+
+### 4. Recommended Actions  
+- **Audit Inpatient Claims**  
+  - Verify service dates, diagnoses, and associated CPT/ICD codes.  
+  - Cross‑check with medical records for documentation of inpatient stays.  
+- **Deductible Verification**  
+  - Ensure the deductible amount paid aligns with the patient’s plan terms.  
+  - Identify any instances where the deductible was paid in full for a low‑value claim.  
+- **Beneficiary Cross‑Reference**  
+  - Match beneficiary IDs to claim submissions to rule out duplicate or phantom billing.  
+- **Coding Compliance Review**  
+  - Provide targeted training on proper coding for inpatient services.  
+  - Implement automated flagging for claims where claim amount equals deductible.  
+- **Continuous Monitoring**  
+  - Establish a low‑threshold trigger (e.g., >2 inpatient claims per 5 beneficiaries) for real‑time alerts.  
+
+### 5. Final Verdict  
+The provider’s current claim profile exhibits a **low fraud probability (4.93 %)** with modest potential savings. While the risk level is low, the identified patterns—particularly the high inpatient claim density and deductible alignment—necessitate proactive monitoring and targeted audits. Implementing the recommended actions will mitigate the residual risk and ensure ongoing compliance with payer regulations.
+
+*Prepared by: [Fraud Analyst Name]  
+Date: [Insert Date]*

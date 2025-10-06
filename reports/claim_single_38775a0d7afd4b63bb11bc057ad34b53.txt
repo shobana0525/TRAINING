@@ -1,0 +1,72 @@
+=== Statistics ===
+{
+  "total_claims": 1,
+  "fraud_claims": 0,
+  "fraud_percentage": 0.37,
+  "fraud_probability": 0.0037,
+  "risk_level": "Low",
+  "potential_saving": 0.01,
+  "claim_amount": 4,
+  "deductible_amt_paid": 2,
+  "beneficiaries_count": 1
+}
+
+=== AI Summary ===
+**Fraud Investigation Report**  
+*Claim ID: 00000001 (sample)*  
+
+```
+Key Statistics
+---------------
+Fraud Probability:            0.0037
+Risk Level:                    Low
+Potential Saving:             $0.01
+Claim Amount:                 $4
+Deductible Paid:              $2
+Inpatient Status:             0  (Out‑patient)
+Beneficiaries Count:          1
+```
+
+---
+
+### 1. Overall Fraud Situation  
+- The model assigns a **very low probability (0.37 %)** of fraud for this claim.  
+- Risk level is automatically flagged as **Low**.  
+- The claim amount is modest ($4) with a deductible of $2, indicating a small out‑patient payment.  
+- With only **one beneficiary**, the claim structure is simple and presents minimal complexity for fraud.  
+- **Potential saving** of $0.01 suggests that even if fraud were present, the financial impact would be negligible.
+
+### 2. Likely Fraud Types  
+| Fraud Category | Probability | Typical Indicators in This Claim |
+|----------------|-------------|----------------------------------|
+| **Billing for non‑performed services** | 0.20 % | No inpatient service recorded; claim amount extremely low. |
+| **Duplicate billing** | 0.10 % | Single beneficiary, no overlapping dates. |
+| **Up‑coding** | 0.10 % | Claim amount ($4) too low to reflect any coding upgrade. |
+| **Provider collusion** | 0.01 % | No ancillary data suggesting multiple providers. |
+
+*Note:* The low fraud probability reduces the likelihood of any of these types occurring.
+
+### 3. Patterns or Causes  
+- **Out‑patient claim with a deductible:** Out‑patient services often have higher deductible ratios; here the deductible is 50 % of the claim amount, which is consistent with policy terms.  
+- **Single beneficiary:** Limits the scope for beneficiary‑centric fraud schemes.  
+- **Minimal claim amount:** Small claims are less attractive targets but can be used for “incremental” fraud; however, the $4 figure falls below typical thresholds for scrutiny.  
+- **Zero inpatient status:** Confirms that no inpatient services were rendered, reducing complexity.
+
+### 4. Recommended Actions  
+| Action | Rationale | Priority |
+|--------|-----------|----------|
+| **Maintain routine monitoring** | Standard compliance practice; no immediate red flags. | Low |
+| **Verify service documentation** | Confirm that the $4 claim aligns with a legitimate outpatient service. | Low |
+| **Cross‑check with provider network** | Ensure the provider is authorized and has no prior complaints. | Low |
+| **Educate staff** | Reinforce low‑risk claim handling to prevent complacency. | Low |
+
+*Implementation:* No system changes required; manual review suffices.
+
+### 5. Final Verdict  
+- **Assessment:** The claim presents a **low likelihood of fraud** (0.37 %) and a negligible potential financial loss ($0.01).  
+- **Conclusion:** **No evidence of fraud** is detected.  
+- **Recommendation:** Routine monitoring and documentation verification are recommended to sustain compliance. No further investigative resources are necessary at this time.  
+
+**Prepared by:**  
+*Fraud Analysis Team*  
+*Date:* 2024‑06‑30

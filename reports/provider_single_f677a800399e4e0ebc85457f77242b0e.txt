@@ -1,0 +1,65 @@
+=== Statistics ===
+{
+  "total_claims": 1,
+  "fraud_claims": 0,
+  "fraud_percentage": 6.38,
+  "fraud_probability": 0.0638,
+  "risk_level": "Low",
+  "potential_saving": 4.67,
+  "claim_amount": 122,
+  "is_inpatient": 1,
+  "deductible_amt_paid": 232,
+  "beneficiaries_count": 12
+}
+
+=== AI Summary ===
+**Fraud Investigation Report – Provider‑Level Analysis**
+
+```
+Statistic                     Value
+Fraud Probability             0.0638
+Risk Level                    Low
+Potential Saving              4.67
+Claim Amount                  122
+Deductible Amount Paid        232
+Inpatient Status              1
+Beneficiaries Count           12
+```
+
+---
+
+### 1. Overall Fraud Situation  
+&nbsp;&nbsp;• **Fraud Probability:** 6.38 % – a modest likelihood of irregular activity.  
+&nbsp;&nbsp;• **Risk Level:** Low – consistent with the probability figure and the limited claim size.  
+&nbsp;&nbsp;• **Potential Savings:** $4.67 – the estimated amount that could be recovered if fraudulent claims are eliminated.  
+&nbsp;&nbsp;• **Claim & Payment Profile:** A single inpatient claim of $122 with a deductible paid of $232, indicating a possible over‑payment or billing error.  
+&nbsp;&nbsp;• **Beneficiary Context:** 12 beneficiaries associated with the claim, suggesting a group or family plan rather than a single individual claim.
+
+---
+
+### 2. Likely Fraud Types  
+&nbsp;&nbsp;• **Billing Over‑Submission** – paying a deductible that exceeds the actual claim amount.  
+&nbsp;&nbsp;• **Duplicate Billing** – potential duplicate claims for the same service under different claim numbers.  
+&nbsp;&nbsp;• **Up‑coding** – billing for a higher‑tier inpatient service than was actually provided.  
+&nbsp;&nbsp;• **Misclassification** – incorrectly marking an outpatient service as inpatient, inflating cost.
+
+---
+
+### 3. Patterns or Causes  
+&nbsp;&nbsp;• **Inpatient Status (1)** combined with a **claim amount** lower than the **deductible paid** points to a mismatch in service classification or billing.  
+&nbsp;&nbsp;• The **small number of beneficiaries (12)** suggests a concentrated risk that can be monitored with targeted audits.  
+&nbsp;&nbsp;• **Low fraud probability** but a **non‑zero potential saving** indicates that the system is largely compliant but still vulnerable to routine billing errors.
+
+---
+
+### 4. Recommended Actions  
+&nbsp;&nbsp;• **Claim Review Audit** – Re‑examine the specific claim to verify that the inpatient designation and deductible are accurate.  
+&nbsp;&nbsp;• **Data Validation Rules** – Implement automated checks that flag discrepancies where deductible > claim amount.  
+&nbsp;&nbsp;• **Provider Training** – Offer refresher sessions on correct inpatient/outpatient coding and deductible calculations.  
+&nbsp;&nbsp;• **Beneficiary Monitoring** – Track claims involving the 12 beneficiaries for any recurring patterns.  
+&nbsp;&nbsp;• **Process Improvement** – Streamline the claim entry workflow to reduce manual entry errors that could lead to over‑billing.
+
+---
+
+### 5. Final Verdict  
+&nbsp;&nbsp;The provider’s claim exhibits a **low but present risk** of fraud, primarily centered on potential billing over‑submission. The **estimated savings of $4.67** are modest, yet addressing the identified discrepancies will enhance overall integrity and reduce future exposure. A focused audit, coupled with preventive controls, is recommended to ensure compliance and safeguard the insurer’s interests.

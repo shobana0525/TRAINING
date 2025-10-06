@@ -1,0 +1,85 @@
+=== Statistics ===
+{
+  "total_claims": 1,
+  "fraud_claims": 0,
+  "fraud_percentage": 1.22,
+  "fraud_probability": 0.0122,
+  "risk_level": "Low",
+  "potential_saving": 0.01,
+  "claim_amount": 1,
+  "is_inpatient": 1,
+  "deductible_amt_paid": 1,
+  "beneficiaries_count": 1
+}
+
+=== AI Summary ===
+**Fraud Investigation Report – Provider‑Level Review**  
+*Prepared by: Senior Healthcare Fraud Analyst*  
+*Date: 2024‑06‑20*  
+
+---
+
+### 1. Overall Fraud Situation  
+
+| Metric                     | Value |
+|----------------------------|-------|
+| Fraud Probability          | 0.0122 |
+| Risk Level                 | Low |
+| Potential Saving (USD)     | 0.01 |
+| Claim Amount (USD)         | 1 |
+| Deductible Amount Paid (USD) | 1 |
+| Inpatient Status (1=Yes)   | 1 |
+| Beneficiaries Count        | 1 |
+
+**Interpretation**  
+- The probability of fraud for this provider’s single claim is **1.22 %**, which is modest but not negligible.  
+- The **risk level is classified as Low** per the internal scoring matrix.  
+- With a **potential saving of only $0.01**, the financial impact of this claim is minimal.  
+- The claim is for an **inpatient service** and involves a **single beneficiary**.
+
+---
+
+### 2. Likely Fraud Types  
+
+| Fraud Type                     | Reasoning |
+|--------------------------------|-----------|
+| **Up‑coding / Billing for Higher‑Level Service** | Inpatient claim with a $1 billed amount suggests a possible under‑billing or mis‑classification. |
+| **Duplicate Claim**            | Single beneficiary and identical claim/deductible amounts raise the possibility of duplicate filing. |
+| **Phantom Patient**            | Low claim amount but inpatient status could indicate a non‑existent patient record. |
+
+---
+
+### 3. Patterns or Causes  
+
+| Observation | Possible Cause |
+|-------------|----------------|
+| **Claim & Deductible === $1** | Indicates a minimal transaction, possibly a test or filler claim. |
+| **Inpatient Status = 1** | Suggests provider is billing for inpatient services; however, the amount is unusually low for such services. |
+| **Single Beneficiary** | Reduces complexity but also limits cross‑checking opportunities. |
+| **Low Fraud Probability** | The provider’s historical data likely shows consistent compliance. |
+
+---
+
+### 4. Recommended Actions  
+
+| Action | Priority | Description |
+|--------|----------|-------------|
+| **Verify Patient Identity** | High | Cross‑check the beneficiary’s demographic data against the claim to confirm legitimacy. |
+| **Audit Billing Codes** | Medium | Ensure the inpatient code used aligns with the billed amount and service rendered. |
+| **Check for Duplicate Claims** | Medium | Search the provider’s claim history for identical claim IDs or amounts within the same period. |
+| **Submit for Manual Review** | Low | If any anomalies persist after automated checks, forward the claim to the manual review team. |
+| **Update Provider Education** | Low | Provide targeted training on proper inpatient billing and deductible reporting. |
+
+---
+
+### 5. Final Verdict  
+
+- **Fraud Risk:** *Low* (0.0122 probability).  
+- **Financial Impact:** Negligible ($0.01 potential saving).  
+- **Recommendation:** Proceed with the **verification steps** above. If no discrepancies are found, the claim can be processed with standard confidence.  
+- **Action Required:** Initiate the verification workflow; no immediate claim denial is warranted based on current data.  
+
+---  
+*Prepared by:*  
+*Senior Healthcare Fraud Analyst*  
+*Signature:* ____________________

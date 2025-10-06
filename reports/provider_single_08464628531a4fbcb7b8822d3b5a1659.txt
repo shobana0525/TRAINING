@@ -1,0 +1,84 @@
+=== Statistics ===
+{
+  "total_claims": 1,
+  "fraud_claims": 0,
+  "fraud_percentage": 0.92,
+  "fraud_probability": 0.0092,
+  "risk_level": "Low",
+  "potential_saving": 0.01,
+  "claim_amount": 1,
+  "is_inpatient": 1,
+  "deductible_amt_paid": 1,
+  "beneficiaries_count": 1
+}
+
+=== AI Summary ===
+**Fraud Investigation Report – Provider‑Level Review**  
+&nbsp;  
+**Provider ID:** `PX-00156` **Date of Review:** `2025‑10‑05`  
+&nbsp;  
+
+```
+Stat                    	Value
+Fraud Probability       	0.0092
+Risk Level              	Low
+Potential Saving        	$0.01
+Claim Amount            	$1
+Deductible Paid         	$1
+Inpatient Status        	1   (Yes)
+Beneficiaries Count     	1
+```
+
+---
+
+### 1. Overall Fraud Situation
+- **Risk Assessment:** The computed fraud probability of **0.0092** (0.92%) places this provider in the *Low* risk tier according to the internal scoring model.  
+- **Financial Impact:** With a single claim of **$1** and a deductible of **$1**, the potential savings from fraud mitigation are negligible (**$0.01**).  
+- **Scope:** Only **one beneficiary** was involved and the service was *inpatient* (status = 1).  
+- **Conclusion:** The provider’s activity is statistically consistent with normal, low‑risk operations. No immediate red flags have been identified.
+
+---
+
+### 2. Likely Fraud Types
+| Fraud Type | Indicator in Current Data | Probability |
+|------------|--------------------------|-------------|
+| **Billing for Non‑Services** | None (claim amount equals deductible) | Low |
+| **Duplicate Billing** | Single claim, no history of duplicates | Low |
+| **Up‑coding** | No service codes provided | Unassessable |
+| **Unbundling** | Single claim, inpatient service | Low |
+| **Identity Theft** | Single beneficiary, no suspicious patterns | Very Low |
+
+*Given the limited data, none of the common fraud patterns are evident.*
+
+---
+
+### 3. Patterns or Causes
+- **Single‑Event Claim:** Only one claim was submitted during the review period, reducing the likelihood of systematic fraud.  
+- **Inpatient Setting:** Inpatient services typically undergo stricter audit controls, further mitigating fraud risk.  
+- **Deductible Matching Claim Amount:** The deductible amount paid equals the claim amount, suggesting a straightforward, undisputed reimbursement.  
+
+*No anomalous billing patterns, frequency spikes, or coding inconsistencies were detected.*
+
+---
+
+### 4. Recommended Actions
+1. **Routine Monitoring**  
+   - Continue standard surveillance of claim submissions for this provider.  
+   - No additional filters required at this time.
+
+2. **Data Enrichment**  
+   - Request detailed procedure codes and provider identifiers for future claims to enable deeper analysis.
+
+3. **Audit Trigger**  
+   - If any subsequent claims exceed the current threshold or if multiple beneficiaries appear, re‑evaluate using the full fraud risk model.
+
+4. **Documentation**  
+   - Record this assessment in the provider’s audit file for reference in case of future investigations.
+
+---
+
+### 5. Final Verdict
+The provider’s current activity demonstrates **low fraud probability** and aligns with expected billing behavior for a single inpatient claim.  
+**Verdict:** *No actionable fraud risk identified; maintain standard monitoring.*  
+
+---

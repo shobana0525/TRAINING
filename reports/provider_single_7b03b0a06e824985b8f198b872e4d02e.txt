@@ -1,0 +1,60 @@
+=== Statistics ===
+{
+  "total_claims": 1,
+  "fraud_claims": 0,
+  "fraud_percentage": 1.22,
+  "fraud_probability": 0.0122,
+  "risk_level": "Low",
+  "potential_saving": 0.01,
+  "claim_amount": 1,
+  "is_inpatient": 1,
+  "deductible_amt_paid": 1,
+  "beneficiaries_count": 1
+}
+
+=== AI Summary ===
+```
+Fraud Investigation Report
+Provider: __________________________
+Date: _____________________________
+
+───────────────────────────────────────
+
+Tabulated Data
+───────────────────────────────────────
+Fraud Probability      : 0.0122
+Risk Level             : Low
+Potential Saving       : 0.01
+Claim Amount           : 1
+Deductible Amount Paid : 1
+Inpatient Status       : 1
+Beneficiaries Count    : 1
+
+───────────────────────────────────────
+
+1. Overall Fraud Situation
+───────────────────────────────────────
+	Text: The provider’s fraud probability is 0.0122, which is below the typical threshold for high‑risk cases.  The risk level is classified as Low, and the projected potential saving from addressing any fraudulent activity is modest (0.01 relative to the claim amount of 1).  With a deductible paid of 1 and a single inpatient claim, the overall financial exposure is minimal.
+
+2. Likely Fraud Types
+───────────────────────────────────────
+	Text:  Based on the limited data set, the most plausible fraudulent activities include:
+	•  Under‑billing / over‑billing of a single inpatient claim
+	•  Duplicate claim submissions for the same service
+	•  Misclassification of service type (inpatient vs outpatient) to inflate reimbursement
+
+3. Patterns or Causes
+───────────────────────────────────────
+	Text:  No recurring patterns are evident due to the single claim data point.  However, the fact that the deductible amount paid matches the claim amount suggests a possible “claim‑only” submission without additional services, which could be a red flag for a single‑event fraud scenario.
+
+4. Recommended Actions
+───────────────────────────────────────
+	Text:  •  Verify the inpatient status by cross‑checking with the provider’s inpatient logs.
+	•  Confirm that the claim amount of 1 aligns with the actual services rendered.
+	•  Request supporting documentation (e.g., progress notes, discharge summary) to ensure compliance with billing guidelines.
+	•  Monitor for any future claims from this provider to detect potential escalation.
+
+5. Final Verdict
+───────────────────────────────────────
+	Text:  The evidence indicates a low probability of fraud (0.0122) with a minimal potential saving (0.01).  While no definitive fraudulent activity is confirmed, a targeted review of the single inpatient claim is recommended to eliminate any residual risk.  The provider can be classified as Low‑Risk pending the results of the above verification steps.
+```

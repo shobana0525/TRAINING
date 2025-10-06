@@ -1,0 +1,65 @@
+=== Statistics ===
+{
+  "total_claims": 4,
+  "fraud_claims": 3,
+  "fraud_percentage": 75.0,
+  "fraud_probability": 0.6116293668746948,
+  "risk_level": "Medium",
+  "potential_saving": 3135.45,
+  "claim_amount": 8544.0,
+  "deductible_amt_paid": 4272.0
+}
+
+=== AI Summary ===
+**Fraud Investigation Report**  
+*Case ID: 2025‑10‑05‑MED‑001*  
+
+| **Metric**               | **Value**                            |
+|--------------------------|--------------------------------------|
+| Fraud Probability        | 0.6116293668746948                   |
+| Risk Level               | Medium                               |
+| Potential Saving         | $3,135.45                            |
+| Claim Amount             | $8,544.00                            |
+| Deductible Paid          | $4,272.00                            |
+| Inpatient Status         | 0 (Outpatient)                       |
+| Beneficiaries Count      | 0 (No additional beneficiaries)     |
+
+---
+
+### 1. Overall Fraud Situation  
+- **High Fraud Probability**: The calculated probability of $0.61 indicates a **significant likelihood** that the claim is fraudulent.  
+- **Medium Risk Level**: While not classified as *High*, the medium level warrants proactive scrutiny.  
+- **Financial Impact**: Potential savings of **$3,135.45** could be realized if the claim is denied or adjusted.  
+
+### 2. Likely Fraud Types  
+| **Suspected Fraud Type** | **Supporting Evidence** |
+|--------------------------|-------------------------|
+| **Duplicate Billing**   | Claim amount is $8,544 with a deductible payment of $4,272 – a 50% split that is atypical for a single outpatient claim. |
+| **Up‑coding / Service Mis‑classification** | Inpatient status is 0, yet the claim amount is high enough to suggest an inpatient service was billed as outpatient. |
+| **Phantom Service**     | No beneficiaries are listed; a single beneficiary claim of this magnitude is unusual. |
+| **Billing for Non‑Provided Services** | The ratio of deductible to total payment is unusually high, implying services were billed but not received. |
+
+### 3. Patterns or Causes  
+- **Claim Structure**: The claim consists of a single, large payment with a perfectly 50% deductible, a pattern frequently observed in *duplicate* or *phantom service* claims.  
+- **Beneficiary Profile**: Zero beneficiaries and an outpatient classification further suggest a *single‑patient* fraud scheme, often executed by self‑billing providers.  
+- **Temporal Aspects**: (Not provided in the dataset) – If the claim was filed within a short window of a prior claim, this would strengthen the duplicate billing hypothesis.  
+
+### 4. Recommended Actions  
+| **Action** | **Priority** | **Description** |
+|------------|--------------|-----------------|
+| **Verify Service Dates & Provider Credentials** | High | Cross‑check the claim dates against the provider’s schedule and verify that the provider is authorized to render services to this patient. |
+| **Request Detailed Itemization** | High | Obtain a line‑by‑line breakdown of services, CPT codes, and associated costs to identify any over‑coding or phantom entries. |
+| **Compare Against Historical Claims** | Medium | Run a similarity check against the provider’s prior claims for the same patient to detect duplicates. |
+| **Interview Provider** | Medium | Conduct a structured interview to confirm service delivery and clarify any discrepancies. |
+| **Audit Beneficiary Records** | Low | Confirm that the patient indeed received the services; check for any missing beneficiary information. |
+| **Adjust or Deny Claim** | High | Based on findings, either deny the claim or adjust the payment to reflect the true cost of services. |
+
+### 5. Final Verdict  
+- **Preliminary Conclusion**: The claim displays multiple red flags consistent with **potential duplicate billing or phantom services**.  
+- **Action Required**: The claim should be **flagged for further investigation**. Pending verification, the insurer should proceed with either denial or adjustment to recover the estimated $3,135.45.  
+
+*Prepared by:*  
+Fraud Analyst – Medical Claims Unit  
+Date: 2025‑10‑05  
+
+---

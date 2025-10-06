@@ -1,0 +1,92 @@
+=== Statistics ===
+{
+  "total_claims": 1,
+  "fraud_claims": 0,
+  "fraud_percentage": 6.38,
+  "fraud_probability": 0.0638,
+  "risk_level": "Low",
+  "potential_saving": 4.67,
+  "claim_amount": 122,
+  "is_inpatient": 1,
+  "deductible_amt_paid": 232,
+  "beneficiaries_count": 12
+}
+
+=== AI Summary ===
+**Fraud Investigation Report – Provider‑Level Analysis**  
+*Prepared by: Healthcare Fraud Analyst*  
+*Date: 2025‑10‑05*  
+
+---
+
+### 1. Overall Fraud Situation  
+```
+Fraud Probability          : 0.0638  (6.38 %)  
+Risk Level                  : Low  
+Potential Savings           : $4.67 k  
+Claim Amount                : $122 k  
+Deductible Amount Paid      : $232 k  
+Inpatient Status            : 1 (Inpatient encounter)  
+Beneficiaries Count         : 12  
+```
+The statistical model flags this provider with a **low‑risk** classification, yet the **fraud probability** of 6.38 % is non‑trivial given the sizable claim and deductible amounts. The discrepancy between the claim ($122 k) and deductible paid ($232 k) suggests potential over‑billing or mis‑allocation of charges.
+
+---
+
+### 2. Likely Fraud Types  
+```
+    • Up‑coding of inpatient services  
+    • Duplicate or “phantom” billing for the same encounter  
+    • Unbundling of services (separating bundled procedures for higher reimbursement)  
+    • Misclassification of outpatient services as inpatient to inflate payments  
+```
+These patterns are consistent with providers who exploit the inpatient status (Inpatient Status = 1) to drive higher reimbursements, especially when the deductible paid exceeds the nominal claim amount.
+
+---
+
+### 3. Patterns or Causes  
+```
+    • High Deductible Paid vs. Claim Amount  
+        – Deductible ($232 k) > Claim ($122 k) indicates potential over‑billing or a data entry error.  
+
+    • Multiple Beneficiaries  
+        – 12 beneficiaries suggest a large practice or group setting; large groups increase the risk of internal collusion or “shared” billing.  
+
+    • Inpatient Flag Consistency  
+        – Inpatient encounters are more costly; any deviation in coding or service mix may trigger audit flags.  
+
+    • Historical Claims Trend  
+        – If historical data show a steady rise in inpatient claims without a proportional increase in service volume, fraud may be embedded.  
+```
+These factors combined raise the suspicion of systematic billing manipulation rather than isolated errors.
+
+---
+
+### 4. Recommended Actions  
+```
+    • Conduct a targeted audit of all inpatient claims for this provider over the last 12‑month period.  
+        – Verify CPT/ICD codes against clinical documentation.  
+        – Cross‑check the deductible paid against the actual cost of services rendered.  
+
+    • Implement a “claim‑to‑beneficiary” reconciliation process.  
+        – Ensure each beneficiary’s claim aligns with the provider’s billing records.  
+
+    • Deploy a real‑time flagging rule:  
+        – Flag any claim where Deductible Paid > Claim Amount or where Inpatient Status is coded but the service mix is atypical.  
+
+    • Engage the provider’s billing department for an internal review.  
+        – Offer training on correct coding and documentation practices.  
+
+    • Consider a temporary hold or pre‑authorization requirement for large inpatient claims until audit completion.  
+```
+These actions aim to confirm whether the flagged anomalies are due to fraud or legitimate billing variances.
+
+---
+
+### 5. Final Verdict  
+```
+    The evidence indicates a *low risk* classification, but the presence of significant anomalies in deductible payments and inpatient billing patterns warrants a focused audit.  
+    Pending audit results, the provider should be monitored closely, and corrective action should be taken if fraudulent behavior is confirmed.  
+```
+*Prepared by:*  
+*Fraud Analyst – Healthcare Insurance Division*

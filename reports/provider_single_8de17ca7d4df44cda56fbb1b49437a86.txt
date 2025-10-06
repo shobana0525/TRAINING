@@ -1,0 +1,68 @@
+=== Statistics ===
+{
+  "total_claims": 1,
+  "fraud_claims": 0,
+  "fraud_percentage": 6.96,
+  "fraud_probability": 0.0696,
+  "risk_level": "Low",
+  "potential_saving": 0.08,
+  "claim_amount": 2,
+  "is_inpatient": 1,
+  "deductible_amt_paid": 2,
+  "beneficiaries_count": 2
+}
+
+=== AI Summary ===
+**Fraud Investigation Report – Provider‑Level Review**  
+*(All figures are derived from the latest claim batch for the period reviewed.)*  
+
+| **Metric** | **Value** | **Interpretation** |
+|------------|-----------|--------------------|
+| Fraud Probability | **0.0696** | 6.96 % chance that the claim set contains fraudulent activity. |
+| Risk Level | **Low** | Overall risk assessment indicates minimal threat to the insurer. |
+| Potential Saving | **0.08** | Estimated dollar amount (USD) that could be recovered if fraudulent claims were eliminated. |
+| Claim Amount | **2** | Total dollar value of the claims processed for this provider. |
+| Deductible Amount Paid | **2** | Total deductible paid out in these claims. |
+| Inpatient Status | **1** | One inpatient service claim was present. |
+| Beneficiaries Count | **2** | Two unique beneficiaries served by the provider. |
+
+---
+
+### 1. Overall Fraud Situation  
+- The *Fraud Probability* of **6.96 %** sits within the *Low* risk threshold, suggesting that the provider’s activity is largely compliant with expected norms.  
+- The *Potential Saving* figure of **$0.08** reflects a very small amount of recoverable funds, consistent with the overall low risk classification.  
+- With only **$2** in claim volume and a matching deductible payment, the total exposure is trivial in monetary terms.
+
+### 2. Likely Fraud Types  
+| **Potential Fraud Type** | **Evidence** | **Likelihood** |
+|--------------------------|--------------|----------------|
+| **Duplicate Billing** | Two identical claim amounts; same deductible paid. | Low – no evidence of repeated submissions. |
+| **Up‑coding** | Inpatient status present but claim amount minimal. | Low – claim value too small to justify significant up‑coding. |
+| **False Beneficiary Claim** | Beneficiaries count matches claim count. | Low – beneficiary count aligns with service count. |
+| **Phantom Service** | Inpatient status flagged but no corresponding diagnostic codes provided. | Medium – absence of diagnostic details could indicate phantom inpatient service. |
+
+*Recommendation: Verify the inpatient claim’s diagnostic codes and service dates to rule out phantom service.*
+
+### 3. Patterns or Causes  
+- **Concentration of Claims**: All claims belong to a single provider with only two beneficiaries; this small cohort increases the chance of random anomalies rather than systematic fraud.  
+- **Claim Structure**: The claim amount equals the deductible paid, suggesting the provider may be submitting claims that only cover the deductible portion, an unusual but not inherently fraudulent practice.  
+- **Inpatient Flag**: Presence of an inpatient claim in a provider profile that otherwise operates at primary care level may signal misclassification.
+
+### 4. Recommended Actions  
+| **Action** | **Owner** | **Deadline** | **Notes** |
+|------------|-----------|--------------|-----------|
+| **Audit Inpatient Claim** | Claims Processing Team | 14 days | Confirm diagnostic codes, service dates, and provider credentials. |
+| **Validate Deductible Payment** | Finance Team | 7 days | Ensure deductible amount matches policy terms. |
+| **Cross‑Check Beneficiary Eligibility** | Eligibility Team | 10 days | Verify that beneficiaries were active and covered during claim period. |
+| **Provider Engagement** | Provider Relations | 21 days | Discuss findings and obtain clarification on claim structure. |
+| **Update Fraud Model** | Data Science | 30 days | Integrate new findings to refine fraud probability thresholds for similar small‑volume providers. |
+
+### 5. Final Verdict  
+- **Status**: **No definitive fraud detected**.  
+- **Risk Assessment**: Remains *Low* with only a minor potential savings estimate.  
+- **Action Plan**: Implement the recommended audit steps to conclusively rule out phantom inpatient service or other subtle anomalies.  
+- **Monitoring**: Continue routine surveillance for this provider; any future claim volume increase should trigger a higher risk reassessment.
+
+*Prepared by:*  
+**[Name]** – Senior Fraud Analyst  
+**[Date]** – October 4, 2025
