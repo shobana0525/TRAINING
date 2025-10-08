@@ -9,6 +9,14 @@
     .hidden { display: none; }
     .result { margin-top: 10px; }
     pre { white-space: pre-wrap; word-wrap: break-word; background:#f5f5f5; padding:8px; border-radius:4px; }
+    .field-row { display:flex; gap:8px; align-items:center; }
+    .field-row label { min-width: 200px; font-weight:600; font-size:14px; color:#333; }
+    .field-row input { flex:1; padding:8px 10px; border-radius:8px; border:1px solid #cfd9e8; font-size:14px; }
+    .controls { display:flex; gap:10px; margin-top:12px; }
+    .cta { padding:10px 14px; border-radius:10px; border:none; cursor:pointer; font-weight:700; }
+    .cta.analyze { background: linear-gradient(90deg,#4a90e2,#357ab7); color:white; }
+    .cta.ai { background: linear-gradient(90deg,#8e44ad,#9b59b6); color:white; }
+    .cta.dashboard { background: linear-gradient(90deg,#16a085,#1abc9c); color:white; }
   </style>
 </head>
 <body>
@@ -34,50 +42,67 @@
 
         <!-- Batch -->
         <div class="batch-panel hidden" data-type="provider">
-          <p>Upload CSV or JSON. </strong></p>
+          <p>Upload CSV or JSON. </p>
           <input type="file" id="provider_batch_file" />
-          <button id="provider_batch_analyze">Analyse</button>
+          <div class="controls">
+            <button id="provider_batch_analyze" class="cta analyze">Analyse</button>
+            <button id="provider_batch_ai" class="cta ai">AI Summary</button>
+            <button onclick="window.open('/dashboard','_blank')" class="cta dashboard">View Dashboard</button>
+          </div>
           <div id="provider_batch_result" class="result"></div>
         </div>
 
         <!-- Single -->
         <div class="single-panel hidden" data-type="provider">
-         <form id="provider_single_form" class="form-grid">
-    <label for="is_inpatient">Inpatient Status </label>
-    <input type="number" name="is_inpatient" id="is_inpatient" placeholder="e.g., 1" required>
+          <form id="provider_single_form" class="form-grid">
+            <div class="field-row">
+              <label for="is_inpatient">Inpatient Status (0 / 1)</label>
+              <input id="is_inpatient" type="number" name="is_inpatient" placeholder="0 or 1" required>
+            </div>
+            <div class="field-row">
+              <label for="is_groupcode">Group Code (0 / 1)</label>
+              <input id="is_groupcode" type="number" name="is_groupcode" placeholder="0 or 1" required>
+            </div>
+            <div class="field-row">
+              <label for="ChronicCond_rheumatoidarthritis">Rheumatoid Arthritis (0 / 1)</label>
+              <input id="ChronicCond_rheumatoidarthritis" type="number" name="ChronicCond_rheumatoidarthritis" placeholder="0 or 1" required>
+            </div>
+            <div class="field-row">
+              <label for="Beneficiaries_Count">Beneficiaries Count</label>
+              <input id="Beneficiaries_Count" type="number" name="Beneficiaries_Count" placeholder="e.g. 10" required>
+            </div>
+            <div class="field-row">
+              <label for="DeductibleAmtPaid">Deductible Amount Paid</label>
+              <input id="DeductibleAmtPaid" type="number" name="DeductibleAmtPaid" placeholder="e.g. 1500" required>
+            </div>
+            <div class="field-row">
+              <label for="InscClaimAmtReimbursed">Insured Claim Amount Reimbursed</label>
+              <input id="InscClaimAmtReimbursed" type="number" name="InscClaimAmtReimbursed" placeholder="e.g. 5000" required>
+            </div>
+            <div class="field-row">
+              <label for="ChronicCond_Alzheimer">Alzheimer's (0 / 1)</label>
+              <input id="ChronicCond_Alzheimer" type="number" name="ChronicCond_Alzheimer" placeholder="0 or 1" required>
+            </div>
+            <div class="field-row">
+              <label for="ChronicCond_IschemicHeart">Ischemic Heart (0 / 1)</label>
+              <input id="ChronicCond_IschemicHeart" type="number" name="ChronicCond_IschemicHeart" placeholder="0 or 1" required>
+            </div>
+            <div class="field-row">
+              <label for="Days_Admitted">Days Admitted</label>
+              <input id="Days_Admitted" type="number" name="Days_Admitted" placeholder="e.g. 3" required>
+            </div>
+            <div class="field-row">
+              <label for="ChronicCond_stroke">Stroke (0 / 1)</label>
+              <input id="ChronicCond_stroke" type="number" name="ChronicCond_stroke" placeholder="0 or 1" required>
+            </div>
 
-    <label for="is_groupcode">Group Code </label>
-    <input type="number" name="is_groupcode" id="is_groupcode" placeholder="e.g., 0" required>
-
-    <label for="ChronicCond_rheumatoidarthritis">Rheumatoid Arthritis </label>
-    <input type="number" name="ChronicCond_rheumatoidarthritis" id="ChronicCond_rheumatoidarthritis" placeholder="e.g., 1" required>
-
-    <label for="Beneficiaries_Count">Beneficiaries Count</label>
-    <input type="number" name="Beneficiaries_Count" id="Beneficiaries_Count" placeholder="e.g., 150" required>
-
-    <label for="DeductibleAmtPaid">Deductible Paid</label>
-    <input type="number" name="DeductibleAmtPaid" id="DeductibleAmtPaid" placeholder="e.g., 1000" required>
-
-    <label for="InscClaimAmtReimbursed">Reimbursed Amount</label>
-    <input type="number" name="InscClaimAmtReimbursed" id="InscClaimAmtReimbursed" placeholder="e.g., 5500" required>
-
-    <label for="ChronicCond_Alzheimer">Alzheimer's </label>
-    <input type="number" name="ChronicCond_Alzheimer" id="ChronicCond_Alzheimer" placeholder="e.g., 1" required>
-
-    <label for="ChronicCond_IschemicHeart"> chronic Heart </label>
-    <input type="number" name="ChronicCond_IschemicHeart" id="ChronicCond_IschemicHeart" placeholder="e.g., 0" required>
-
-    <label for="Days_Admitted">Days Admitted</label>
-    <input type="number" name="Days_Admitted" id="Days_Admitted" placeholder="e.g., 5" required>
-
-    <label for="ChronicCond_stroke">Stroke </label>
-    <input type="number" name="ChronicCond_stroke" id="ChronicCond_stroke" placeholder="e.g., 0" required>
-
-    <button type="submit">Analyse</button>
-</form>
+            <div class="controls" style="width:100%; justify-content:flex-start;">
+              <button type="button" id="provider_single_analyze" class="cta analyze">Analyse Provider</button>
+              <button type="button" id="provider_single_ai_btn" class="cta ai">AI Summary</button>
+              <button type="button" id="provider_single_view_dashboard" class="cta dashboard">View Dashboard</button>
+            </div>
+          </form>
           <div id="provider_single_result" class="result"></div>
-          <h4>AI Summary</h4>
-          <pre id="provider_ai_summary_stream"></pre>
         </div>
       </section>
 
@@ -91,47 +116,63 @@
 
         <!-- Batch -->
         <div class="batch-panel hidden" data-type="claim">
-          <p>Upload CSV or JSON. </strong></p>
+          <p>Upload CSV or JSON. </p>
           <input type="file" id="claim_batch_file" />
-          <button id="claim_batch_analyze">Analyse</button>
+          <div class="controls">
+            <button id="claim_batch_analyze" class="cta analyze">Analyse</button>
+            <button id="claim_batch_ai" class="cta ai">AI Summary</button>
+            <button onclick="window.open('/dashboard','_blank')" class="cta dashboard">View Dashboard</button>
+          </div>
           <div id="claim_batch_result" class="result"></div>
         </div>
 
         <!-- Single -->
         <div class="single-panel hidden" data-type="claim">
           <form id="claim_single_form" class="form-grid">
-    <label for="Total_Claims_Per_Bene">Total Claims Per Beneficiary</label>
-    <input type="number" name="Total_Claims_Per_Bene" id="Total_Claims_Per_Bene" placeholder="e.g., 5" required>
+            <div class="field-row">
+              <label for="Total_Claims_Per_Bene">Total Claims Per Beneficiary</label>
+              <input id="Total_Claims_Per_Bene" type="number" name="Total_Claims_Per_Bene" placeholder="e.g. 2" required>
+            </div>
+            <div class="field-row">
+              <label for="TimeInHptal">Time in Hospital (days)</label>
+              <input id="TimeInHptal" type="number" name="TimeInHptal" placeholder="e.g. 3" required>
+            </div>
+            <div class="field-row">
+              <label for="Provider_Claim_Frequency">Provider Claim Frequency</label>
+              <input id="Provider_Claim_Frequency" type="number" name="Provider_Claim_Frequency" placeholder="e.g. 25" required>
+            </div>
+            <div class="field-row">
+              <label for="ChronicCond_stroke_Yes">Stroke (0 / 1)</label>
+              <input id="ChronicCond_stroke_Yes" type="number" name="ChronicCond_stroke_Yes" placeholder="0 or 1" required>
+            </div>
+            <div class="field-row">
+              <label for="DeductibleAmtPaid_claim">Deductible Amount Paid</label>
+              <input id="DeductibleAmtPaid_claim" type="number" name="DeductibleAmtPaid" placeholder="e.g. 1500" required>
+            </div>
+            <div class="field-row">
+              <label for="OPD_Flag_Yes">OPD Flag (0 / 1)</label>
+              <input id="OPD_Flag_Yes" type="number" name="OPD_Flag_Yes" placeholder="0 or 1" required>
+            </div>
+            <div class="field-row">
+              <label for="Diagnosis_Count">Diagnosis Count</label>
+              <input id="Diagnosis_Count" type="number" name="Diagnosis_Count" placeholder="e.g. 3" required>
+            </div>
+            <div class="field-row">
+              <label for="ChronicDisease_Count">Chronic Disease Count</label>
+              <input id="ChronicDisease_Count" type="number" name="ChronicDisease_Count" placeholder="e.g. 2" required>
+            </div>
+            <div class="field-row">
+              <label for="Age">Age</label>
+              <input id="Age" type="number" name="Age" placeholder="e.g. 65" required>
+            </div>
 
-    <label for="TimeInHptal">Time in Hospital (days)</label>
-    <input type="number" name="TimeInHptal" id="TimeInHptal" placeholder="e.g., 3" required>
-
-    <label for="Provider_Claim_Frequency">Provider Claim Frequency</label>
-    <input type="number" name="Provider_Claim_Frequency" id="Provider_Claim_Frequency" placeholder="e.g., 120" required>
-
-    <label for="ChronicCond_stroke_Yes">Stroke </label>
-    <input type="number" name="ChronicCond_stroke_Yes" id="ChronicCond_stroke_Yes" placeholder="e.g., 1" required>
-
-    <label for="DeductibleAmtPaid">Deductible Paid</label>
-    <input type="number" name="DeductibleAmtPaid" id="DeductibleAmtPaid" placeholder="e.g., 500" required>
-
-    <label for="OPD_Flag_Yes">Outpatient </label>
-    <input type="number" name="OPD_Flag_Yes" id="OPD_Flag_Yes" placeholder="e.g., 0" required>
-
-    <label for="Diagnosis_Count">Diagnosis Count</label>
-    <input type="number" name="Diagnosis_Count" id="Diagnosis_Count" placeholder="e.g., 4" required>
-
-    <label for="ChronicDisease_Count">Chronic Disease Count</label>
-    <input type="number" name="ChronicDisease_Count" id="ChronicDisease_Count" placeholder="e.g., 2" required>
-
-    <label for="Age">Age</label>
-    <input type="number" name="Age" id="Age" placeholder="e.g., 72" required>
-
-    <button type="submit">Analyse</button>
-  </form>
+            <div class="controls" style="width:100%; justify-content:flex-start;">
+              <button type="button" id="claim_single_analyze" class="cta analyze">Analyse Claim</button>
+              <button type="button" id="claim_single_ai_btn" class="cta ai">AI Summary</button>
+              <button type="button" id="claim_single_view_dashboard" class="cta dashboard">View Dashboard</button>
+            </div>
+          </form>
           <div id="claim_single_result" class="result"></div>
-          <h4>AI Summary</h4>
-          <pre id="claim_ai_summary_stream"></pre>
         </div>
       </section>
     </main>

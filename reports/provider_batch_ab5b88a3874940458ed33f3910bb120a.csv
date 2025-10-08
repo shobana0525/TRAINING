@@ -1,0 +1,11 @@
+is_inpatient,is_groupcode,ChronicCond_rheumatoidarthritis,Beneficiaries_Count,DeductibleAmtPaid,InscClaimAmtReimbursed,ChronicCond_Alzheimer,ChronicCond_IschemicHeart,Days_Admitted,ChronicCond_stroke,prediction,fraud_probability,risk_level,potential_saving
+9,9,33,18,539.56,5594.44,31,23,3.0,33,Fraud,0.7406348,High,2486.06
+112,112,743,357,258.44,2293.07,717,550,1.34,852,Fraud,0.9949805,Very High,1368.94
+12,12,146,80,151.84,2018.35,146,106,0.69,157,Fraud,0.8188692,High,991.66
+16,16,92,53,301.54,3593.16,93,68,1.51,110,Fraud,0.8490478,High,1830.46
+37,37,189,99,350.85,3544.51,186,143,1.96,211,Fraud,0.9381486,Very High,1995.17
+30,30,47,27,1068.0,8666.67,42,32,4.73,52,No Fraud,0.33473858,Low,1740.64
+8,8,22,27,287.54,3328.15,45,34,1.96,50,No Fraud,0.43885905,Medium,876.35
+0,0,154,77,2.31,189.89,153,112,0.0,175,No Fraud,0.007483803,Low,0.85
+26,26,86,45,545.84,6131.96,76,63,3.0,94,Fraud,0.91406554,Very High,3363.01
+0,0,23,13,0.0,580.77,23,17,0.0,25,No Fraud,0.003967609,Low,1.38

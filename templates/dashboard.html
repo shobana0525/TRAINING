@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Fraud Analysis Dashboard</title>
+  <link rel="stylesheet" href="/static/style.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <style>
+    body { background: #1c1c1c; color: #fff; }
+
+    header {
+      text-align: center;
+      padding: 20px 10px;
+      background: linear-gradient(90deg,#4a90e2,#357ab7);
+      color: #fff;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+    }
+
+    .subtitle { font-size: 14px; opacity: 0.9; }
+
+    main { max-width: 1200px; margin: auto; padding: 20px; }
+
+    .selectors { display:flex; gap:20px; justify-content:center; margin-bottom:20px; flex-wrap:wrap; }
+
+    .big { padding: 12px 25px; font-size:16px; cursor:pointer; border:none; border-radius:12px; background:linear-gradient(90deg,#4a90e2,#357ab7); color:white; transition: all 0.28s ease; }
+    .big:hover { transform: translateY(-3px) scale(1.02); }
+
+    /* Counters */
+    .counters { display:flex; justify-content:center; gap:50px; margin-bottom:30px; flex-wrap:wrap; }
+    .counter-box {
+      background: #fff; /* white background */
+      padding: 20px 30px;
+      border-radius: 12px;
+      text-align:center;
+      color: #000; /* black text */
+      box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+      transition: transform 0.3s;
+    }
+    .counter-box:hover { transform: translateY(-5px); }
+    .counter-box h3 { margin:0 0 10px; font-size:18px; }
+    .counter-box .count { font-size:32px; font-weight:bold; }
+
+    /* Chart section */
+    .section { display:flex; justify-content:space-around; align-items:flex-start; flex-wrap:wrap; animation: fadeIn 1s ease; }
+    .chart-container { width: 30%; display:inline-block; margin:1%; vertical-align:top; }
+    canvas { background: rgba(0,0,0,0); }
+
+    @keyframes fadeIn { from {opacity:0;} to {opacity:1;} }
+
+    .white-text { color:#fff; }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Fraud Detection Dashboard</h1>
+  <div class="subtitle white-text">Monitor Fraud vs No Fraud Records</div>
+</header>
+
+<main>
+  <div class="selectors">
+    <select id="dashboardType" class="big">
+      <option value="provider">Provider</option>
+      <option value="claim">Claim</option>
+    </select>
+
+    <select id="analysisMode" class="big">
+      <option value="single">Single</option>
+      <option value="batch">Batch</option>
+    </select>
+
+    <button class="big" onclick="updateDashboard()">Update Dashboard</button>
+  </div>
+
+  <div class="counters">
+    <div class="counter-box">
+      <h3>Total Records</h3>
+      <div class="count" id="totalCount">0</div>
+    </div>
+    <div class="counter-box">
+      <h3>Total Fraud Records</h3>
+      <div class="count" id="fraudCount">0</div>
+    </div>
+    <div class="counter-box">
+      <h3>Total No Fraud Records</h3>
+      <div class="count" id="noFraudCount">0</div>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="chart-container">
+      <canvas id="barChart"></canvas>
+    </div>
+    <div class="chart-container">
+      <canvas id="pieChart"></canvas>
+    </div>
+    <div class="chart-container">
+      <canvas id="doughnutChart"></canvas>
+    </div>
+  </div>
+</main>
+
+<script>
+let barChartInstance = null;
+let pieChartInstance = null;
+let doughnutChartInstance = null;
+
+async function fetchDashboardData(type, mode) {
+  const resp = await fetch(`/dashboard_data/${type}?mode=${mode}`);
+  const data = await resp.json();
+  return data;
+}
+
+function updateCounters(total, fraud, noFraud) {
+  document.getElementById('totalCount').innerText = total;
+  document.getElementById('fraudCount').innerText = fraud;
+  document.getElementById('noFraudCount').innerText = noFraud;
+}
+
+function renderBarChart(fraudCount, noFraudCount) {
+  const ctx = document.getElementById('barChart').getContext('2d');
+  if(barChartInstance) barChartInstance.destroy();
+
+  barChartInstance = new Chart(ctx, {
+    type: 'bar',
+    data: {
+      labels: ['Fraud','No Fraud'],
+      datasets: [{
+        label: 'Number of Records',
+        data: [fraudCount, noFraudCount],
+        backgroundColor: ['#ff4d4d','#4caf50'],
+        hoverBackgroundColor: ['#ff6666','#66bb6a'],
+        borderRadius: 6
+      }]
+    },
+    options: {
+      responsive:true,
+      plugins:{ legend:{ display:false }, tooltip: { bodyColor:'#fff', titleColor:'#fff' } },
+      scales: { y: { beginAtZero:true, ticks:{ color:'#fff' } }, x: { ticks:{ color:'#fff' } } },
+      animation: { duration: 800 }
+    }
+  });
+}
+
+function renderPieChart(fraudCount, noFraudCount) {
+  const ctx = document.getElementById('pieChart').getContext('2d');
+  if(pieChartInstance) pieChartInstance.destroy();
+
+  pieChartInstance = new Chart(ctx, {
+    type: 'pie',
+    data: { labels: ['Fraud','No Fraud'], datasets: [{ data: [fraudCount,noFraudCount], backgroundColor: ['#ff4d4d','#4caf50'], hoverOffset: 20 }] },
+    options: { responsive:true, plugins:{ legend:{ labels:{ color:'#fff', font:{ weight:'bold' } } } }, animation: { animateScale:true, animateRotate:true } }
+  });
+}
+
+function renderDoughnutChart(fraudCount, noFraudCount) {
+  const ctx = document.getElementById('doughnutChart').getContext('2d');
+  if(doughnutChartInstance) doughnutChartInstance.destroy();
+
+  doughnutChartInstance = new Chart(ctx, {
+    type: 'doughnut',
+    data: { labels: ['Fraud','No Fraud'], datasets: [{ data: [fraudCount,noFraudCount], backgroundColor: ['#ff6666','#66bb6a'], hoverOffset: 20 }] },
+    options: { responsive:true, plugins:{ legend:{ labels:{ color:'#fff', font:{ weight:'bold' } } } }, animation: { animateScale:true, animateRotate:true } }
+  });
+}
+
+async function updateDashboard() {
+  const type = document.getElementById('dashboardType').value;
+  const mode = document.getElementById('analysisMode').value;
+
+  const data = await fetchDashboardData(type, mode);
+  if(data.error) { alert(data.error); return; }
+
+  // total records = fraud + no fraud
+  const totalRecords = data.fraud_count + data.no_fraud_count;
+  updateCounters(totalRecords, data.fraud_count, data.no_fraud_count);
+
+  renderBarChart(data.fraud_count, data.no_fraud_count);
+  renderPieChart(data.fraud_count, data.no_fraud_count);
+  renderDoughnutChart(data.fraud_count, data.no_fraud_count);
+
+  // fade-in animation for charts
+  document.querySelector('.section').style.opacity = 0;
+  setTimeout(()=>{
+    document.querySelector('.section').style.transition='opacity 0.8s';
+    document.querySelector('.section').style.opacity=1;
+  }, 50);
+}
+
+// Initial load
+updateDashboard();
+</script>
+
+</body>
+</html>
