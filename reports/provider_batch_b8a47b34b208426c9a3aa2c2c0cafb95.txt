@@ -1,0 +1,76 @@
+=== Statistics ===
+{
+  "total_claims": 10,
+  "fraud_claims": 6,
+  "fraud_percentage": 60.0,
+  "fraud_probability": 0.60407954454422,
+  "risk_level": "High",
+  "potential_saving": 14654.52
+}
+
+=== AI Summary ===
+**Fraud Investigation Report**  
+*Provider‑Level Review – Medical Insurance System*  
+*Date: 2025‑10‑06*  
+
+```
+--------------------------------------------------------------------
+| Statistic                 | Value                     |
+--------------------------------------------------------------------
+| Fraud Probability         | 0.60407954454422          |
+| Risk Level                | High                      |
+| Potential Saving          | $14,654.52                |
+| Claim Amount              | $0                        |
+| Deductible Amount Paid    | $0                        |
+| Inpatient Status          | 0 (Not inpatient)         |
+| Beneficiaries Count       | 0 (No beneficiaries)     |
+--------------------------------------------------------------------
+```
+
+--------------------------------------------------------------------
+**1. Overall Fraud Situation**  
+
+- The automated fraud scoring engine has flagged this provider with a **high fraud probability of 60.4 %**.  
+- Despite the high likelihood, the actual **claim and deductible amounts are $0**, indicating that the provider has *not* submitted any reimbursable claims in the period under review.  
+- The absence of inpatient service codes and beneficiary counts further accentuates the anomaly – a provider that normally invoices for services is presently silent on the claims side.  
+- The system’s potential savings metric of **$14,654.52** reflects the estimated amount that could be recovered if the identified fraudulent activity were halted or corrected.
+
+**2. Likely Fraud Types**  
+
+| Likely Fraud Type | Indicator(s) | Rationale |
+|-------------------|--------------|-----------|
+| **Phantom Billing / False Claims** | Zero claim/submission volume with high fraud probability | Provider may be submitting fictitious claims that did not actually occur, leading to a high fraud score despite the lack of current claims. |
+| **Billing for Ineligible Services** | High risk score, zero inpatient status, zero beneficiaries | Provider might be attempting to bill for services that are not covered or for non‑existent patients. |
+| **Duplicate or Over‑billing** | High fraud probability, no deductible paid | No deductible paid may suggest potential over‑billing or duplicate claims that were not processed or were omitted. |
+| **Identity Misuse / Collusion** | Zero beneficiaries, high risk | The provider may be acting in concert with other parties to submit fraudulent claims under false identities. |
+
+**3. Patterns or Causes**  
+
+- **Zero Claim & Deductible Amounts** – The provider has not submitted any claims during the review window, yet the fraud model flags a high probability. This could indicate *pre‑emptive* fraud (e.g., planning to submit fraudulent claims in the near future) or *historical* fraud that was not captured in the current data set.  
+- **Zero Inpatient Status / Beneficiaries** – Suggests the provider is not serving any patients or is claiming services that never occurred.  
+- **High Fraud Probability vs. No Realized Loss** – The model is conservative, applying a high risk score based on historical behavior patterns (e.g., prior violations, billing anomalies, or abnormal claim mixes).  
+- **Potential Collusion** – The absence of beneficiaries may imply that the provider is billing for services performed by another entity under a false name.  
+
+**4. Recommended Actions**  
+
+| Action | Owner | Timeline | Notes |
+|--------|-------|----------|-------|
+| **Immediate Claim Review** | Revenue Cycle Analyst | 5 business days | Verify any pending claims that may have been suppressed or flagged; confirm claim validity. |
+| **Audit of Provider’s Billing History** | Fraud Investigation Team | 10 business days | Cross‑check prior claims for patterns of over‑billing, duplicate billing, or services rendered to nonexistent beneficiaries. |
+| **Verification of Provider Credentials** | Compliance Officer | 7 business days | Confirm licensure, scope of practice, and any history of disciplinary actions. |
+| **Beneficiary Verification** | Claims Processor | 5 business days | Ensure that any claim references a verified beneficiary; flag claims with zero beneficiaries. |
+| **Risk‑Based Monitoring** | IT / Data Science | Ongoing | Deploy real‑time alerts for any future claim submissions from this provider. |
+| **Potential Suspension of Billing Rights** | Legal & Compliance | 15 business days | If evidence confirms fraudulent activity, consider temporary suspension pending further investigation. |
+| **Stakeholder Notification** | Customer Service | 3 business days | Inform beneficiaries and relevant parties of potential fraud risk and ongoing investigation. |
+
+**5. Final Verdict**  
+
+- **High‑Risk Flag**: The provider remains under a high fraud probability flag (60.4 %) with no current claims to validate.  
+- **Preliminary Conclusion**: Evidence suggests a likelihood of phantom or fraudulent billing activity. The absence of claim/submission data is itself anomalous and warrants deeper scrutiny.  
+- **Action Required**: All recommended actions should be executed promptly. Pending the findings of the audit and credential verification, a definitive decision will be made regarding continued provider participation or potential sanctions.  
+
+*Prepared by:*  
+Fraud Analysis Unit  
+Medical Insurance System  
+
+---

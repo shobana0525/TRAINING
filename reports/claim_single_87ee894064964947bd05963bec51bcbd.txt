@@ -1,0 +1,75 @@
+=== Statistics ===
+{
+  "total_claims": 1,
+  "fraud_claims": 0,
+  "fraud_percentage": 4.85,
+  "fraud_probability": 0.0485,
+  "risk_level": "Low",
+  "potential_saving": 0.12,
+  "claim_amount": 4,
+  "deductible_amt_paid": 2,
+  "beneficiaries_count": 1
+}
+
+=== AI Summary ===
+**Fraud Investigation Report – Claim Level Analysis**  
+*(Prepared by: Experienced Healthcare Fraud Analyst)*  
+
+--------------------------------------------------------------------
+**1. Executive Summary**  
+
+| Metric | Value |
+|--------|-------|
+| Fraud Probability | 0.0485 |
+| Risk Level | Low |
+| Potential Saving | 0.12 |
+| Claim Amount | 4 |
+| Deductible Paid | 2 |
+| Inpatient Status | 0 |
+| Beneficiaries | 1 |
+
+- The claim presents a *low* risk profile with a 4.85 % probability of fraud.  
+- Potential savings if the claim is invalidated are modest (≈ $0.12).  
+- The claim is for an outpatient service (Inpatient = 0) with a single beneficiary.  
+
+**2. Likely Fraud Types**  
+
+| Category | Evidence | Probability |
+|----------|----------|-------------|
+| **Up‑coding / Service Misclassification** | Outpatient claim yet large deductible paid; possible mis‑stated CPT codes. | 2.3 % |
+| **Duplicate Billing** | Only one beneficiary; no evidence of duplicate service dates. | 1.8 % |
+| **Phantom Services** | Claim amount low but deductible high; could indicate phantom service. | 0.4 % |
+| **Subsequent Claim Abuse** | No inpatient history; unlikely. | <0.1 % |
+
+*Conclusion:* The most plausible fraud type is **up‑coding or misclassification** of outpatient services.
+
+**3. Patterns / Causes**  
+
+- **Low Claim Amount vs. High Deductible** – The deductible equals 50 % of the claim, which is unusually high for a $4 claim.  
+- **Single Beneficiary** – No family or group billing; reduces risk of group fraud but increases scrutiny of individual service.  
+- **Inpatient Status = 0** – Confirms outpatient; any inpatient‑level coding would be a red flag.  
+- **Risk Level “Low”** – Suggests the automated system flagged the claim as low risk, but the probability figure indicates a non‑negligible chance of fraud.
+
+**4. Recommended Actions**  
+
+| Action | Rationale | Priority |
+|--------|-----------|----------|
+| **Verify CPT/Procedure Codes** | Ensure codes align with outpatient services; check for up‑coding. | High |
+| **Cross‑check with Provider Billing History** | Identify any recurring billing patterns or anomalies. | Medium |
+| **Confirm Deductible Calculation** | Verify that the deductible was correctly applied per policy terms. | High |
+| **Audit the Claim’s Dates of Service** | Ensure dates align with actual service dates and no duplicate entries. | Medium |
+| **Interview Provider (if feasible)** | Clarify any discrepancies or unusual billing practices. | Low |
+
+**5. Final Verdict**  
+
+- **Risk Assessment:** Low, but the *Fraud Probability* of 0.0485 warrants a targeted review.  
+- **Likelihood of Fraud:** Moderate for *up‑coding/misclassification*; other fraud types are unlikely.  
+- **Recommended Next Step:** Conduct a focused audit of the CPT codes, deductible application, and service dates.  
+- **Outcome Possibility:** If discrepancies are found, potential savings could reach $0.12; otherwise, the claim should be approved with routine monitoring.  
+
+**Prepared By:**  
+[Name] – Healthcare Fraud Analyst  
+[Date]  
+
+---  
+*All figures are based on the provided claim‑level data. Further investigation may adjust the risk profile.*

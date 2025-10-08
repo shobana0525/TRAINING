@@ -1,0 +1,59 @@
+=== Statistics ===
+{
+  "total_claims": 10,
+  "fraud_claims": 6,
+  "fraud_percentage": 60.0,
+  "fraud_probability": 0.60407954454422,
+  "risk_level": "High",
+  "potential_saving": 14654.52
+}
+
+=== AI Summary ===
+**Fraud Investigation Report**  
+================================
+
+**Provider Identifier:** *Not Specified*  
+
+---
+
+**1. Overall Fraud Situation**  
+\t- Fraud Probability: 0.60407954454422  
+\t- Risk Level: High  
+\t- Potential Saving: $14,654.52  
+\t- Claim Amount: $0  
+\t- Deductible Amount Paid: $0  
+\t- Inpatient Status: 0  
+\t- Beneficiaries Count: 0  
+
+The provider exhibits a **high probability of fraudulent activity** despite reporting **zero claim and deductible amounts**. The absence of beneficiaries and inpatient services suggests that the provider may be billing for services that were never rendered, or that data entry errors have occurred. The potential saving figure indicates the financial impact that could be realized if fraudulent claims are identified and stopped.
+
+---
+
+**2. Likely Fraud Types**  
+\t- **Phantom Claims / Billing for Non‑existent Services**  
+\t- **Duplicate Billing** (if any claims were submitted but not captured in the data set)  
+\t- **Identity Theft / Impersonation** (provider ID may be spoofed)  
+\t- **Data Manipulation / Record Tampering** (claim amounts set to zero to avoid detection)
+
+---
+
+**3. Patterns or Causes**  
+\t- **Zero Claim & Deductible Amounts** – Indicates possible deliberate suppression of claim data.  
+\t- **Zero Inpatient Status** – Provider may be attempting to bill exclusively for outpatient services that are not documented.  
+\t- **Zero Beneficiaries Count** – Suggests the provider has no registered patients under its account, raising suspicion of phantom provider status.  
+\t- **High Fraud Probability** – Derived from algorithmic scoring; likely triggered by anomalous data patterns (e.g., missing patient data, no claim history).
+
+---
+
+**4. Recommended Actions**  
+\t- **Immediate Provider Credential Verification** – Confirm license, NPI, and practice address.  
+\t- **Audit Historical Claims** – Cross‑check with CMS/Medicare/Medicaid databases for any matching claims.  
+\t- **Investigate Data Entry Processes** – Review how claim amounts and beneficiary counts are recorded.  
+\t- **Flag for Legal Review** – Potential criminal liability for fraudulent billing.  
+\t- **Implement Real‑Time Monitoring** – Set thresholds for zero claims and zero beneficiaries to trigger alerts.  
+\t- **Engage Third‑Party Forensics** – If internal resources are insufficient, bring in external fraud investigators.  
+
+---
+
+**5. Final Verdict**  
+\tThe evidence points to a **high likelihood of fraudulent activity** by the provider in question. The lack of any documented claims or beneficiaries, combined with a significant potential saving, warrants a **full investigative audit**. Immediate action is recommended to prevent further financial loss and to uphold the integrity of the insurance system.

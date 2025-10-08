@@ -1,0 +1,81 @@
+=== Statistics ===
+{
+  "total_claims": 1,
+  "fraud_claims": 0,
+  "fraud_percentage": 4.85,
+  "fraud_probability": 0.0485,
+  "risk_level": "Low",
+  "potential_saving": 0.12,
+  "claim_amount": 4,
+  "deductible_amt_paid": 2,
+  "beneficiaries_count": 1
+}
+
+=== AI Summary ===
+**Fraud Investigation Report – Claim‑Level Analysis**  
+*(Generated: 2025‑10‑05)*  
+
+| Metric                         | Value |
+|--------------------------------|-------|
+| Fraud Probability              | 0.0485 |
+| Risk Level                     | Low |
+| Potential Saving (USD)         | 0.12 |
+| Claim Amount (USD)             | 4 |
+| Deductible Amount Paid (USD)   | 2 |
+| Inpatient Status (0 = No)      | 0 |
+| Beneficiaries Count            | 1 |
+
+---
+
+### 1. Overall Fraud Situation  
+* The **fraud probability** of **4.85 %** classifies this claim as **low‑risk**.  
+* The **potential saving** of **$0.12** is negligible relative to the claim value, indicating minimal financial impact.  
+* Only **one beneficiary** involved and the claim is **outpatient**, reducing complexity.  
+
+**Conclusion:** The claim exhibits only marginal red‑flags and is unlikely to represent a substantive fraud episode.  
+
+---
+
+### 2. Likely Fraud Types  
+| Type | Supporting Evidence | Probability |
+|------|---------------------|-------------|
+| **Duplicate Billing** | One beneficiary, single claim, no inpatient service. | Low |
+| **Upcoding / Service Misclassification** | Claim amount $4 with deductible $2 suggests standard outpatient service; no evidence of higher‑level codes. | Very low |
+| **Identity Misuse** | No beneficiary count > 1. | Very low |
+
+*Given the data, no particular fraud type is strongly indicated.*
+
+---
+
+### 3. Patterns or Causes  
+1. **Small Claim Amount** – Claims under $10 typically have a low fraud incidence.  
+2. **Single Beneficiary** – Reduces the likelihood of collusion or beneficiary‑to‑beneficiary fraud.  
+3. **Outpatient Status** – Outpatient claims are generally less complex and easier to audit.  
+
+**Potential Causes for Minor Red‑Flag:**
+- **Data Entry Error** – The deductible paid ($2) equals 50 % of the claim amount, a common but not unusual ratio.  
+- **System Calibration** – The fraud probability algorithm may flag low‑value claims as a safety net.
+
+---
+
+### 4. Recommended Actions  
+| Action | Rationale | Priority |
+|--------|-----------|----------|
+| **Routine Audit** | Confirm coding and documentation accuracy. | Low |
+| **Policy Review** | Ensure deductible thresholds and benefit structures are correctly configured. | Low |
+| **Staff Training** | Reinforce correct billing procedures for small outpatient claims. | Low |
+| **Monitor Future Claims** | Track any repeated low‑value claims from the same beneficiary. | Medium |
+
+*No immediate remediation or investigative resources are required.*
+
+---
+
+### 5. Final Verdict  
+**Verdict:** **No Fraud Detected**  
+- The claim’s fraud probability and risk level are both low.  
+- Potential savings are trivial.  
+- No clear evidence of fraudulent activity.  
+
+**Action Required:** None beyond standard monitoring and audit procedures.  
+
+---
